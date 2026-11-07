@@ -1,0 +1,40 @@
+{
+ "floors": 3000,
+ "candCells": 49936,
+ "multiRoomCells": 0,
+ "singleRoomCells": 49936,
+ "groups": 46350,
+ "groupSize": {
+  "1": 43199,
+  "2": 2915,
+  "3": 131,
+  "4": 55,
+  "5": 25,
+  "6": 11,
+  "7": 9,
+  "8": 5
+ },
+ "roomsZeroDoors": 497,
+ "roomsTotal": 24032,
+ "spawnRoomsZero": 32,
+ "twoRoomDiff": 0,
+ "strictDiffCells": 0,
+ "wallBreaksFlood": 1,
+ "wallBreaksRoom": 4
+}
+--- per depth ---
+1 {"floors":200,"roomsZero":36,"groups":3041,"multiGroups":214,"cand":3290}
+2 {"floors":200,"roomsZero":36,"groups":3250,"multiGroups":199,"cand":3467}
+3 {"floors":200,"roomsZero":26,"groups":3144,"multiGroups":216,"cand":3391}
+4 {"floors":200,"roomsZero":38,"groups":2997,"multiGroups":201,"cand":3226}
+5 {"floors":200,"roomsZero":36,"groups":3077,"multiGroups":196,"cand":3291}
+6 {"floors":200,"roomsZero":25,"groups":3099,"multiGroups":206,"cand":3358}
+7 {"floors":200,"roomsZero":19,"groups":3193,"multiGroups":238,"cand":3465}
+8 {"floors":200,"roomsZero":44,"groups":3088,"multiGroups":220,"cand":3345}
+9 {"floors":200,"roomsZero":37,"groups":3061,"multiGroups":187,"cand":3280}
+10 {"floors":200,"roomsZero":28,"groups":3012,"multiGroups":245,"cand":3287}
+11 {"floors":200,"roomsZero":20,"groups":3037,"multiGroups":215,"cand":3284}
+12 {"floors":200,"roomsZero":40,"groups":3068,"multiGroups":225,"cand":3319}
+13 {"floors":200,"roomsZero":35,"groups":3104,"multiGroups":191,"cand":3317}
+14 {"floors":200,"roomsZero":43,"groups":3092,"multiGroups":212,"cand":3329}
+15 {"floors":200,"roomsZero":34,"groups":3087,"multiGroups":186,"cand":3287}

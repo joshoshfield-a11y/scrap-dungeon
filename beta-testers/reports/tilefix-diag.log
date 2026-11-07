@@ -1,0 +1,19 @@
+{
+  "floors": 200,
+  "coherenceFail": 0,
+  "wallCells": 73553,
+  "wallDoorCells": 12384,
+  "wallDoorPct": 16.84,
+  "floorCells": 45197,
+  "meanDistinctFloorVariantsPerRoom": 11.21,
+  "maxVariantsInRoom": 13,
+  "debrisCells": 13996,
+  "fakePickupCells": 6947,
+  "fakePickupPct": 49.64,
+  "fakeKey": 1736,
+  "fakeCrystal": 1829,
+  "doorCells": 3067,
+  "doorNoRecord": 0,
+  "lockedFloors": 182,
+  "lockedNoKey": 0
+}

@@ -1,0 +1,19 @@
+PASS boss pose sheets load 822x136 | {'mech_boss_sheet.png': [822, 136], 'mech_boss_walk_a_sheet.png': [822, 136], 'mech_boss_walk_b_sheet.png': [822, 136], 'mech_boss_attack_sheet.png': [822, 136], 'mech_boss_damaged_sheet.png': [822, 136]}
+PASS mid-walk render pos is fractional (between tiles) | {'render': {'x': 7.653333333333333, 'y': 28.346666666666668, 'progress': 0.6533333333333333}, 'logic': (9, 27), 'start': (7, 29), 'target': (11, 29)}
+PASS mid-walk pose is a walk pose | walk_b
+PASS walk has not teleported: logic pos is still early | {'px': 9, 'py': 27, 'runState': 'playing', 'clock': 20, 'hp': 100, 'carried': 0, 'logTail': ['Run seed 2126655779. Depth 1, industrial. Good hunting.'], 'enemies': [], 'pickups': [{'kind': 'salvage', 'x': 28, 'y': 11}, {'kind': 'salvage', 'x': 23, 'y': 10}, {'kind': 'salvage', 'x': 25, 'y': 10}, {'kind': 'health', 'x': 25, 'y': 9}, {'kind': 'food', 'x': 29, 'y': 13}, {'kind': 'component', 'x': 27, 'y': 10}, {'kind': 'ammo', 'x': 25, 'y': 12}, {'kind': 'dataChip', 'x': 27, 'y': 12}, {'kind': 'item', 'x': 28, 'y': 9}, {'kind': 'item', 'x': 39, 'y': 24}]}
+PASS walk reaches destination with one clock tick per step | {'end': (11, 29), 'clockDelta': 40}
+PASS single-step key move slides (fractional render pos) | {'render': {'x': 11.506666666666666, 'y': 29, 'progress': 0.5066666666666667}, 'logic': (12, 29)}
+PASS walk stops on a pickup (short of target, carried up) | {'end': (13, 28), 'carried': 5}
+FAIL walk stops when a foe becomes visible (short of target) | {'end': (17, 28), 'sight': 8, 'logTail': ['Run seed 2126655779. Depth 1, industrial. Good hunting.', 'Salvaged +5 scrap (carried: 5).']}
+PASS boss movement renders as a slide + walk pose | {'bossLogic': [{'id': 'fw-boss', 'type': 'boss', 'x': 19, 'y': 28, 'awake': True}], 'render': {'x': 19.5, 'y': 28, 'progress': 0.5}, 'pose': 'walk_b'}
+PASS Bag mech grid: 6 neon skill cards | 6
+PASS Bag cost lines use shipped values (no screenshot errors) | ['Overclock⚡Next 3 shots deal +25% damage.(20 energy, +30 heat, 1 time unit)Learn (2 pts)', 'Evasive Protocols🛡+4 evasion for 5 time units.(20 energy, +15 heat, 1 time unit)Learn (2 pts)', 'Emergency Plating🛡+3 armor for 5 time units.(20 energy, +15 heat, 1 time unit)Learn (2 pts)', 'Sensor Pulse◎Reveal the current room, including hidden traps.(15 energy, +10 heat, 1 time unit)Learn (2 pts)', 'Salvage Burst✋The next kill drops double salvage.(15 energy, +15 heat, 1 time unit)Learn (2 pts)', 'Vent Heat✋Clear all heat.(10 energy, +0 heat, 1 time unit)Learn (2 pts)']
+PASS Bag buttons >= 44px and no modal overflow | {'btnMinH': 48, 'overflow': False}
+PASS Menu modal uses the neon frame | {'border': 'rgb(53, 224, 255)', 'glow': 'rgb(6, 42, 51) 0px 0px 0px 1px inset, rgba(53, 224, 255, 0.45) 0px 0px 22px 0px', 'overflow': False}
+PASS Hub stations render as neon cards, buttons >= 44px | {'cards': 8, 'titles': ['The Mechanic — chassis upgradesTier 0/5.', 'The Salvager — exchange1 component = 8 b', 'The Researcher — Codex and bankingBankin', 'The Armorer — craftingStockpile: 0 healt', 'Loadout — starting ammoChoose what the n', 'The Scout — threat intelNext expedition,', 'The Radio Operator — rumorsDeepest floor', 'The Instructor — pilot skillsPilot XP: 0'], 'btnMinH': 48, 'overflow': False}
+PASS Log modal opens in neon frame | True
+PASS Use-item popup opens | Use item
+PASS Stairs panel opens in neon frame on a real step | {'visible': True, 'border': 'rgb(53, 224, 255)'}
+PASS zero console errors | []
+RESULT: 17 PASS, 1 FAIL

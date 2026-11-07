@@ -1,0 +1,29 @@
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 1) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'scrappersWard', 'tier': 'common', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Run seed 3672850407. Depth 1, industrial. Good hunting.', 'The door opens.', "Picked up [Common] Scrapper's ward +1 — stowed in the Bag. Equip it from the Bag (no time cost)."]
+PASS Bag shows an Equipment section with the carried gear row | BAG — INVENTORY
+HP: 100/100
+Depth: 1
+Inventory (this run)
+Salvage carried: 0 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 0
+Ammo: Standard 16 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 0 ·
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'shield', 'equipped': {'kind': 'item', 'defId': 'scrappersWard', 'tier': 'common', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (440, 440), 'actions': (44, 44)}
+PASS equipped piece leaves the carried list | []
+PASS shield equipped in the shield slot | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'armor': None, 'shield': {'kind': 'item', 'defId': 'scrappersWard', 'tier': 'common', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}, 'utility': None}
+PASS freshly equipped shield starts empty | {'shield': 0}
+PASS shield recharges on waits (pool >= 1 after 2 waits) | {'shield': 1}
+FAIL shield absorb visible in a real fight (log line) | {'absorbed': False, 'runState': 'playing', 'shield': 11, 'hp': 100, 'logTail': ['Run seed 3672850407. Depth 1, industrial. Good hunting.', 'The door opens.', "Picked up [Common] Scrapper's ward +1 — stowed in the Bag. Equip it from the Bag (no time cost).", "Equipped [Common] Scrapper's ward +1.", 'You wait.', 'You wait.', 'Picked up a health cell (quickslot: 1).', 'Low Power! Find food soon, or power will start draining your hull.']}
+PASS no console errors / failed assets | none
+PASS gear stow + Bag equip verified within 4 fresh runs | 
+FAIL shield recharge + absorb verified within 4 fresh runs | 
+{
+ "failures": [
+  "shield absorb visible in a real fight (log line)",
+  "shield recharge + absorb verified within 4 fresh runs"
+ ]
+}

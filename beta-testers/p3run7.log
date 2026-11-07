@@ -1,0 +1,37 @@
+PASS fresh run: energy 100, heat 0, no mech skills, 0 points, meters collapsed (attempt 1) | {'energy': 100, 'heat': 0, 'mechSkills': [], 'points': 0, 'meters': {'text': '', 'hidden': True}}
+PASS hunt earns 4+ run skill points and 25+ carried salvage | {'runState': 'playing', 'points': 4, 'carried': 31, 'kills': 4}
+PASS Bag shows a Mech skills section with all six skills | Bag — inventory
+HP: 61/100
+Depth: 3
+Inventory (this run)
+Salvage carried: 31 · Components: 4
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 3
+Ammo: 23 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 14 · Stockpiled components: 0
+Hub stockpile: 0 health, 0 food, 0 repair kits, 0 ammo
+Chassis tier: 0/5 · Banking: 25% (visit the hub between runs to upgrade)
+No 
+PASS Learn (real click) learns Overclock, costs 2 points, no time | {'clicked': True, 'mechSkills': ['overclock'], 'points': 2, 'clock': 2360}
+PASS Learn (real click) learns Vent Heat | {'clicked': True, 'mechSkills': ['overclock', 'ventHeat']}
+PASS Use (real click) costs time + energy + heat and applies Overclock | {'clicked': True, 'clock': 2370, 'energy': 90, 'heat': 20, 'effects': {'overclockShots': 3, 'evasiveUntil': -1, 'platingUntil': -1, 'salvageBurst': False}, 'logTail': ['Picked up food (quickslot: 1). Eat it to restore 40 actions of power.', 'You wait.', 'You eat. Power restored by 40 actions (actions used: 114, power: low).', 'Salvaged +11 scrap (carried: 31).', 'You wait.', 'Mech skill learned: Overclock (Next 3 shots deal +25% damage.)', 'Mech skill learned: Vent Heat (Clear all heat.)', 'Mech skill used: Overclock (-20 energy, +30 heat).']}
+PASS HUD meters line appears while meters are non-full | {'text': 'Energy 90/100 · Heat 20/100 · Overclock x3 · Skill pts 0', 'hidden': False}
+PASS repeated Overclock use overheats the mech (locked) | {'overheated': True, 'heat': 90, 'energy': 50}
+PASS Use while overheated is refused at no time cost | {'clicked': True, 'clock': 2410, 'overheated': True, 'logTail': ['Mech skill used: Overclock (-20 energy, +30 heat).', 'Mech skill used: Overclock (-20 energy, +30 heat).', 'Starving Power! Your hull is draining — eat food now.', 'Mech skill used: Overclock (-20 energy, +30 heat).', 'Mech skill used: Overclock (-20 energy, +30 heat).', 'OVERHEAT! Mech skills are locked until heat drops below 50.', 'Mech skill used: Overclock (-20 energy, +30 heat).', 'Systems overheated — mech skills are locked until heat drops below 50.']}
+PASS waiting cools below 50 and unlocks mech skills | {'heat': 30, 'overheated': False}
+PASS Vent Heat (real click) clears heat to 0 | {'clicked': True, 'heat': 0}
+PASS extract reaches the hub with 20+ banked salvage | {'hub': {'skills': {}, 'pilotXp': 58, 'banked': 45, 'codexLen': 3}, 'modalHead': 'EXTRACTED — back at the hub\nExtracted salvage secured: 31\nBanked salvage: 45\nStockpiled components: 4\nChassis tier: 0/5 '}
+PASS Instructor station lists all 12 pilot skills | {'missing': []}
+PASS Buy rank 1 (real click) spends 20 banked salvage, rank persists in hub | {'clicked': True, 'skills': {'steadyAim': 1}, 'banked': 25}
+PASS scripted death ends the run | {'runState': 'dead', 'hp': 0}
+PASS pilot rank survives death (hub store) | {'hub': {'skills': {'steadyAim': 1}, 'pilotXp': 58, 'banked': 25, 'codexLen': 3}}
+PASS new expedition starts with empty mech state (run store wiped) | {'mechSkills': [], 'points': 0, 'energy': 100, 'heat': 0}
+PASS second extract tops the hub up to 25+ banked salvage | {'hub': {'skills': {'steadyAim': 1}, 'pilotXp': 65, 'banked': 39, 'codexLen': 3}, 'modalHead': 'EXTRACTED — back at the hub\nExtracted salvage secured: 14\nBanked salvage: 39\nSto', 'bankedBefore': 25}
+PASS Respec (real click) refunds all ranks at 25 salvage per rank | {'clicked': True, 'skills': {}, 'banked': 14}
+PASS no console errors / failed assets | none
+PASS fresh-run meters + mech learn/use verified within 6 fresh runs | {'fresh': True, 'mech': True, 'overheat': True, 'hub': True, 'persist': True, 'respec': True}
+PASS overheat lock + cool-down + Vent Heat verified within 6 fresh runs | {'fresh': True, 'mech': True, 'overheat': True, 'hub': True, 'persist': True, 'respec': True}
+PASS Instructor buy + death persistence + respec verified within 6 fresh runs | {'fresh': True, 'mech': True, 'overheat': True, 'hub': True, 'persist': True, 'respec': True}
+{
+ "failures": []
+}

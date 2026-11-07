@@ -1,0 +1,958 @@
+{
+  "generatedAt": "2026-10-30T03:16:56.170Z",
+  "floorsPerDepth": 200,
+  "seedSeries": "runSeed = (0x5D5C2026 + i * 0x9E3779B9) mod 2^32, floor seed = runSeed XOR depth",
+  "determinismReplayIdentical": true,
+  "perDepth": {
+    "1": {
+      "depth": 1,
+      "floors": 200,
+      "regular": 800,
+      "counts": {
+        "drone": 222,
+        "raider": 415,
+        "brute": 163
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "raider": 0.5,
+        "drone": 0.3,
+        "brute": 0.2
+      },
+      "observed": {
+        "raider": 0.5188,
+        "drone": 0.2775,
+        "brute": 0.2037
+      },
+      "shareCheck": {
+        "raider": {
+          "within15pct": true,
+          "relErr": 0.0375
+        },
+        "drone": {
+          "within15pct": true,
+          "relErr": 0.075
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.0187
+        }
+      },
+      "bossShare": 0
+    },
+    "2": {
+      "depth": 2,
+      "floors": 200,
+      "regular": 1000,
+      "counts": {
+        "flyer": 179,
+        "drone": 245,
+        "brute": 164,
+        "raider": 255,
+        "turret_light": 157
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "raider": 0.25,
+        "drone": 0.25,
+        "brute": 0.1667,
+        "turret_light": 0.1667,
+        "flyer": 0.1667
+      },
+      "observed": {
+        "raider": 0.255,
+        "drone": 0.245,
+        "brute": 0.164,
+        "turret_light": 0.157,
+        "flyer": 0.179
+      },
+      "shareCheck": {
+        "raider": {
+          "within15pct": true,
+          "relErr": 0.02
+        },
+        "drone": {
+          "within15pct": true,
+          "relErr": 0.02
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.016
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.058
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.074
+        }
+      },
+      "bossShare": 0
+    },
+    "3": {
+      "depth": 3,
+      "floors": 200,
+      "regular": 1200,
+      "counts": {
+        "raider": 261,
+        "drone": 255,
+        "turret_light": 232,
+        "flyer": 235,
+        "brute": 217
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "raider": 0.225,
+        "drone": 0.225,
+        "brute": 0.1833,
+        "turret_light": 0.1833,
+        "flyer": 0.1833
+      },
+      "observed": {
+        "raider": 0.2175,
+        "drone": 0.2125,
+        "brute": 0.1808,
+        "turret_light": 0.1933,
+        "flyer": 0.1958
+      },
+      "shareCheck": {
+        "raider": {
+          "within15pct": true,
+          "relErr": 0.0333
+        },
+        "drone": {
+          "within15pct": true,
+          "relErr": 0.0556
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.0136
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.0545
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.0682
+        }
+      },
+      "bossShare": 0
+    },
+    "4": {
+      "depth": 4,
+      "floors": 200,
+      "regular": 1400,
+      "counts": {
+        "flyer": 230,
+        "shielder": 261,
+        "sniper": 93,
+        "raider": 241,
+        "drone": 248,
+        "turret_light": 131,
+        "brute": 196
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "raider": 0.1667,
+        "drone": 0.1667,
+        "brute": 0.1667,
+        "turret_light": 0.0833,
+        "flyer": 0.1667,
+        "shielder": 0.1667,
+        "sniper": 0.0833
+      },
+      "observed": {
+        "raider": 0.1721,
+        "drone": 0.1771,
+        "brute": 0.14,
+        "turret_light": 0.0936,
+        "flyer": 0.1643,
+        "shielder": 0.1864,
+        "sniper": 0.0664
+      },
+      "shareCheck": {
+        "raider": {
+          "within15pct": true,
+          "relErr": 0.0329
+        },
+        "drone": {
+          "within15pct": true,
+          "relErr": 0.0629
+        },
+        "brute": {
+          "within15pct": false,
+          "relErr": 0.16
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.1229
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.0143
+        },
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.1186
+        },
+        "sniper": {
+          "within15pct": false,
+          "relErr": 0.2029
+        }
+      },
+      "bossShare": 0
+    },
+    "5": {
+      "depth": 5,
+      "floors": 200,
+      "regular": 1600,
+      "counts": {
+        "flyer": 286,
+        "raider": 227,
+        "turret_light": 134,
+        "brute": 279,
+        "shielder": 316,
+        "sniper": 136,
+        "drone": 222
+      },
+      "bossPresent": 55,
+      "bossReasons": {
+        "no-security-room": 145,
+        "present": 55
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "raider": 0.15,
+        "drone": 0.15,
+        "brute": 0.175,
+        "turret_light": 0.0875,
+        "flyer": 0.175,
+        "shielder": 0.175,
+        "sniper": 0.0875
+      },
+      "observed": {
+        "raider": 0.1419,
+        "drone": 0.1388,
+        "brute": 0.1744,
+        "turret_light": 0.0838,
+        "flyer": 0.1787,
+        "shielder": 0.1975,
+        "sniper": 0.085
+      },
+      "shareCheck": {
+        "raider": {
+          "within15pct": true,
+          "relErr": 0.0542
+        },
+        "drone": {
+          "within15pct": true,
+          "relErr": 0.075
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.0036
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.0429
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.0214
+        },
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.1286
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.0286
+        }
+      },
+      "bossShare": 0.275
+    },
+    "6": {
+      "depth": 6,
+      "floors": 200,
+      "regular": 1800,
+      "counts": {
+        "turret_light": 283,
+        "shielder": 331,
+        "brute": 444,
+        "sniper": 295,
+        "flyer": 156,
+        "bomber": 291
+      },
+      "bossPresent": 54,
+      "bossReasons": {
+        "no-security-room": 146,
+        "present": 54
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "brute": 0.25,
+        "shielder": 0.1667,
+        "sniper": 0.1667,
+        "bomber": 0.1667,
+        "flyer": 0.0833,
+        "turret_light": 0.1667
+      },
+      "observed": {
+        "brute": 0.2467,
+        "shielder": 0.1839,
+        "sniper": 0.1639,
+        "bomber": 0.1617,
+        "flyer": 0.0867,
+        "turret_light": 0.1572
+      },
+      "shareCheck": {
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.0133
+        },
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.1033
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.0167
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.03
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.04
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.0567
+        }
+      },
+      "bossShare": 0.27
+    },
+    "7": {
+      "depth": 7,
+      "floors": 200,
+      "regular": 2000,
+      "counts": {
+        "flyer": 338,
+        "bomber": 308,
+        "turret_light": 337,
+        "shielder": 326,
+        "brute": 349,
+        "sniper": 342
+      },
+      "bossPresent": 53,
+      "bossReasons": {
+        "no-security-room": 147,
+        "present": 53
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.1667,
+        "turret_light": 0.1667,
+        "flyer": 0.1667,
+        "brute": 0.1667,
+        "sniper": 0.1667,
+        "bomber": 0.1667
+      },
+      "observed": {
+        "shielder": 0.163,
+        "turret_light": 0.1685,
+        "flyer": 0.169,
+        "brute": 0.1745,
+        "sniper": 0.171,
+        "bomber": 0.154
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.022
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.011
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.014
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.047
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.026
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.076
+        }
+      },
+      "bossShare": 0.265
+    },
+    "8": {
+      "depth": 8,
+      "floors": 200,
+      "regular": 2200,
+      "counts": {
+        "bomber": 366,
+        "flyer": 404,
+        "sniper": 414,
+        "shielder": 335,
+        "brute": 345,
+        "turret_light": 336
+      },
+      "bossPresent": 66,
+      "bossReasons": {
+        "no-security-room": 134,
+        "present": 66
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.15,
+        "turret_light": 0.15,
+        "flyer": 0.175,
+        "brute": 0.175,
+        "sniper": 0.175,
+        "bomber": 0.175
+      },
+      "observed": {
+        "shielder": 0.1523,
+        "turret_light": 0.1527,
+        "flyer": 0.1836,
+        "brute": 0.1568,
+        "sniper": 0.1882,
+        "bomber": 0.1664
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.0152
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.0182
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.0494
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.1039
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.0753
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.0494
+        }
+      },
+      "bossShare": 0.33
+    },
+    "9": {
+      "depth": 9,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "shielder": 364,
+        "flyer": 407,
+        "bomber": 456,
+        "sniper": 414,
+        "brute": 441,
+        "turret_light": 318
+      },
+      "bossPresent": 49,
+      "bossReasons": {
+        "present": 49,
+        "no-security-room": 151
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.1333,
+        "turret_light": 0.1333,
+        "flyer": 0.1833,
+        "brute": 0.1833,
+        "sniper": 0.1833,
+        "bomber": 0.1833
+      },
+      "observed": {
+        "shielder": 0.1517,
+        "turret_light": 0.1325,
+        "flyer": 0.1696,
+        "brute": 0.1837,
+        "sniper": 0.1725,
+        "bomber": 0.19
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.1375
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.0062
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.075
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.0023
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.0591
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.0364
+        }
+      },
+      "bossShare": 0.245
+    },
+    "10": {
+      "depth": 10,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "sniper": 479,
+        "flyer": 452,
+        "turret_light": 253,
+        "bomber": 453,
+        "brute": 460,
+        "shielder": 303
+      },
+      "bossPresent": 61,
+      "bossReasons": {
+        "no-security-room": 139,
+        "present": 61
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.1167,
+        "turret_light": 0.1167,
+        "flyer": 0.1917,
+        "brute": 0.1917,
+        "sniper": 0.1917,
+        "bomber": 0.1917
+      },
+      "observed": {
+        "shielder": 0.1263,
+        "turret_light": 0.1054,
+        "flyer": 0.1883,
+        "brute": 0.1917,
+        "sniper": 0.1996,
+        "bomber": 0.1888
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.0821
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.0964
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.0174
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.0413
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.0152
+        }
+      },
+      "bossShare": 0.305
+    },
+    "11": {
+      "depth": 11,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "bomber": 494,
+        "sniper": 458,
+        "flyer": 470,
+        "brute": 474,
+        "turret_light": 271,
+        "shielder": 233
+      },
+      "bossPresent": 50,
+      "bossReasons": {
+        "no-security-room": 150,
+        "present": 50
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.1,
+        "turret_light": 0.1,
+        "flyer": 0.2,
+        "brute": 0.2,
+        "sniper": 0.2,
+        "bomber": 0.2
+      },
+      "observed": {
+        "shielder": 0.0971,
+        "turret_light": 0.1129,
+        "flyer": 0.1958,
+        "brute": 0.1975,
+        "sniper": 0.1908,
+        "bomber": 0.2058
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.0292
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.1292
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.0208
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.0125
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.0458
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.0292
+        }
+      },
+      "bossShare": 0.25
+    },
+    "12": {
+      "depth": 12,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "brute": 488,
+        "sniper": 490,
+        "flyer": 495,
+        "shielder": 216,
+        "bomber": 511,
+        "turret_light": 200
+      },
+      "bossPresent": 51,
+      "bossReasons": {
+        "no-security-room": 149,
+        "present": 51
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.0833,
+        "turret_light": 0.0833,
+        "flyer": 0.2083,
+        "brute": 0.2083,
+        "sniper": 0.2083,
+        "bomber": 0.2083
+      },
+      "observed": {
+        "shielder": 0.09,
+        "turret_light": 0.0833,
+        "flyer": 0.2062,
+        "brute": 0.2033,
+        "sniper": 0.2042,
+        "bomber": 0.2129
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.08
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.01
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.024
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.02
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.022
+        }
+      },
+      "bossShare": 0.255
+    },
+    "13": {
+      "depth": 13,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "turret_light": 188,
+        "bomber": 506,
+        "sniper": 523,
+        "brute": 530,
+        "flyer": 450,
+        "shielder": 203
+      },
+      "bossPresent": 49,
+      "bossReasons": {
+        "present": 49,
+        "no-security-room": 151
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.0833,
+        "turret_light": 0.0833,
+        "flyer": 0.2083,
+        "brute": 0.2083,
+        "sniper": 0.2083,
+        "bomber": 0.2083
+      },
+      "observed": {
+        "shielder": 0.0846,
+        "turret_light": 0.0783,
+        "flyer": 0.1875,
+        "brute": 0.2208,
+        "sniper": 0.2179,
+        "bomber": 0.2108
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.015
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.06
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.1
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.06
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.046
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.012
+        }
+      },
+      "bossShare": 0.245
+    },
+    "14": {
+      "depth": 14,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "flyer": 484,
+        "sniper": 497,
+        "bomber": 483,
+        "brute": 506,
+        "shielder": 208,
+        "turret_light": 222
+      },
+      "bossPresent": 40,
+      "bossReasons": {
+        "no-security-room": 160,
+        "present": 40
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.0833,
+        "turret_light": 0.0833,
+        "flyer": 0.2083,
+        "brute": 0.2083,
+        "sniper": 0.2083,
+        "bomber": 0.2083
+      },
+      "observed": {
+        "shielder": 0.0867,
+        "turret_light": 0.0925,
+        "flyer": 0.2017,
+        "brute": 0.2108,
+        "sniper": 0.2071,
+        "bomber": 0.2013
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.04
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.11
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.032
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.012
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.006
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.034
+        }
+      },
+      "bossShare": 0.2
+    },
+    "15": {
+      "depth": 15,
+      "floors": 200,
+      "regular": 2400,
+      "counts": {
+        "turret_light": 210,
+        "bomber": 468,
+        "shielder": 190,
+        "brute": 520,
+        "flyer": 513,
+        "sniper": 499
+      },
+      "bossPresent": 46,
+      "bossReasons": {
+        "no-security-room": 154,
+        "present": 46
+      },
+      "coherenceFailures": 0,
+      "countMismatches": 0,
+      "unwiredTypes": 0,
+      "bossInNonSecurity": 0,
+      "expected": {
+        "shielder": 0.0833,
+        "turret_light": 0.0833,
+        "flyer": 0.2083,
+        "brute": 0.2083,
+        "sniper": 0.2083,
+        "bomber": 0.2083
+      },
+      "observed": {
+        "shielder": 0.0792,
+        "turret_light": 0.0875,
+        "flyer": 0.2137,
+        "brute": 0.2167,
+        "sniper": 0.2079,
+        "bomber": 0.195
+      },
+      "shareCheck": {
+        "shielder": {
+          "within15pct": true,
+          "relErr": 0.05
+        },
+        "turret_light": {
+          "within15pct": true,
+          "relErr": 0.05
+        },
+        "flyer": {
+          "within15pct": true,
+          "relErr": 0.026
+        },
+        "brute": {
+          "within15pct": true,
+          "relErr": 0.04
+        },
+        "sniper": {
+          "within15pct": true,
+          "relErr": 0.002
+        },
+        "bomber": {
+          "within15pct": true,
+          "relErr": 0.064
+        }
+      },
+      "bossShare": 0.23
+    }
+  }
+}

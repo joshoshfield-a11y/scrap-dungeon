@@ -1,0 +1,17 @@
+PASS parsed lists: floorVariants 15, wall materials, debris list | {'floor': 15, 'wallMats': 8, 'debris': 6}
+PASS no door panel in wall materials | ['vision_wall_top', 'vision_wall_top2', 'vision_wall_right', 'wall', 'batch3_s2_wall_panel_a', 'batch3_s2_wall_panel_b', 'batch3_s2_wall_panel_c', 'batch3_s1_panel_plain_a']
+PASS no loot_ sprite in debris list | ['debris', 'debris', 'batch3_s2_scrap_pile_a', 'batch3_s2_scrap_debris', 'batch3_s2_scrap_pile_wires', 'batch3_s2_armour_broken']
+PASS fresh run playing, depth 1, industrial | {'state': 'playing', 'depth': 1, 'theme': 'industrial'}
+PASS no wall cell draws a door panel (live floor) | {'badWall': 0}
+PASS no debris cell draws a pickup sprite (live floor) | {'badDebris': 0, 'debrisCells': 91}
+PASS every door grid cell has a record | {'doors': 17, 'noRecord': 0}
+PASS room dominant mapping stable
+PASS spawn screenshot saved | {'bytes': 184517}
+PASS real key pickup shows gold ring pixels | {'goldPx': 8, 'tile': 43}
+PASS key-vs-decor screenshot saved | {'bytes': 179826}
+PASS real bump opens closed door, player stays | {'door': {'id': 'door:16:52', 'x': 52, 'y': 16, 'roomId': 'room:0', 'entranceId': 'entrance:room:0:0', 'state': 'open', 'lockLevel': 0, 'keyId': None, 'hp': 0, 'maxHp': 0}, 'player': (51, 16)}
+PASS second bump enters through open door | {'player': (52, 16)}
+PASS tapping a real door paths and opens it | {'door': {'id': 'door:16:55', 'x': 55, 'y': 16, 'roomId': 'room:0', 'entranceId': 'entrance:room:0:0', 'state': 'open', 'lockLevel': 0, 'keyId': None, 'hp': 0, 'maxHp': 0}, 'player': (55, 16), 'target': (55, 16)}
+PASS zero console errors | []
+
+PASS 15 FAIL 0

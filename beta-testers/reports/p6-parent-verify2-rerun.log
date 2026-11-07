@@ -1,0 +1,69 @@
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 1) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS descended depth 1 -> 2 | {'depth': 2, 'runState': 'playing'}
+PASS descended depth 2 -> 3 | {'depth': 3, 'runState': 'playing'}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'flamethrower', 'tier': 'common', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}, {'kind': 'item', 'defId': 'alloyVest', 'tier': 'uncommon', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Starving Power drains 1 HP (55/100).', 'Starving Power drains 1 HP (54/100).', 'Starving Power drains 1 HP (53/100).', 'Starving Power drains 1 HP (52/100).', 'Starving Power drains 1 HP (51/100).', 'The door opens.', 'Starving Power drains 1 HP (50/100).', 'Picked up [Uncommon] Alloy vest +1 — stowed in the Bag. Equip it from the Bag (no time cost).']
+PASS Bag shows an Equipment section with the carried gear row | Bag — inventory
+HP: 50/100
+Depth: 3
+Inventory (this run)
+Salvage carried: 11 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 1
+Ammo: Standard 16 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 3 ·
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'armor', 'equipped': {'kind': 'item', 'defId': 'alloyVest', 'tier': 'uncommon', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (1840, 1840), 'actions': (186, 186)}
+PASS equipped piece leaves the carried list | [{'kind': 'item', 'defId': 'flamethrower', 'tier': 'common', 'upgrade': 1, 'properties': [], 'flair': None, 'element': None}]
+PASS descended depth 3 -> 4 | {'depth': 4, 'runState': 'playing'}
+FAIL shield found within 5 floors | {'runState': 'dead', 'hp': 0, 'depth': 4, 'actions': 297}
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 2) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'scope', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Run seed 3915764194. Depth 1, industrial. Good hunting.', 'The door opens.', 'The door opens.', 'The door opens.', 'Picked up [Common] Scope +0 — stowed in the Bag. Equip it from the Bag (no time cost).']
+PASS Bag shows an Equipment section with the carried gear row | Bag — inventory
+HP: 100/100
+Depth: 1
+Inventory (this run)
+Salvage carried: 0 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 0
+Ammo: Standard 16 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 0 ·
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'utility', 'equipped': {'kind': 'item', 'defId': 'scope', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (520, 520), 'actions': (52, 52)}
+PASS equipped piece leaves the carried list | []
+PASS descended depth 1 -> 2 | {'depth': 2, 'runState': 'playing'}
+FAIL shield found within 5 floors | {'runState': 'dead', 'hp': 0, 'depth': 2, 'actions': 360}
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 3) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'sensor', 'tier': 'epic', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Drone hits You for 3 (raw 5, armor -2)', 'Drone hits You for 3 (raw 5, armor -2)', 'The door opens.', 'Drone misses You.', 'Drone misses You.', 'Drone misses You.', 'Picked up an ammo crate (+8 Standard ammo, total 24).', 'Picked up [Epic] Sensor +0 — stowed in the Bag. Equip it from the Bag (no time cost).']
+PASS Bag shows an Equipment section with the carried gear row | Bag — inventory
+HP: 60/100
+Depth: 1
+Inventory (this run)
+Salvage carried: 0 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 0
+Ammo: Standard 24 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 0 · 
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'utility', 'equipped': {'kind': 'item', 'defId': 'sensor', 'tier': 'epic', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (790, 790), 'actions': (79, 79)}
+PASS equipped piece leaves the carried list | []
+FAIL shield found within 5 floors | {'runState': 'dead', 'hp': 0, 'depth': 1, 'actions': 117}
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 4) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+FAIL reached the gear pickup alive | dead
+PASS gear stow + Bag equip verified within 4 fresh runs | 
+FAIL shield recharge + absorb verified within 4 fresh runs | 
+{
+ "failures": [
+  "shield found within 5 floors",
+  "shield found within 5 floors",
+  "shield found within 5 floors",
+  "reached the gear pickup alive",
+  "shield recharge + absorb verified within 4 fresh runs"
+ ]
+}
+VERIFY2_RERUN_EXIT:1

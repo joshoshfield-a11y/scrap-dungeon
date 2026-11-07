@@ -1,0 +1,119 @@
+P5-BALANCE-SIM — starter blaster (Common +0 scrapBlaster 2d6+8, acc 14), 20000 trials per cell
+HP: shipped Math.round scaling. Shielder frontal = halved raw before armor; rear = no halving.
+
+type            depth  hp    p10  median  p90   (mode)
+raider          d 1    30     2       3     5   standard
+raider          d 2    33     3       3     5   standard
+raider          d 3    36     3       4     5   standard
+raider          d 4    39     3       4     6   standard
+raider          d 5    42     3       4     6   standard
+drone           d 1    16     1       3     6   standard
+drone           d 2    18     2       3     6   standard
+drone           d 3    19     2       3     6   standard
+drone           d 4    21     2       3     7   standard
+drone           d 5    22     2       4     7   standard
+brute           d 1    60     5       6     8   standard
+brute           d 2    66     6       7     9   standard
+brute           d 3    72     7       8     9   standard
+brute           d 4    78     7       8    10   standard
+brute           d 5    84     8       9    11   standard
+brute           d 6    90     8      10    11   standard
+brute           d 7    96     9      10    12   standard
+brute           d 8   102     9      11    13   standard
+brute           d 9   108    10      11    13   standard
+brute           d10   114    10      12    14   standard
+brute           d11   120    11      13    15   standard
+brute           d12   126    12      13    15   standard
+brute           d13   132    12      14    16   standard
+brute           d14   138    13      14    17   standard
+brute           d15   144    13      15    17   standard
+turret_light    d 2    22     2       2     2   standard
+turret_light    d 3    24     2       2     3   standard
+turret_light    d 4    26     2       2     3   standard
+turret_light    d 5    28     2       2     3   standard
+turret_light    d 6    30     2       3     3   standard
+turret_light    d 7    32     2       3     3   standard
+turret_light    d 8    34     3       3     3   standard
+turret_light    d 9    36     3       3     3   standard
+turret_light    d10    38     3       3     4   standard
+turret_light    d11    40     3       3     4   standard
+turret_light    d12    42     3       3     4   standard
+turret_light    d13    44     3       4     4   standard
+turret_light    d14    46     3       4     4   standard
+turret_light    d15    48     4       4     4   standard
+flyer           d 2    13     1       2     5   standard
+flyer           d 3    14     1       2     6   standard
+flyer           d 4    16     1       3     7   standard
+flyer           d 5    17     1       3     7   standard
+flyer           d 6    18     2       4     7   standard
+flyer           d 7    19     2       4     8   standard
+flyer           d 8    20     2       4     8   standard
+flyer           d 9    22     2       4     8   standard
+flyer           d10    23     2       4     8   standard
+flyer           d11    24     2       4     8   standard
+flyer           d12    25     2       4     8   standard
+flyer           d13    26     2       4     8   standard
+flyer           d14    28     2       4     9   standard
+flyer           d15    29     2       5     9   standard
+shielder        d 4    26     5       6     8   frontal
+shielder        d 4    26     2       3     4   rear
+shielder        d 5    28     5       7     9   frontal
+shielder        d 5    28     2       3     5   rear
+shielder        d 6    30     6       7     9   frontal
+shielder        d 6    30     2       3     5   rear
+shielder        d 7    32     6       8    10   frontal
+shielder        d 7    32     3       3     5   rear
+shielder        d 8    34     7       8    10   frontal
+shielder        d 8    34     3       3     5   rear
+shielder        d 9    36     7       9    11   frontal
+shielder        d 9    36     3       4     5   rear
+shielder        d10    38     7       9    12   frontal
+shielder        d10    38     3       4     6   rear
+shielder        d11    40     8      10    12   frontal
+shielder        d11    40     3       4     6   rear
+shielder        d12    42     8      10    13   frontal
+shielder        d12    42     3       4     6   rear
+shielder        d13    44     9      10    13   frontal
+shielder        d13    44     4       4     6   rear
+shielder        d14    46     9      11    14   frontal
+shielder        d14    46     4       5     6   rear
+shielder        d15    48    10      11    14   frontal
+shielder        d15    48     4       5     7   rear
+sniper          d 4    23     2       2     2   standard
+sniper          d 5    25     2       2     2   standard
+sniper          d 6    27     2       2     3   standard
+sniper          d 7    29     2       2     3   standard
+sniper          d 8    31     2       3     3   standard
+sniper          d 9    32     2       3     3   standard
+sniper          d10    34     2       3     3   standard
+sniper          d11    36     3       3     3   standard
+sniper          d12    38     3       3     3   standard
+sniper          d13    40     3       3     3   standard
+sniper          d14    41     3       3     4   standard
+sniper          d15    43     3       3     4   standard
+bomber          d 6    36     3       3     3   standard
+bomber          d 7    38     3       3     4   standard
+bomber          d 8    41     3       3     4   standard
+bomber          d 9    43     3       4     4   standard
+bomber          d10    46     3       4     4   standard
+bomber          d11    48     4       4     4   standard
+bomber          d12    50     4       4     4   standard
+bomber          d13    53     4       4     5   standard
+bomber          d14    55     4       4     5   standard
+bomber          d15    58     4       5     5   standard
+boss            d 5   168    16      19    22   standard
+boss            d 6   180    18      20    24   standard
+boss            d 7   192    19      22    25   standard
+boss            d 8   204    20      23    27   standard
+boss            d 9   216    21      24    28   standard
+boss            d10   228    23      26    29   standard
+boss            d11   240    24      27    31   standard
+boss            d12   252    25      28    32   standard
+boss            d13   264    26      30    34   standard
+boss            d14   276    28      31    35   standard
+boss            d15   288    29      32    36   standard
+
+GATE (introduction depths + boss ordering 5-15): PASS
+  NOTE: medians >8 with the STARTER blaster (diagnostic only, gear-progression scope): brute|5|standard=9, brute|6|standard=10, brute|7|standard=10, brute|8|standard=11, brute|9|standard=11, brute|10|standard=12, brute|11|standard=13, brute|12|standard=13, brute|13|standard=14, brute|14|standard=14, brute|15|standard=15, shielder|9|frontal=9, shielder|10|frontal=9, shielder|11|frontal=10, shielder|12|frontal=10, shielder|13|frontal=10, shielder|14|frontal=11, shielder|15|frontal=11
+
+SIM5_EXIT=0

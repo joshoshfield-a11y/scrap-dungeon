@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Scrap Dungeon graphics prototype — Canvas 2D vs WebGL</title>
+<style>
+body{background:#0b0e14;color:#cfe0d2;font-family:monospace;margin:16px}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.panel{border:1px solid #35e0ff;padding:8px}
+canvas{display:block;background:#10131a}
+#result{margin-top:12px;white-space:pre-wrap}
+</style></head><body>
+<h2>Graphics prototype — same scene, two renderers</h2>
+<div class="row">
+<div class="panel"><h3>Canvas 2D — pre-rendered radial glow, 'lighter' composite</h3>
+<canvas id="c2d" width="896" height="576"></canvas></div>
+<div class="panel"><h3>WebGL — per-pixel light falloff in shader + additive glow quad</h3>
+<canvas id="gl" width="896" height="576"></canvas></div>
+</div>
+<div id="result">measuring…</div>
+<script>
+"use strict";
+// Scene: 14x9 grid, TILE 64. Walls = border + two blocks. Player at (4,4).
+// Terminals (glow spots) at (9,2) and (11,6). Dressing dots deterministic.
+var COLS=14, ROWS=9, TILE=64;
+var walls={};
+for (var x=0;x<COLS;x++){walls[x+",0"]=1;walls[x+","+(ROWS-1)]=1;}
+for (var y=0;y<ROWS;y++){walls["0,"+y]=1;walls[(COLS-1)+","+y]=1;}
+[[6,2],[6,3],[6,4],[10,5]].forEach(function(c){walls[c[0]+","+c[1]]=1;});
+var player={x:4,y:4};
+var terms=[[9,2],[11,6]];
+var img=new Image();
+img.src="../../game/assets/mech_light_scout_sheet.png"; // cell 0: x=6,y=34,96x96
+
+// ---- pre-rendered radial glow sprite (shared idea, canvas side) ----
+function makeGlow(){
+  var c=document.createElement("canvas"); c.width=c.height=256;
+  var g=c.getContext("2d");
+  var gr=g.createRadialGradient(128,128,0,128,128,128);
+  gr.addColorStop(0,"rgba(53,224,255,0.55)");
+  gr.addColorStop(0.4,"rgba(53,224,255,0.22)");
+  gr.addColorStop(1,"rgba(53,224,255,0)");
+  g.fillStyle=gr; g.fillRect(0,0,256,256);
+  return c;
+}
+var glowSprite=makeGlow();
+function drawScene2D(ctx){
+  for (var y=0;y<ROWS;y++) for (var x=0;x<COLS;x++){
+    if (walls[x+","+y]){ ctx.fillStyle="#262b33"; ctx.fillRect(x*TILE,y*TILE,TILE,TILE);
+      ctx.strokeStyle="rgba(0,0,0,0.55)"; ctx.lineWidth=3; ctx.strokeRect(x*TILE+1.5,y*TILE+1.5,TILE-3,TILE-3); }
+    else { ctx.fillStyle=((x+y)%2)?"#1a2029":"#1e2630"; ctx.fillRect(x*TILE,y*TILE,TILE,TILE);
+      ctx.fillStyle="#8a7a4a"; ctx.fillRect(x*TILE+20,y*TILE+30,10,10); }
+  }
+  // ambient occlusion: dark strip on floor edges next to walls
+  ctx.fillStyle="rgba(0,0,0,0.22)";
+  for (var y2=0;y2<ROWS;y2++) for (var x2=0;x2<COLS;x2++){
+    if (walls[x2+","+y2]) continue;
+    if (walls[x2+","+(y2-1)]) ctx.fillRect(x2*TILE,y2*TILE,TILE,8);
+    if (walls[x2+","+(y2+1)]) ctx.fillRect(x2*TILE,y2*TILE+TILE-8,TILE,8);
+    if (walls[(x2-1)+","+y2]) ctx.fillRect(x2*TILE,y2*TILE,8,TILE);
+    if (walls[(x2+1)+","+y2]) ctx.fillRect(x2*TILE+TILE-8,y2*TILE,8,TILE);
+  }
+  // terminal glow spots (small, pulsing in the live loop)
+  var pulse=0.75+0.25*Math.sin(Date.now()/300);
+  ctx.globalCompositeOperation="lighter";
+  terms.forEach(function(t){
+    ctx.globalAlpha=0.5*pulse;
+    ctx.drawImage(glowSprite,t[0]*TILE-TILE/2,t[1]*TILE-TILE/2,TILE*2,TILE*2);
+    ctx.globalAlpha=1;
+    ctx.fillStyle="#35e0ff"; ctx.fillRect(t[0]*TILE+16,t[1]*TILE+20,32,24);
+  });
+  // player point light
+  ctx.globalAlpha=0.9;
+  ctx.drawImage(glowSprite,(player.x-1.5)*TILE,(player.y-1.5)*TILE,TILE*4,TILE*4);
+  ctx.globalAlpha=1; ctx.globalCompositeOperation="source-over";
+  // player sprite (cell 0) or fallback box
+  if (img.complete && img.naturalWidth) ctx.drawImage(img,6,34,96,96,player.x*TILE,player.y*TILE,TILE,TILE);
+  else { ctx.fillStyle="#35e05c"; ctx.fillRect(player.x*TILE+8,player.y*TILE+8,TILE-16,TILE-16); }
+}
+
+// ---- WebGL side: tiles as vertex-coloured quads, light falloff in shader ----
+var glCanvas=document.getElementById("gl");
+var gl=glCanvas.getContext("webgl",{antialias:false})||glCanvas.getContext("experimental-webgl");
+var glOk=!!gl, glFps=0, drawGL=null;
+if (gl){
+  var vs="attribute vec2 a_pos; attribute vec3 a_col; attribute vec2 a_uv;"+
+    "varying vec3 v_col; varying vec2 v_uv; varying vec2 v_px;"+
+    "void main(){ v_col=a_col; v_uv=a_uv; v_px=a_pos;"+
+    " gl_Position=vec4(a_pos.x/448.0-1.0, 1.0-a_pos.y/288.0, 0.0, 1.0); }";
+  var fs="precision mediump float; varying vec3 v_col; varying vec2 v_uv; varying vec2 v_px;"+
+    "uniform vec2 u_player; uniform sampler2D u_tex; uniform float u_textured;"+
+    "void main(){ vec4 tex=texture2D(u_tex,v_uv);"+
+    " vec3 c=(u_textured>0.5)?tex.rgb:v_col;"+
+    " float a=(u_textured>0.5)?tex.a:1.0;"+
+    " float d=distance(v_px,u_player);"+
+    " float light=clamp(1.2-d/260.0,0.25,1.0);"+
+    " gl_FragColor=vec4(c*light,a); }";
+  function shader(type,src){ var s=gl.createShader(type); gl.shaderSource(s,src); gl.compileShader(s); return s; }
+  var prog=gl.createProgram();
+  gl.attachShader(prog,shader(gl.VERTEX_SHADER,vs)); gl.attachShader(prog,shader(gl.FRAGMENT_SHADER,fs));
+  gl.linkProgram(prog); gl.useProgram(prog);
+  var verts=[];
+  function quad(x0,y0,x1,y1,r,g,b,uv){
+    verts.push(x0,y0,r,g,b,uv[0],uv[1], x1,y0,r,g,b,uv[2],uv[1], x1,y1,r,g,b,uv[2],uv[3],
+               x0,y0,r,g,b,uv[0],uv[1], x1,y1,r,g,b,uv[2],uv[3], x0,y1,r,g,b,uv[0],uv[3]);
+  }
+  for (var y=0;y<ROWS;y++) for (var x=0;x<COLS;x++){
+    var wall=!!walls[x+","+y];
+    var c=wall?[0.15,0.17,0.20]:(((x+y)%2)?[0.10,0.13,0.16]:[0.12,0.15,0.19]);
+    quad(x*TILE,y*TILE,x*TILE+TILE,y*TILE+TILE,c[0],c[1],c[2],[0,0,0,0]);
+  }
+  var tex=gl.createTexture();
+  drawGL=function(){
+    gl.viewport(0,0,896,576); gl.clearColor(0.06,0.07,0.10,1); gl.clear(gl.COLOR_BUFFER_BIT);
+    var buf=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(verts),gl.STATIC_DRAW);
+    var stride=7*4;
+    function attr(name,size,off){ var l=gl.getAttribLocation(prog,name); gl.enableVertexAttribArray(l); gl.vertexAttribPointer(l,size,gl.FLOAT,false,stride,off*4); }
+    attr("a_pos",2,0); attr("a_col",3,2); attr("a_uv",2,5);
+    gl.uniform2f(gl.getUniformLocation(prog,"u_player"),(player.x+0.5)*TILE,(player.y+0.5)*TILE);
+    gl.uniform1f(gl.getUniformLocation(prog,"u_textured"),0);
+    gl.drawArrays(gl.TRIANGLES,0,verts.length/7);
+    // player sprite quad (textured, cell 0 of the sheet, uv in sheet space)
+    // NOTE: under file://, texImage2D from an <img> throws a cross-origin
+    // error — that failure itself is prototype evidence (see report).
+    // Fall back to a flat-coloured quad so the lighting still renders.
+    var spriteOk=false;
+    if (img.complete && img.naturalWidth){
+      try{
+      gl.bindTexture(gl.TEXTURE_2D,tex);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img);
+      spriteOk=true;
+      }catch(e){ spriteOk=false; window.__glTexErr=String(e.message); }
+    }
+    if (spriteOk){
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);
+      var u0=6/822, u1=102/822, v0=1-(34+96)/136, v1=1-34/136;
+      var pv=[];
+      (function(){ var x0=player.x*TILE,y0=player.y*TILE,x1=x0+TILE,y1=y0+TILE;
+        pv.push(x0,y0,1,1,1,u0,v1, x1,y0,1,1,1,u1,v1, x1,y1,1,1,1,u1,v0,
+                x0,y0,1,1,1,u0,v1, x1,y1,1,1,1,u1,v0, x0,y1,1,1,1,u0,v0); })();
+      var b2=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,b2);
+      gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(pv),gl.STATIC_DRAW);
+      attr("a_pos",2,0); attr("a_col",3,2); attr("a_uv",2,5);
+      gl.uniform1f(gl.getUniformLocation(prog,"u_textured"),1);
+      gl.drawArrays(gl.TRIANGLES,0,6);
+    } else {
+      // Flat player quad (texture path blocked under file://).
+      var pv2=[];
+      (function(){ var x0=player.x*TILE+8,y0=player.y*TILE+8,x1=x0+TILE-16,y1=y0+TILE-16;
+        pv2.push(x0,y0,0.21,0.88,0.36,0,0, x1,y0,0.21,0.88,0.36,0,0, x1,y1,0.21,0.88,0.36,0,0,
+                 x0,y0,0.21,0.88,0.36,0,0, x1,y1,0.21,0.88,0.36,0,0, x0,y1,0.21,0.88,0.36,0,0); })();
+      var b2b=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,b2b);
+      gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(pv2),gl.STATIC_DRAW);
+      attr("a_pos",2,0); attr("a_col",3,2); attr("a_uv",2,5);
+      gl.uniform1f(gl.getUniformLocation(prog,"u_textured"),0);
+      gl.drawArrays(gl.TRIANGLES,0,6);
+    }
+    // additive glow quad (radial texture, generated once below)
+    gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA,gl.ONE);
+    gl.bindTexture(gl.TEXTURE_2D,glowTex);
+    var gx=(player.x-1.5)*TILE, gy=(player.y-1.5)*TILE, gs=TILE*4;
+    var gv=[];
+    (function(){ gv.push(gx,gy,0.21,0.88,1,0,1, gx+gs,gy,0.21,0.88,1,1,1, gx+gs,gy+gs,0.21,0.88,1,1,0,
+      gx,gy,0.21,0.88,1,0,1, gx+gs,gy+gs,0.21,0.88,1,1,0, gx,gy+gs,0.21,0.88,1,0,0); })();
+    var b3=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,b3);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(gv),gl.STATIC_DRAW);
+    attr("a_pos",2,0); attr("a_col",3,2); attr("a_uv",2,5);
+    // glow texture carries its own alpha in the fragment path below via colour;
+    // approximate with textured quad whose colour is scaled by uv radial in shader? No:
+    // we instead draw it with the light shader but textured=1 and accept flat colour.
+    gl.uniform1f(gl.getUniformLocation(prog,"u_textured"),1);
+    gl.drawArrays(gl.TRIANGLES,0,6);
+    gl.disable(gl.BLEND);
+  }
+  var glowTex=gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D,glowTex);
+  gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,glowSprite);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+}
+// NOTE (honest limit, recorded in GFX-REPORT): the WebGL glow quad above is
+// a flat textured quad, not a true multi-pass bloom — the per-pixel light
+// falloff on tiles is the real WebGL differentiator in this prototype.
+// ---- frame counting ----
+var c2d=document.getElementById("c2d").getContext("2d");
+var frames2d=0, framesGl=0, t0=performance.now();
+function loop(){
+  drawScene2D(c2d); frames2d++;
+  if (gl){ try{ drawGL(); framesGl++; }catch(e){ glOk=false; window.__glErr=String(e && e.message || e); } }
+  if (performance.now()-t0 < 4000) requestAnimationFrame(loop);
+  else {
+    var s="canvas2d_fps="+(frames2d/4).toFixed(1)+" webgl_ok="+glOk+" webgl_fps="+(framesGl/4).toFixed(1);
+    document.getElementById("result").textContent=s;
+    window.__proto={canvasFps:frames2d/4, webglOk:glOk, webglFps:framesGl/4};
+  }
+}
+if (img.complete) loop(); else img.onload=loop;
+</script></body></html>

@@ -1,0 +1,195 @@
+✔ coherence: floors pass every MAPS.md check (764.992925ms)
+✔ coherence: same seed reproduces the same floor (41.977541ms)
+✔ coherence: doors exist where corridors meet rooms, stairs in farthest room (6.660907ms)
+✔ scheduler: faster actors get more actions per player time (8.090432ms)
+✔ combat: bump attack damages enemy, adjacent enemy damages player (24.39312ms)
+✔ combat: enemy stats are distinct per type (0.243986ms)
+✔ salvage: descend banks exactly 25% (floor), extract keeps 100% (73.156495ms)
+✔ death and restart: game over state, fresh run resets everything (27.973183ms)
+✔ wait costs time and lets enemies act (19.636842ms)
+✔ quickslot: health cell pickup and use (28.187374ms)
+✔ combat: high evasion dodges far more than low evasion (2.490989ms)
+✔ combat: surprise attack auto-hits at 1.5x and wakes the enemy (10.498306ms)
+✔ sleeping: enemy stays put until player is in sight, waking spends its turn (7.353306ms)
+✔ pathfinding: reaches target over walkable tiles, avoids walls (14.102185ms)
+✔ attack indicator: adjacent enemies listed lowest HP first, none when empty (17.158873ms)
+✔ search: reveals hidden traps within radius 4, not beyond (160.236548ms)
+✔ quickslots: assign and use health and food (6.688449ms)
+✔ pressure: warns at 80 actions, drains after 120 (8.324013ms)
+✔ phase2: banked salvage survives Restart (new expedition keeps hub) (27.296076ms)
+✔ phase2: kill drops a salvage pickup tile, walking over it credits it (5.896459ms)
+✔ phase2: death creates exactly one wreck holding carried salvage and items (11.595393ms)
+✔ phase2: next expedition places the wreck reachable, recovering it credits and clears it (19.352715ms)
+✔ phase2: dying again before recovery destroys the old wreck and replaces it (18.646535ms)
+✔ phase2: wreck at a deeper depth appears when that depth is reached (34.040088ms)
+✔ phase2: Extract keeps 100% and persists it to hub state (6.086695ms)
+✔ phase2: Codex entry survives death and Restart (87.975926ms)
+✔ phase2: save/load round-trip restores run and hub, loaded run can act (10.170384ms)
+✔ phase3: chassis upgrade raises next run max HP and deducts banked (13.150406ms)
+✔ phase3: salvager exchange moves both numbers in both directions (0.403856ms)
+✔ phase3: banking tier upgrade changes Descend rate, gated on Codex (43.86207ms)
+✔ phase3: crafting deducts ingredients, stocks the hub, loads the next run capped (4.987075ms)
+✔ phase3-balance: Armorer ammo packs craft, load capped, old hubs default to 0 ammo (30.461307ms)
+✔ phase3: repair kit heals 50 from a quickslot (5.006003ms)
+✔ phase3: scout preview matches the generator composition for the next depth (58.598166ms)
+✔ phase3: hub state survives a new expedition and a save/load round-trip (9.953909ms)
+✔ phase3: radio rumors derive from real hub state, no quest language (0.577016ms)
+✔ dressing: every room dressed including spawn, never on actors or key cells (469.454352ms)
+✔ dressing: minimum density per floor over seeds and depths (1449.722828ms)
+✔ circuit block: present, one rectangle, inside one non-spawn room, on floor cells (1238.359447ms)
+✔ circuit block and dressing: same seed reproduces the same floor including the block (27.3584ms)
+✔ guarantees: every floor has a loot room, a structure room, and pickups (6640.675957ms)
+✔ ammo: new run starts with the scrap blaster and starting ammo (11.450155ms)
+✔ ammo: firing hits the first enemy in the facing line only, spends ammo and time (12.355204ms)
+✖ ammo: firing wakes a sleeping target but never gets the melee surprise bonus (6.340086ms)
+✔ ammo: firing kills, drops salvage, and counts the kill like melee (10.795382ms)
+✔ ammo: no target, wall-blocked, out-of-range, and empty ammo refuse free (70.787109ms)
+✔ ammo: crates spawn in loot rooms and restore ammo on pickup (1240.850316ms)
+✔ ammo: save/load round-trip preserves ammo and weapon; old saves default (12.551327ms)
+✔ ammo: death puts ammo in the wreck, recovery restores it (15.377569ms)
+✔ batch3: structure rooms get console dressing on floor cells, no overlaps (1291.126311ms)
+✔ wide-cell: placement invariants across 180 floors (3215.276604ms)
+✔ wide-cell: save/load round-trips wide records, old saves tolerate their absence (7.751353ms)
+✔ phase1: tier and upgrade rolls match the depth tables (fixed stream) (27.80473ms)
+✔ phase1: 200-floor sweep — every floor has >=1 item drop, tier mix in bounds (1277.08634ms)
+✔ phase1: weaponStats derives tier x upgrade scaling, never stored (5.644171ms)
+✔ phase1: dice rolls stay in spec and the log shows the roll (2.467864ms)
+✔ phase2: stepping on an item stows it in the Bag; Bag equip swaps it in, old piece returns (5.350761ms)
+✔ phase1: kill drop rates match the table (raider 12%, drone 10%, brute 30%) (255.399131ms)
+✔ phase1: save/load round-trips an equipped tiered weapon with properties (5.792884ms)
+✔ phase1: properties — slots by tier, evasion bonus, display names (4.750169ms)
+✖ phase1: burst spends 3 ammo and 1 time unit; spread spends 4 ammo and 2 (17.581898ms)
+✔ phase1: rail gun pierces armor; homing ignores evasion (6.474538ms)
+✔ phase1: beam hits every enemy in the line; cone hits only its 3 cells (7.708699ms)
+✔ phase1: grenade splash hits neighbours, walls block the diagonal (56.976743ms)
+✔ phase1: flamethrower cone burns; burn ticks kill through the scheduler (8.593397ms)
+✔ phase1: energy sword is melee-range, costs no ammo, refuses free (19.123211ms)
+✔ phase1: flamethrower cone hits only its 3 cells, never straight-ahead at 2 (21.231404ms)
+✔ phase1: combat drone never drops and fire refuses it honestly (31.013986ms)
+✔ phase2: gear def tables — 12 defs, 4 per slot, bands and lookups (0.724647ms)
+✔ phase2: rollGearItem — same tier/upgrade tables, depth-1 cap, no properties (119.316003ms)
+✔ phase2: derivedStats — base, gear, and chassis tier compose; nothing stored (146.017748ms)
+✔ phase2: equip/unequip round-trips conserve every piece; shield resets on swap (8.391774ms)
+✔ phase2: shield absorbs before hull, recharges 1 per 2 time units, never banks (179.772178ms)
+✔ phase2: wreck with gear recovers intact; a second death destroys it with the gear (155.48725ms)
+✔ phase2: save/load round-trips equipment, carried gear, and shield; legacy saves migrate (24.030456ms)
+✔ phase2: kill drop rates match the table and gear shares the roll (267.401664ms)
+✔ phase2: 200-floor sweep — gear drops, structure caches lean gear (1579.495785ms)
+✔ phase2: power cell pushes the pressure thresholds out (11.575353ms)
+✔ phase3: skill data tables — 3 trees x 4 pilot skills, 6 mech skills (0.364177ms)
+✔ phase3: pilot buy gates — unknown, codex, XP, salvage, max rank (0.644998ms)
+✔ phase3: respec refunds all ranks, costs 25/rank, Codex + XP untouched (0.568633ms)
+✔ phase3: pilot skills persist through scripted death + new expedition (16.777741ms)
+✔ phase3: mech skills wipe on death AND on extract (31.848199ms)
+✔ phase3: executor refusals cost no time, energy, or heat (18.502399ms)
+✔ phase3: valid mech use costs time + energy + heat, and applies the effect (20.925596ms)
+✔ phase3: overheat locks skills until cooled below 50; Vent Heat clears heat (20.057843ms)
+✔ phase3: second wind saves once per run, then cools down across runs (60.137866ms)
+✔ phase3: trigger discipline — every Nth shot costs 1 less ammo (32.449911ms)
+✔ phase3: pilot effects — aim, damage, plating, repair, salvage, pockets, eye, tuning (132.399419ms)
+✔ phase3: mech effects — overclock, evasive, plating, salvage burst, sensor pulse (108.097967ms)
+✔ phase3: earning — 1 point per 3 kills, XP banks on descend/extract, lost on death (84.540731ms)
+✔ phase3: save/load round-trips the new state; legacy saves default cleanly (11.72644ms)
+✔ phase4: breakdown yields are fixed per tier at every rank (P4-BREAKDOWN-YIELD, P4-BREAKDOWN-RANKS) (29.167145ms)
+✔ phase4: core rolls are independent uniform 1/3 draws on the seeded stream (P4-BREAKDOWN-CORES) (0.476555ms)
+✔ phase4: breakdown requires rank 1, is atomic, and cannot reach equipped or missing items (P4-BREAKDOWN-ATOMIC, P4-BREAKDOWN-ELIGIBILITY) (9.152155ms)
+✔ phase4: ammo recipes gate on Ammo Smith rank, output 6, consume exactly, codex null (P4-AMMO-GATES, P4-AMMO-RECIPE) (0.801162ms)
+✔ phase4: hub and run pools plus materials survive save/load (P4-AMMO-POOL) (14.361435ms)
+✔ phase4: loadout default, allocation, caps, ownership, shortfall (P4-AMMO-LOADOUT) (78.895238ms)
+✔ phase4: legacy ammo migrates idempotently, hub and run separately (P4-LEGACY-MIGRATION, P4-MIGRATION-IDEMPOTENT) (18.818013ms)
+✔ phase4: switching selects, cycles, wraps, reverses; empty FIRE auto-switches without firing (P4-AMMO-SWITCH, P4-AMMO-AUTO-SWITCH) (7.343451ms)
+✔ phase4: burning ticks per time unit with resistance rounding, including dormant enemies; refresh does not stack (P4-BURN-TICK, P4-BURN-DORMANT, P4-BURN-REFRESH) (7.372956ms)
+✔ phase4: burning kills through the ordinary path exactly once, before activation (P4-BURN-KILL) (23.818017ms)
+✔ phase4: jam skips exactly one activation, stacks with burning, reapplication does not queue (P4-JAM-SKIP, P4-STATUS-STACK) (12.471567ms)
+✔ phase4: jam resistance probabilities on the seeded stream, fixed seeds recorded (P4-STATUS-RESIST) (126.464773ms)
+✔ phase4: a Shock round is consumed on a resisted hit; a miss rolls nothing (P4-SHOCK-RESIST-COST) (66.82304ms)
+✔ phase4: Piercing ignores half the target armor, rounded down on the ignored portion (P4-AMMO-EFFECT) (3199.788579ms)
+✔ phase4: Incendiary and Shock deal normal damage plus a status on a hit, nothing on a miss (P4-AMMO-EFFECT) (48.528103ms)
+✔ phase4: Enhance costs 4 x target level plus a matching core, caps at +5, is atomic (P4-ENHANCE-COST, P4-ENHANCE-CAP, P4-ENHANCE-ATOMIC) (107.996274ms)
+✔ phase4: element tags are explicit data only, never inferred, invalid values rejected (P4-ELEMENT-TAGS) (8.773347ms)
+✔ phase4: crafting and breakdown refuse at caps; crate pickup clamps and discards with a log message (P4-AMMO-OVERFLOW) (13.622064ms)
+✔ phase4: flamethrower burn and Incendiary ammo converge into one status (dormant reconciliation) (9.898947ms)
+✔ phase5: ENEMY_TYPES stat table matches the settled spec exactly (P5-STAT-TABLE) (0.897137ms)
+✔ phase5: HP/damage depth scaling uses the shipped rounding (P5-HP-SCALING, F4) (645.642169ms)
+✔ phase5: theme mapping 1-15 matches the shipped assignment (P5-THEME) (0.284748ms)
+✔ phase5: donor-pool shift math incl. worked examples, 4-decimal weights (P5-WEIGHTS) (0.569245ms)
+✔ phase5: roster draws are deterministic and match expected shares (P5-ROSTER-DRAW) (32.681159ms)
+✔ phase5: generated rosters use only the depth table; regular count exact (P5-ROSTER-COMPOSITION) (5360.360951ms)
+✔ phase5: determinism — same seed series replays identically (P5-DETERMINISM) (13.899431ms)
+✔ phase5: placeBoss gates, determinism, tie-break, first-room rule (P5-BOSS-PLACE) (0.836305ms)
+✔ phase5: generated bosses are conditional, at most one, in security rooms (P5-BOSS-GEN) (8380.902271ms)
+✔ phase5: boss drones spawn once at half HP, never on a lethal hit (P5-BOSS-DRONES) (50.440362ms)
+✔ phase5: boss reward is exactly one Epic/Legendary item + one Codex entry, first defeat only (P5-BOSS-REWARD) (11.830536ms)
+✔ phase5: fractional componentDrop rolls once for exactly one; trio counts untouched (P5-COMPDROP) (33.453087ms)
+✔ phase5: ground enemies take 6 on spike entry, re-entry retriggers, standing still does not (P5-SPIKE-ENTER) (10.322422ms)
+✔ phase5: flyers cross spikes unharmed; ground enemies are never generated onto spikes (P5-SPIKE-FLYER) (3250.000589ms)
+✔ phase5: turret spike relocation moves to the nearest legal cell, fails loudly if none (P5-TURRET-RELOC) (13.727873ms)
+✔ phase5: shielder frontal arc is 90 degrees, boundary-included; rear/flank full (P5-SHIELD-ARC) (0.73268ms)
+✔ phase5: shielder formula — worked example D=10, S=0.5, A=4, P=1 gives 3 (P5-SHIELD-FORMULA) (0.423496ms)
+✔ phase5: shielder facing updates only after successful movement (P5-SHIELD-FACING) (6.614106ms)
+✔ phase5: shielder spawn facing follows the visible/seeded rule on real floors (P5-SHIELD-SPAWN) (2201.110834ms)
+✔ phase5: sniper aims, then fires the marked tile; moving off dodges the shot (P5-SNIPER) (44.564533ms)
+✔ phase5: sniper jam interplay — jam at aim loses the aim, jam at fire cancels it (P5-SNIPER-JAM) (83.093569ms)
+✔ phase5: sniper retreats when close with no aim, increasing Chebyshev distance (P5-SNIPER-RETREAT) (12.2266ms)
+✔ phase5: bomber fuse arms on movement resolution at Manhattan 1, not at 2, not on waiting (P5-FUSE-ARM) (58.078305ms)
+✔ phase5: bomber fuse detonates on its next activation with one shared roll (P5-FUSE-FIRE) (6.272053ms)
+✔ phase5: sleeping bomber with an armed fuse detonates instead of waking (P5-FUSE-SLEEP, §8.5.8 jam-only deferral) (6.643521ms)
+✔ phase5: bomber splash shares one roll across targets; chains queue, never recurse (P5-BOMB-CHAIN) (65.964842ms)
+✔ phase5: death detonation clears a pending fuse; jam defers the fuse (P5-BOMB-DEATH-JAM) (25.670797ms)
+✔ phase5: turret never moves; nextShotTime gates shots; no cooldown without a target (P5-TURRET) (9.945116ms)
+✔ phase5: turret cadence through the scheduler is one shot per 3 player actions (P5-TURRET-CADENCE) (6.12965ms)
+✔ phase5: new enemy state round-trips as plain JSON; legacy saves default safely (P5-SAVE) (46.414951ms)
+✔ phase5: scout preview counts the real generator exactly, boss included (P5-SCOUT) (170.800112ms)
+✔ phase5: jam resistance uses the shipped table on the seeded stream (P5-JAM-RESIST) (39.610388ms)
+ℹ tests 143
+ℹ suites 0
+ℹ pass 141
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 46592.846742
+
+✖ failing tests:
+
+test at test.js:1031:1
+✖ ammo: firing wakes a sleeping target but never gets the melee surprise bonus (6.340086ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (/home/hatch/workspace/scrap-dungeon/game/test.js:1044:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test.js:1553:1
+✖ phase1: burst spends 3 ammo and 1 time unit; spread spends 4 ammo and 2 (17.581898ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (/home/hatch/workspace/scrap-dungeon/game/test.js:1568:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

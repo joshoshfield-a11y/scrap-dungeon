@@ -1,0 +1,587 @@
+{
+  "generatedAt": "2026-10-30T05:48:49.059Z",
+  "floorsPerDepth": 200,
+  "seedSeries": "runSeed = (0x5D5C2026 + i * 0x9E3779B9) mod 2^32, floor seed = runSeed XOR depth",
+  "determinismReplayIdentical": true,
+  "perDepth": {
+    "1": {
+      "depth": 1,
+      "floors": 200,
+      "doors": 3053,
+      "entrances": 3053,
+      "lockedRooms": 180,
+      "keys": 180,
+      "lockLevels": {
+        "1": 54,
+        "2": 62,
+        "3": 64
+      },
+      "lockedKinds": {
+        "lootVault": 58,
+        "objective": 63,
+        "newArea": 59
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 151,
+        "2": 38,
+        "3": 10,
+        "4": 1
+      },
+      "retryFloors": 49,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 0
+    },
+    "2": {
+      "depth": 2,
+      "floors": 200,
+      "doors": 3253,
+      "entrances": 3253,
+      "lockedRooms": 184,
+      "keys": 184,
+      "lockLevels": {
+        "1": 58,
+        "2": 51,
+        "3": 75
+      },
+      "lockedKinds": {
+        "objective": 64,
+        "lootVault": 58,
+        "newArea": 62
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 155,
+        "2": 32,
+        "3": 10,
+        "4": 3
+      },
+      "retryFloors": 45,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 0
+    },
+    "3": {
+      "depth": 3,
+      "floors": 200,
+      "doors": 3220,
+      "entrances": 3220,
+      "lockedRooms": 189,
+      "keys": 189,
+      "lockLevels": {
+        "1": 69,
+        "2": 62,
+        "3": 58
+      },
+      "lockedKinds": {
+        "newArea": 74,
+        "objective": 66,
+        "lootVault": 49
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 158,
+        "2": 32,
+        "3": 8,
+        "4": 2
+      },
+      "retryFloors": 42,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 0
+    },
+    "4": {
+      "depth": 4,
+      "floors": 200,
+      "doors": 3162,
+      "entrances": 3162,
+      "lockedRooms": 188,
+      "keys": 188,
+      "lockLevels": {
+        "1": 52,
+        "2": 63,
+        "3": 73
+      },
+      "lockedKinds": {
+        "newArea": 55,
+        "lootVault": 60,
+        "objective": 73
+      },
+      "bossPresent": 0,
+      "bossReasons": {
+        "depth<5": 200
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 141,
+        "2": 45,
+        "3": 11,
+        "4": 2,
+        "5": 1
+      },
+      "retryFloors": 59,
+      "maxAttempts": 5,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 0
+    },
+    "5": {
+      "depth": 5,
+      "floors": 200,
+      "doors": 3184,
+      "entrances": 3184,
+      "lockedRooms": 181,
+      "keys": 181,
+      "lockLevels": {
+        "1": 54,
+        "2": 67,
+        "3": 60
+      },
+      "lockedKinds": {
+        "newArea": 52,
+        "lootVault": 58,
+        "objective": 71
+      },
+      "bossPresent": 48,
+      "bossReasons": {
+        "no-security-room": 146,
+        "present": 48,
+        "locked-first-security-room": 6
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 147,
+        "2": 42,
+        "3": 11
+      },
+      "retryFloors": 53,
+      "maxAttempts": 3,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 6
+    },
+    "6": {
+      "depth": 6,
+      "floors": 200,
+      "doors": 3115,
+      "entrances": 3115,
+      "lockedRooms": 184,
+      "keys": 184,
+      "lockLevels": {
+        "1": 55,
+        "2": 57,
+        "3": 72
+      },
+      "lockedKinds": {
+        "objective": 63,
+        "newArea": 55,
+        "lootVault": 66
+      },
+      "bossPresent": 50,
+      "bossReasons": {
+        "no-security-room": 146,
+        "present": 50,
+        "locked-first-security-room": 4
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 163,
+        "2": 29,
+        "3": 5,
+        "4": 3
+      },
+      "retryFloors": 37,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 4
+    },
+    "7": {
+      "depth": 7,
+      "floors": 200,
+      "doors": 3168,
+      "entrances": 3168,
+      "lockedRooms": 180,
+      "keys": 180,
+      "lockLevels": {
+        "1": 64,
+        "2": 58,
+        "3": 58
+      },
+      "lockedKinds": {
+        "newArea": 57,
+        "lootVault": 60,
+        "objective": 63
+      },
+      "bossPresent": 45,
+      "bossReasons": {
+        "no-security-room": 150,
+        "present": 45,
+        "locked-first-security-room": 5
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 164,
+        "2": 30,
+        "3": 4,
+        "4": 1,
+        "5": 1
+      },
+      "retryFloors": 36,
+      "maxAttempts": 5,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 5
+    },
+    "8": {
+      "depth": 8,
+      "floors": 200,
+      "doors": 3097,
+      "entrances": 3097,
+      "lockedRooms": 193,
+      "keys": 193,
+      "lockLevels": {
+        "1": 63,
+        "2": 76,
+        "3": 54
+      },
+      "lockedKinds": {
+        "lootVault": 58,
+        "newArea": 67,
+        "objective": 68
+      },
+      "bossPresent": 51,
+      "bossReasons": {
+        "no-security-room": 140,
+        "present": 51,
+        "locked-first-security-room": 9
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 143,
+        "2": 43,
+        "3": 11,
+        "4": 3
+      },
+      "retryFloors": 57,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 9
+    },
+    "9": {
+      "depth": 9,
+      "floors": 200,
+      "doors": 3116,
+      "entrances": 3116,
+      "lockedRooms": 182,
+      "keys": 182,
+      "lockLevels": {
+        "1": 63,
+        "2": 60,
+        "3": 59
+      },
+      "lockedKinds": {
+        "lootVault": 61,
+        "newArea": 66,
+        "objective": 55
+      },
+      "bossPresent": 48,
+      "bossReasons": {
+        "present": 48,
+        "no-security-room": 150,
+        "locked-first-security-room": 2
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 152,
+        "2": 34,
+        "3": 10,
+        "4": 3,
+        "5": 1
+      },
+      "retryFloors": 48,
+      "maxAttempts": 5,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 2
+    },
+    "10": {
+      "depth": 10,
+      "floors": 200,
+      "doors": 3026,
+      "entrances": 3026,
+      "lockedRooms": 185,
+      "keys": 185,
+      "lockLevels": {
+        "1": 49,
+        "2": 68,
+        "3": 68
+      },
+      "lockedKinds": {
+        "objective": 58,
+        "newArea": 59,
+        "lootVault": 68
+      },
+      "bossPresent": 48,
+      "bossReasons": {
+        "no-security-room": 142,
+        "locked-first-security-room": 10,
+        "present": 48
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 151,
+        "2": 34,
+        "3": 12,
+        "4": 2,
+        "5": 1
+      },
+      "retryFloors": 49,
+      "maxAttempts": 5,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 10
+    },
+    "11": {
+      "depth": 11,
+      "floors": 200,
+      "doors": 3102,
+      "entrances": 3102,
+      "lockedRooms": 182,
+      "keys": 182,
+      "lockLevels": {
+        "1": 60,
+        "2": 67,
+        "3": 55
+      },
+      "lockedKinds": {
+        "lootVault": 63,
+        "newArea": 57,
+        "objective": 62
+      },
+      "bossPresent": 40,
+      "bossReasons": {
+        "no-security-room": 152,
+        "present": 40,
+        "locked-first-security-room": 8
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 162,
+        "2": 25,
+        "3": 10,
+        "4": 3
+      },
+      "retryFloors": 38,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 8
+    },
+    "12": {
+      "depth": 12,
+      "floors": 200,
+      "doors": 3157,
+      "entrances": 3157,
+      "lockedRooms": 190,
+      "keys": 190,
+      "lockLevels": {
+        "1": 61,
+        "2": 54,
+        "3": 75
+      },
+      "lockedKinds": {
+        "newArea": 68,
+        "lootVault": 64,
+        "objective": 58
+      },
+      "bossPresent": 49,
+      "bossReasons": {
+        "no-security-room": 149,
+        "present": 49,
+        "locked-first-security-room": 2
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 154,
+        "2": 39,
+        "3": 6,
+        "5": 1
+      },
+      "retryFloors": 46,
+      "maxAttempts": 5,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 2
+    },
+    "13": {
+      "depth": 13,
+      "floors": 200,
+      "doors": 3163,
+      "entrances": 3163,
+      "lockedRooms": 187,
+      "keys": 187,
+      "lockLevels": {
+        "1": 65,
+        "2": 51,
+        "3": 71
+      },
+      "lockedKinds": {
+        "objective": 56,
+        "lootVault": 67,
+        "newArea": 64
+      },
+      "bossPresent": 44,
+      "bossReasons": {
+        "present": 44,
+        "no-security-room": 152,
+        "locked-first-security-room": 4
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 154,
+        "2": 35,
+        "3": 7,
+        "4": 4
+      },
+      "retryFloors": 46,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 4
+    },
+    "14": {
+      "depth": 14,
+      "floors": 200,
+      "doors": 3066,
+      "entrances": 3066,
+      "lockedRooms": 188,
+      "keys": 188,
+      "lockLevels": {
+        "1": 65,
+        "2": 58,
+        "3": 65
+      },
+      "lockedKinds": {
+        "newArea": 62,
+        "lootVault": 67,
+        "objective": 59
+      },
+      "bossPresent": 35,
+      "bossReasons": {
+        "no-security-room": 160,
+        "present": 35,
+        "locked-first-security-room": 5
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 150,
+        "2": 44,
+        "3": 4,
+        "4": 2
+      },
+      "retryFloors": 50,
+      "maxAttempts": 4,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 5
+    },
+    "15": {
+      "depth": 15,
+      "floors": 200,
+      "doors": 3165,
+      "entrances": 3165,
+      "lockedRooms": 181,
+      "keys": 181,
+      "lockLevels": {
+        "1": 61,
+        "2": 69,
+        "3": 51
+      },
+      "lockedKinds": {
+        "newArea": 62,
+        "objective": 53,
+        "lootVault": 66
+      },
+      "bossPresent": 45,
+      "bossReasons": {
+        "no-security-room": 149,
+        "present": 45,
+        "locked-first-security-room": 6
+      },
+      "coherenceFailures": 0,
+      "coherenceErrors": [],
+      "doorKeyMismatch": 0,
+      "stairsUnreachable": 0,
+      "scoutMismatch": 0,
+      "attemptsHist": {
+        "1": 154,
+        "2": 39,
+        "3": 7
+      },
+      "retryFloors": 46,
+      "maxAttempts": 3,
+      "fogMalformed": 0,
+      "lockedFirstSecurityNoBoss": 6
+    }
+  }
+}

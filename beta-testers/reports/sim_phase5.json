@@ -1,0 +1,669 @@
+{
+  "trials": 20000,
+  "results": {
+    "raider|1|standard": {
+      "hp": 30,
+      "p10": 2,
+      "median": 3,
+      "p90": 5
+    },
+    "raider|2|standard": {
+      "hp": 33,
+      "p10": 3,
+      "median": 3,
+      "p90": 5
+    },
+    "raider|3|standard": {
+      "hp": 36,
+      "p10": 3,
+      "median": 4,
+      "p90": 5
+    },
+    "raider|4|standard": {
+      "hp": 39,
+      "p10": 3,
+      "median": 4,
+      "p90": 6
+    },
+    "raider|5|standard": {
+      "hp": 42,
+      "p10": 3,
+      "median": 4,
+      "p90": 6
+    },
+    "drone|1|standard": {
+      "hp": 16,
+      "p10": 1,
+      "median": 3,
+      "p90": 6
+    },
+    "drone|2|standard": {
+      "hp": 18,
+      "p10": 2,
+      "median": 3,
+      "p90": 6
+    },
+    "drone|3|standard": {
+      "hp": 19,
+      "p10": 2,
+      "median": 3,
+      "p90": 6
+    },
+    "drone|4|standard": {
+      "hp": 21,
+      "p10": 2,
+      "median": 3,
+      "p90": 7
+    },
+    "drone|5|standard": {
+      "hp": 22,
+      "p10": 2,
+      "median": 4,
+      "p90": 7
+    },
+    "brute|1|standard": {
+      "hp": 60,
+      "p10": 5,
+      "median": 6,
+      "p90": 8
+    },
+    "brute|2|standard": {
+      "hp": 66,
+      "p10": 6,
+      "median": 7,
+      "p90": 9
+    },
+    "brute|3|standard": {
+      "hp": 72,
+      "p10": 7,
+      "median": 8,
+      "p90": 9
+    },
+    "brute|4|standard": {
+      "hp": 78,
+      "p10": 7,
+      "median": 8,
+      "p90": 10
+    },
+    "brute|5|standard": {
+      "hp": 84,
+      "p10": 8,
+      "median": 9,
+      "p90": 11
+    },
+    "brute|6|standard": {
+      "hp": 90,
+      "p10": 8,
+      "median": 10,
+      "p90": 11
+    },
+    "brute|7|standard": {
+      "hp": 96,
+      "p10": 9,
+      "median": 10,
+      "p90": 12
+    },
+    "brute|8|standard": {
+      "hp": 102,
+      "p10": 9,
+      "median": 11,
+      "p90": 13
+    },
+    "brute|9|standard": {
+      "hp": 108,
+      "p10": 10,
+      "median": 11,
+      "p90": 13
+    },
+    "brute|10|standard": {
+      "hp": 114,
+      "p10": 10,
+      "median": 12,
+      "p90": 14
+    },
+    "brute|11|standard": {
+      "hp": 120,
+      "p10": 11,
+      "median": 13,
+      "p90": 15
+    },
+    "brute|12|standard": {
+      "hp": 126,
+      "p10": 12,
+      "median": 13,
+      "p90": 15
+    },
+    "brute|13|standard": {
+      "hp": 132,
+      "p10": 12,
+      "median": 14,
+      "p90": 16
+    },
+    "brute|14|standard": {
+      "hp": 138,
+      "p10": 13,
+      "median": 14,
+      "p90": 17
+    },
+    "brute|15|standard": {
+      "hp": 144,
+      "p10": 13,
+      "median": 15,
+      "p90": 17
+    },
+    "turret_light|2|standard": {
+      "hp": 22,
+      "p10": 2,
+      "median": 2,
+      "p90": 2
+    },
+    "turret_light|3|standard": {
+      "hp": 24,
+      "p10": 2,
+      "median": 2,
+      "p90": 3
+    },
+    "turret_light|4|standard": {
+      "hp": 26,
+      "p10": 2,
+      "median": 2,
+      "p90": 3
+    },
+    "turret_light|5|standard": {
+      "hp": 28,
+      "p10": 2,
+      "median": 2,
+      "p90": 3
+    },
+    "turret_light|6|standard": {
+      "hp": 30,
+      "p10": 2,
+      "median": 3,
+      "p90": 3
+    },
+    "turret_light|7|standard": {
+      "hp": 32,
+      "p10": 2,
+      "median": 3,
+      "p90": 3
+    },
+    "turret_light|8|standard": {
+      "hp": 34,
+      "p10": 3,
+      "median": 3,
+      "p90": 3
+    },
+    "turret_light|9|standard": {
+      "hp": 36,
+      "p10": 3,
+      "median": 3,
+      "p90": 3
+    },
+    "turret_light|10|standard": {
+      "hp": 38,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "turret_light|11|standard": {
+      "hp": 40,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "turret_light|12|standard": {
+      "hp": 42,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "turret_light|13|standard": {
+      "hp": 44,
+      "p10": 3,
+      "median": 4,
+      "p90": 4
+    },
+    "turret_light|14|standard": {
+      "hp": 46,
+      "p10": 3,
+      "median": 4,
+      "p90": 4
+    },
+    "turret_light|15|standard": {
+      "hp": 48,
+      "p10": 4,
+      "median": 4,
+      "p90": 4
+    },
+    "flyer|2|standard": {
+      "hp": 13,
+      "p10": 1,
+      "median": 2,
+      "p90": 5
+    },
+    "flyer|3|standard": {
+      "hp": 14,
+      "p10": 1,
+      "median": 2,
+      "p90": 6
+    },
+    "flyer|4|standard": {
+      "hp": 16,
+      "p10": 1,
+      "median": 3,
+      "p90": 7
+    },
+    "flyer|5|standard": {
+      "hp": 17,
+      "p10": 1,
+      "median": 3,
+      "p90": 7
+    },
+    "flyer|6|standard": {
+      "hp": 18,
+      "p10": 2,
+      "median": 4,
+      "p90": 7
+    },
+    "flyer|7|standard": {
+      "hp": 19,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|8|standard": {
+      "hp": 20,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|9|standard": {
+      "hp": 22,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|10|standard": {
+      "hp": 23,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|11|standard": {
+      "hp": 24,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|12|standard": {
+      "hp": 25,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|13|standard": {
+      "hp": 26,
+      "p10": 2,
+      "median": 4,
+      "p90": 8
+    },
+    "flyer|14|standard": {
+      "hp": 28,
+      "p10": 2,
+      "median": 4,
+      "p90": 9
+    },
+    "flyer|15|standard": {
+      "hp": 29,
+      "p10": 2,
+      "median": 5,
+      "p90": 9
+    },
+    "shielder|4|frontal": {
+      "hp": 26,
+      "p10": 5,
+      "median": 6,
+      "p90": 8
+    },
+    "shielder|4|rear": {
+      "hp": 26,
+      "p10": 2,
+      "median": 3,
+      "p90": 4
+    },
+    "shielder|5|frontal": {
+      "hp": 28,
+      "p10": 5,
+      "median": 7,
+      "p90": 9
+    },
+    "shielder|5|rear": {
+      "hp": 28,
+      "p10": 2,
+      "median": 3,
+      "p90": 5
+    },
+    "shielder|6|frontal": {
+      "hp": 30,
+      "p10": 6,
+      "median": 7,
+      "p90": 9
+    },
+    "shielder|6|rear": {
+      "hp": 30,
+      "p10": 2,
+      "median": 3,
+      "p90": 5
+    },
+    "shielder|7|frontal": {
+      "hp": 32,
+      "p10": 6,
+      "median": 8,
+      "p90": 10
+    },
+    "shielder|7|rear": {
+      "hp": 32,
+      "p10": 3,
+      "median": 3,
+      "p90": 5
+    },
+    "shielder|8|frontal": {
+      "hp": 34,
+      "p10": 7,
+      "median": 8,
+      "p90": 10
+    },
+    "shielder|8|rear": {
+      "hp": 34,
+      "p10": 3,
+      "median": 3,
+      "p90": 5
+    },
+    "shielder|9|frontal": {
+      "hp": 36,
+      "p10": 7,
+      "median": 9,
+      "p90": 11
+    },
+    "shielder|9|rear": {
+      "hp": 36,
+      "p10": 3,
+      "median": 4,
+      "p90": 5
+    },
+    "shielder|10|frontal": {
+      "hp": 38,
+      "p10": 7,
+      "median": 9,
+      "p90": 12
+    },
+    "shielder|10|rear": {
+      "hp": 38,
+      "p10": 3,
+      "median": 4,
+      "p90": 6
+    },
+    "shielder|11|frontal": {
+      "hp": 40,
+      "p10": 8,
+      "median": 10,
+      "p90": 12
+    },
+    "shielder|11|rear": {
+      "hp": 40,
+      "p10": 3,
+      "median": 4,
+      "p90": 6
+    },
+    "shielder|12|frontal": {
+      "hp": 42,
+      "p10": 8,
+      "median": 10,
+      "p90": 13
+    },
+    "shielder|12|rear": {
+      "hp": 42,
+      "p10": 3,
+      "median": 4,
+      "p90": 6
+    },
+    "shielder|13|frontal": {
+      "hp": 44,
+      "p10": 9,
+      "median": 10,
+      "p90": 13
+    },
+    "shielder|13|rear": {
+      "hp": 44,
+      "p10": 4,
+      "median": 4,
+      "p90": 6
+    },
+    "shielder|14|frontal": {
+      "hp": 46,
+      "p10": 9,
+      "median": 11,
+      "p90": 14
+    },
+    "shielder|14|rear": {
+      "hp": 46,
+      "p10": 4,
+      "median": 5,
+      "p90": 6
+    },
+    "shielder|15|frontal": {
+      "hp": 48,
+      "p10": 10,
+      "median": 11,
+      "p90": 14
+    },
+    "shielder|15|rear": {
+      "hp": 48,
+      "p10": 4,
+      "median": 5,
+      "p90": 7
+    },
+    "sniper|4|standard": {
+      "hp": 23,
+      "p10": 2,
+      "median": 2,
+      "p90": 2
+    },
+    "sniper|5|standard": {
+      "hp": 25,
+      "p10": 2,
+      "median": 2,
+      "p90": 2
+    },
+    "sniper|6|standard": {
+      "hp": 27,
+      "p10": 2,
+      "median": 2,
+      "p90": 3
+    },
+    "sniper|7|standard": {
+      "hp": 29,
+      "p10": 2,
+      "median": 2,
+      "p90": 3
+    },
+    "sniper|8|standard": {
+      "hp": 31,
+      "p10": 2,
+      "median": 3,
+      "p90": 3
+    },
+    "sniper|9|standard": {
+      "hp": 32,
+      "p10": 2,
+      "median": 3,
+      "p90": 3
+    },
+    "sniper|10|standard": {
+      "hp": 34,
+      "p10": 2,
+      "median": 3,
+      "p90": 3
+    },
+    "sniper|11|standard": {
+      "hp": 36,
+      "p10": 3,
+      "median": 3,
+      "p90": 3
+    },
+    "sniper|12|standard": {
+      "hp": 38,
+      "p10": 3,
+      "median": 3,
+      "p90": 3
+    },
+    "sniper|13|standard": {
+      "hp": 40,
+      "p10": 3,
+      "median": 3,
+      "p90": 3
+    },
+    "sniper|14|standard": {
+      "hp": 41,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "sniper|15|standard": {
+      "hp": 43,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "bomber|6|standard": {
+      "hp": 36,
+      "p10": 3,
+      "median": 3,
+      "p90": 3
+    },
+    "bomber|7|standard": {
+      "hp": 38,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "bomber|8|standard": {
+      "hp": 41,
+      "p10": 3,
+      "median": 3,
+      "p90": 4
+    },
+    "bomber|9|standard": {
+      "hp": 43,
+      "p10": 3,
+      "median": 4,
+      "p90": 4
+    },
+    "bomber|10|standard": {
+      "hp": 46,
+      "p10": 3,
+      "median": 4,
+      "p90": 4
+    },
+    "bomber|11|standard": {
+      "hp": 48,
+      "p10": 4,
+      "median": 4,
+      "p90": 4
+    },
+    "bomber|12|standard": {
+      "hp": 50,
+      "p10": 4,
+      "median": 4,
+      "p90": 4
+    },
+    "bomber|13|standard": {
+      "hp": 53,
+      "p10": 4,
+      "median": 4,
+      "p90": 5
+    },
+    "bomber|14|standard": {
+      "hp": 55,
+      "p10": 4,
+      "median": 4,
+      "p90": 5
+    },
+    "bomber|15|standard": {
+      "hp": 58,
+      "p10": 4,
+      "median": 5,
+      "p90": 5
+    },
+    "boss|5|standard": {
+      "hp": 168,
+      "p10": 16,
+      "median": 19,
+      "p90": 22
+    },
+    "boss|6|standard": {
+      "hp": 180,
+      "p10": 18,
+      "median": 20,
+      "p90": 24
+    },
+    "boss|7|standard": {
+      "hp": 192,
+      "p10": 19,
+      "median": 22,
+      "p90": 25
+    },
+    "boss|8|standard": {
+      "hp": 204,
+      "p10": 20,
+      "median": 23,
+      "p90": 27
+    },
+    "boss|9|standard": {
+      "hp": 216,
+      "p10": 21,
+      "median": 24,
+      "p90": 28
+    },
+    "boss|10|standard": {
+      "hp": 228,
+      "p10": 23,
+      "median": 26,
+      "p90": 29
+    },
+    "boss|11|standard": {
+      "hp": 240,
+      "p10": 24,
+      "median": 27,
+      "p90": 31
+    },
+    "boss|12|standard": {
+      "hp": 252,
+      "p10": 25,
+      "median": 28,
+      "p90": 32
+    },
+    "boss|13|standard": {
+      "hp": 264,
+      "p10": 26,
+      "median": 30,
+      "p90": 34
+    },
+    "boss|14|standard": {
+      "hp": 276,
+      "p10": 28,
+      "median": 31,
+      "p90": 35
+    },
+    "boss|15|standard": {
+      "hp": 288,
+      "p10": 29,
+      "median": 32,
+      "p90": 36
+    }
+  },
+  "failures": [],
+  "notes": [
+    "medians >8 with the STARTER blaster (diagnostic only, gear-progression scope): brute|5|standard=9, brute|6|standard=10, brute|7|standard=10, brute|8|standard=11, brute|9|standard=11, brute|10|standard=12, brute|11|standard=13, brute|12|standard=13, brute|13|standard=14, brute|14|standard=14, brute|15|standard=15, shielder|9|frontal=9, shielder|10|frontal=9, shielder|11|frontal=10, shielder|12|frontal=10, shielder|13|frontal=10, shielder|14|frontal=11, shielder|15|frontal=11"
+  ]
+}

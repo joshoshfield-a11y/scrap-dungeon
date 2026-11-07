@@ -1,0 +1,119 @@
+/* SCRAP DUNGEON — vision layout pass 2: the map IS the screen.
+   One pale-text top HUD bar (pipe separators, red heart, gear
+   glyph), a player-centred large-tile camera, 5 monochrome
+   line-icon square buttons with gaps plus 2 stacked buttons, a
+   dark floating stairs panel, no banner, no permanent message
+   line (latest line only as a transient overlay fading over the
+   map's bottom edge). Layout shape matches the user's
+   gameplay-vision screenshots; all art, code, and text here
+   are original to this game. */
+html, body { height: 100%; }
+body { margin: 0; background: #0b0e14; color: #cfe0d2; font-family: monospace; -webkit-tap-highlight-color: transparent; overflow: hidden; }
+#wrap { height: 100vh; height: 100dvh; display: flex; flex-direction: column; }
+header { background: #11141c; border-bottom: 1px solid #2a303c; padding: 8px 12px; flex: 0 0 auto; }
+#hud { display: flex; flex-wrap: nowrap; gap: 12px; font-size: 15px; align-items: center; white-space: nowrap; overflow: hidden; color: #cfe0d2; }
+#hud-meters { font-size: 13px; color: #cfe0d2; white-space: nowrap; overflow: hidden; padding-top: 2px; }
+#hud-meters.hidden { display: none; }
+#hud b, #hud strong { font-weight: normal; }
+.hud-sep { color: #5a635a; }
+.hud-heart { color: #d43a2f; }
+.hud-gear { color: #cfe0d2; }
+/* Graphics pass: icon HP bar (text numbers stay authoritative) and
+   ammo cartridge glyph, plus the glass dock and the scanline /
+   vignette overlay (toggleable from the Menu; .fx-off hides it).
+   The overlay is pointer-events none and sits below the stairs
+   panel and transient message, so it can never block a tap. */
+.hud-hp-bar { display: inline-block; width: 56px; height: 8px; background: #222; border: 1px solid #3a414d; vertical-align: middle; margin-left: 6px; }
+.hud-hp-bar span { display: block; height: 100%; background: #35e05c; }
+.hud-ammo-icon { color: #4aa8ff; }
+#fx-overlay { position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  background:
+    radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.28) 100%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.06) 0 1px, transparent 1px 3px); }
+body.fx-off #fx-overlay { display: none; }
+#main { flex: 1 1 auto; min-height: 0; position: relative; }
+#canvas-wrap { position: absolute; inset: 0; }
+canvas#game { background: #10131a; image-rendering: pixelated; width: 100%; height: 100%; display: block; touch-action: manipulation; }
+#transient-msg { position: absolute; left: 12px; right: 12px; bottom: 8px; z-index: 4; font-size: 13px; color: #cfe0d2; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; opacity: 0; transition: opacity 0.6s ease; }
+#transient-msg.show { opacity: 1; }
+button { background: #232833; color: #cfe0d2; border: 1px solid #3a414d; padding: 10px; font-family: monospace; cursor: pointer; min-height: 48px; font-size: 16px; touch-action: manipulation; }
+button:hover, button:active { background: #2f3a2e; }
+button:disabled { opacity: 0.45; cursor: default; }
+#stairs-panel { position: absolute; right: 10px; top: 10px; width: 250px; background: rgba(12,14,20,0.94); border: 1px solid #4a4f5a; padding: 12px; z-index: 6; }
+#stairs-panel.hidden { display: none; }
+#stairs-panel button { width: 100%; margin-top: 8px; min-height: 52px; font-size: 15px; background: #1c1f28; }
+#btn-stairs-descend { color: #ffa04a; }
+#btn-stairs-extract { color: #ff7a52; }
+#btn-stairs-cancel { color: #cfe0d2; }
+#stairs-info { font-size: 13px; line-height: 1.5; color: #cfe0d2; }
+#dock { flex: 0 0 auto; background: rgba(11,14,20,0.88); backdrop-filter: blur(8px) saturate(1.2); -webkit-backdrop-filter: blur(8px) saturate(1.2); border-top: 1px solid #2a303c; padding: 8px 10px 10px; z-index: 5; }
+/* Quickslot bar (Pixel Dungeon style): weapon/FIRE slot + item slots
+   with counts, above the bottom bar. Same 56px/48px sizing as the
+   action bar so every slot clears the 44px tap-target bar. */
+#quickbar { display: flex; gap: 10px; margin-bottom: 8px; }
+#quickbar .qs-slot { width: 56px; height: 56px; min-height: 56px; padding: 0; background: #1a1e28; border-color: #3a414d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; }
+#quickbar .qs-label { font-size: 11px; letter-spacing: 0.5px; }
+#quickbar .qs-count { font-size: 15px; font-weight: bold; }
+#quickbar .qs-slot.empty { opacity: 0.45; }
+#btn-fire { border-color: #4aa8ff; }
+#bottom-bar { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+#action-bar { display: flex; gap: 10px; flex: 0 0 auto; }
+#action-bar button { width: 56px; height: 56px; min-height: 56px; padding: 0; background: #1a1e28; border-color: #3a414d; display: flex; align-items: center; justify-content: center; }
+#action-bar button svg { width: 30px; height: 30px; fill: none; stroke: #cfe0d2; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+#side-stack { display: flex; flex-direction: column; gap: 8px; flex: 0 0 auto; }
+#side-stack button { width: 48px; min-height: 44px; padding: 2px 0; flex: 1; background: #1a1e28; display: flex; align-items: center; justify-content: center; }
+/* Tap-target rule (2026-10-28): the two stacked buttons share the
+   action-bar row height, so each needs an explicit 44px floor or the
+   split leaves them under the 44px bar. The stack then stands 96px
+   tall and #bottom-bar centers the action bar against it. */
+#side-stack button svg { width: 22px; height: 22px; fill: none; stroke: #cfe0d2; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+/* Neon menu restyle (fixwave, from the user's reference shot):
+   dark teal cards, glowing cyan double-border frames, caps
+   titles with a small icon at the top-right, body text in pale
+   cyan-white, and a full-width button at the foot of each card.
+   Visual only: every menu keeps its options, order, and
+   behavior, and every value comes from shipped code — the
+   reference shot's typos are NOT copied (Evasive Protocols
+   energy is spelled out, Emergency Plating keeps its 20 energy,
+   cost lines keep one consistent parenthesised format). */
+.neon-card { background: #0a2027; border: 2px solid #35e0ff; box-shadow: inset 0 0 0 1px #062a33, 0 0 14px rgba(53,224,255,0.30); padding: 10px; margin-top: 10px; }
+.neon-card b { color: #d8fbff; }
+.neon-card-title { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; text-transform: uppercase; letter-spacing: 0.5px; font-size: 14px; line-height: 1.3; }
+.neon-card-title .neon-icon { color: #35e0ff; font-size: 18px; flex: 0 0 auto; }
+.neon-card-desc { font-size: 13px; line-height: 1.45; color: #cfe8ec; margin-top: 4px; }
+.neon-card-cost { font-size: 12px; color: #9fd8e0; margin-top: 4px; }
+.neon-card button { width: 100%; margin-top: 8px; }
+.mech-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+/* Menu-tabs wave: tab rows sit above the modal buttons, share the
+   neon button treatment, and the active tab glows. Per-item gear
+   effect lines sit under the item name in smaller pale text. */
+.tab-bar { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; }
+.tab-bar button { flex: 1 1 auto; }
+.tab-bar button.active { border-color: #35e0ff; background: #0f3a47; box-shadow: inset 0 0 0 1px #062a33, 0 0 14px rgba(53,224,255,0.55); color: #d8fbff; }
+.gear-effect { font-size: 13px; line-height: 1.45; color: #cfe8ec; margin-top: 2px; }
+.mech-grid .neon-card { margin-top: 0; }
+#modal { position: fixed; inset: 0; background: rgba(0,0,0,0.75); display: flex; align-items: center; justify-content: center; padding: 12px; z-index: 10; }
+#modal.hidden { display: none; }
+#modal-box { background: #07181d; border: 2px solid #35e0ff; box-shadow: inset 0 0 0 1px #062a33, 0 0 22px rgba(53,224,255,0.45); padding: 24px; max-width: 520px; width: 100%; max-height: 92vh; overflow-y: auto; }
+#modal-box h2 { margin-top: 0; color: #d8fbff; text-transform: uppercase; letter-spacing: 1px; }
+#modal-btns { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+#modal-btns button { flex: 1; }
+#modal-btns button, .hub-stations button, .bag-assign button, .bag-gear button, .bag-tabs button, #stairs-panel button { background: #0a2a33; border: 2px solid #35e0ff; color: #d8fbff; box-shadow: inset 0 0 0 1px #062a33, 0 0 12px rgba(53,224,255,0.35); min-height: 48px; }
+#modal-btns button:hover, #modal-btns button:active, .hub-stations button:hover, .hub-stations button:active, .bag-assign button:hover, .bag-assign button:active, .bag-gear button:hover, .bag-gear button:active, #stairs-panel button:hover, #stairs-panel button:active { background: #0f3a47; }
+#modal-btns button:disabled, .hub-stations button:disabled, .bag-assign button:disabled, .bag-gear button:disabled { opacity: 0.45; }
+.menu-log, .full-log { max-height: 220px; overflow-y: auto; background: #081820; border: 1px solid #35e0ff; padding: 8px; font-size: 13px; line-height: 1.45; margin: 10px 0; }
+#stairs-panel { background: rgba(7,24,29,0.97); border: 2px solid #35e0ff; box-shadow: inset 0 0 0 1px #062a33, 0 0 18px rgba(53,224,255,0.40); }
+@media (max-width: 520px) {
+  header { padding: 6px 6px; }
+  #hud { font-size: 8px; gap: 1px; } /* 390px: all segments incl. Ammo + Power OK must fit on one line (measured 2026-10-27: scrollWidth <= clientWidth; Phase 4: typed ammo names forced Std/Prc/Inc/Shk short labels + 1px gap, re-measured 2026-10-29; graphics pass: 9px -> 8px + 22px bar so the new HP bar + ammo glyph still fit — measured again in verify_gfx.py) */
+  .hud-hp-bar { width: 22px; margin-left: 3px; } /* graphics pass: bar shrinks on narrow screens so the HUD line still fits */
+  #stairs-panel { width: 200px; padding: 8px; }
+  #stairs-panel button { font-size: 13px; min-height: 48px; }
+  #action-bar button { width: 48px; height: 48px; min-height: 48px; }
+  #action-bar button svg { width: 26px; height: 26px; }
+  #quickbar { gap: 8px; margin-bottom: 6px; }
+  #quickbar .qs-slot { width: 48px; height: 48px; min-height: 48px; }
+  #side-stack button { width: 44px; min-height: 44px; }
+  #dock { padding: 6px 8px 8px; }
+  #transient-msg { font-size: 12px; }
+}

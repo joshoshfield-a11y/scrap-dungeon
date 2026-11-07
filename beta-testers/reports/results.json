@@ -1,0 +1,2811 @@
+{
+  "snapshot_before": {
+    "core.js": "9ee43bd92cc0",
+    "game.js": "c1602b99b6e7",
+    "index.html": "c74a81983969",
+    "test.js": "4a3586431757",
+    "style.css": "4c4dc1ed1a63"
+  },
+  "snapshot_after": {
+    "core.js": "9ee43bd92cc0",
+    "game.js": "c1602b99b6e7",
+    "index.html": "c74a81983969",
+    "test.js": "4a3586431757",
+    "style.css": "4c4dc1ed1a63"
+  },
+  "mid_flight_changes": {},
+  "counts": {
+    "PASS": 359,
+    "FAIL": 0,
+    "NOTE": 2,
+    "ENV": 0
+  },
+  "checks": [
+    {
+      "persona": "graphics-qc",
+      "check": "all referenced sheets exist on disk",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "all 169 referenced sheets present"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "unreferenced sheets in assets/ (dead weight, not a bug)",
+      "status": "NOTE",
+      "severity": "Minor",
+      "evidence": "unreferenced: ['prop_salvage_sheet.png'] \u2014 safe to delete or wire in"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_console_double.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_console_double.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=24414 nonblack-opaque=23146 bytes=45556"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_console_single.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_console_single.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20214 nonblack-opaque=19611 bytes=34453"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_console_single_mid.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_console_single_mid.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=19518 nonblack-opaque=18447 bytes=35587"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_console_tall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_console_tall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=12344 nonblack-opaque=11808 bytes=25245"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_console_tall_small.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_console_tall_small.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14341 nonblack-opaque=13602 bytes=28476"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_debris_cans.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_debris_cans.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=7617 nonblack-opaque=6798 bytes=22206"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_debris_shells.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_debris_shells.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8245 nonblack-opaque=7356 bytes=28817"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_fire_extinguisher.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_fire_extinguisher.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14959 nonblack-opaque=13919 bytes=35450"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_floor_grate_green.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_floor_grate_green.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65369 bytes=51119"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_floor_grate_round.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_floor_grate_round.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65182 bytes=57760"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_floor_grey_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_floor_grey_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65536 bytes=44361"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_floor_grey_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_floor_grey_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65536 bytes=29979"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_floor_grey_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_floor_grey_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65257 bytes=40579"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_panel_console_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_panel_console_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65143 bytes=68097"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_panel_pipes_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_panel_pipes_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64678 bytes=59207"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_panel_plain_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_panel_plain_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64982 bytes=31512"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_panel_vent.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_panel_vent.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65132 bytes=45218"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_prop_barrel_blue.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_prop_barrel_blue.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=24947 nonblack-opaque=23668 bytes=46714"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_prop_barrel_grey.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_prop_barrel_grey.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=11207 nonblack-opaque=10078 bytes=27157"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_prop_barrel_rust.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_prop_barrel_rust.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14121 nonblack-opaque=13639 bytes=31349"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_prop_crate_skull_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_prop_crate_skull_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20538 nonblack-opaque=19701 bytes=34761"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_prop_crate_skull_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_prop_crate_skull_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=27957 nonblack-opaque=26514 bytes=39750"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_server_small.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_server_small.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14732 nonblack-opaque=13853 bytes=26407"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_server_tall_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_server_tall_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=19803 nonblack-opaque=18354 bytes=47933"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_server_tall_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_server_tall_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=22357 nonblack-opaque=20756 bytes=54985"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_server_tall_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_server_tall_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=18733 nonblack-opaque=17447 bytes=43569"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_toolbox_grey.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_toolbox_grey.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=21233 nonblack-opaque=18944 bytes=43829"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_toolbox_red.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_toolbox_red.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=25491 nonblack-opaque=23842 bytes=46220"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_vent_slats_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_vent_slats_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65534 bytes=67447"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_vent_slats_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_vent_slats_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65533 bytes=68068"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s1_vent_slats_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s1_vent_slats_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65533 bytes=67311"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_armour_broken.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_armour_broken.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=24697 nonblack-opaque=22295 bytes=78299"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_console_map.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_console_map.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=28195 nonblack-opaque=26945 bytes=52448"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_console_term_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_console_term_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=29265 nonblack-opaque=27879 bytes=54499"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_console_term_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_console_term_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=28000 nonblack-opaque=27115 bytes=53103"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_console_term_blue.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_console_term_blue.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=26875 nonblack-opaque=25736 bytes=48637"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_console_term_green.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_console_term_green.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=23591 nonblack-opaque=22197 bytes=38803"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_crates_stack.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_crates_stack.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=24912 nonblack-opaque=23689 bytes=61378"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_circuit_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_circuit_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65016 bytes=64311"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_circuit_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_circuit_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65222 bytes=50799"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_circuit_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_circuit_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65045 bytes=52173"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_cracked_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_cracked_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65379 bytes=50599"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_cracked_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_cracked_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65400 bytes=61562"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_diamond.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_diamond.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65352 bytes=64653"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_mesh.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_mesh.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65099 bytes=61870"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_rusty_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_rusty_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65238 bytes=56874"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_rusty_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_rusty_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65375 bytes=57585"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_sludge.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_sludge.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65121 bytes=63050"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_floor_tiles_grey.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_floor_tiles_grey.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65139 bytes=57605"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_keypad_small_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_keypad_small_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=24639 nonblack-opaque=23134 bytes=42913"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_keypad_tall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_keypad_tall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=21074 nonblack-opaque=19952 bytes=39804"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_scrap_debris.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_scrap_debris.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20670 nonblack-opaque=19228 bytes=60476"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_scrap_pile_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_scrap_pile_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=23785 nonblack-opaque=21617 bytes=73131"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_scrap_pile_wires.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_scrap_pile_wires.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=17037 nonblack-opaque=15173 bytes=58132"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_vent_grid.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_vent_grid.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=62195 bytes=47473"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_vent_grid_hole.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_vent_grid_hole.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=63901 bytes=65108"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_vent_hole_square.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_vent_hole_square.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64135 bytes=62188"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_vent_slats.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_vent_slats.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=63929 bytes=70724"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_corner_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_corner_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65037 bytes=60398"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_corner_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_corner_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64880 bytes=64586"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_door_closed_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_door_closed_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64838 bytes=57808"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_door_closed_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_door_closed_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64622 bytes=60445"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_door_open_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_door_open_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64086 bytes=56181"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_door_open_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_door_open_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64118 bytes=56681"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_door_open_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_door_open_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64064 bytes=54905"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_hole_cracked.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_hole_cracked.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=63610 bytes=75911"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_hole_wires.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_hole_wires.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=63956 bytes=63950"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_panel_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_panel_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65011 bytes=65617"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_panel_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_panel_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64840 bytes=70013"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_panel_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_panel_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64230 bytes=77000"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_panel_console.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_panel_console.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64916 bytes=62323"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_pipe_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_pipe_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64751 bytes=51451"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_pipe_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_pipe_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64824 bytes=47584"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset batch3_s2_wall_pipe_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content batch3_s2_wall_pipe_c.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64942 bytes=47629"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_floor_circuit.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_floor_circuit.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=62244 bytes=109175"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_floor_dense_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_floor_dense_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64792 bytes=173054"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_floor_rusty_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_floor_rusty_a.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65536 bytes=76875"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_floor_rusty_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_floor_rusty_b.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65534 bytes=58105"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_frozen_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_frozen_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=10831 nonblack-opaque=10831 bytes=21795"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_frozen_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_frozen_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65536 bytes=144963"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_frozen_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_frozen_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=19667 nonblack-opaque=19667 bytes=62718"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_frozen_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_frozen_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65536 bytes=139984"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_molten_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_molten_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14322 nonblack-opaque=8090 bytes=27992"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_molten_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_molten_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=58880 bytes=90356"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_molten_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_molten_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=11054 nonblack-opaque=11054 bytes=37059"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_molten_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_molten_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=51568 bytes=95181"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_overgrown_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_overgrown_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=17362 nonblack-opaque=13225 bytes=50557"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_overgrown_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_overgrown_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=58865 bytes=146691"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_overgrown_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_overgrown_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=21636 nonblack-opaque=16165 bytes=67592"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_overgrown_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_overgrown_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=58286 bytes=133120"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_pile_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_pile_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=34467 nonblack-opaque=27149 bytes=103985"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_toxic_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_toxic_detail.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=9094 nonblack-opaque=9053 bytes=22925"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_toxic_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_toxic_floor.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=59858 bytes=151577"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_toxic_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_toxic_pile.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=15874 nonblack-opaque=15339 bytes=56025"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_toxic_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_toxic_wall.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=61041 bytes=138375"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_wall_dense_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_wall_dense_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=58480 bytes=114645"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset gen_wall_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content gen_wall_scrap.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64790 bytes=150332"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry item_ammo_crate_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content item_ammo_crate_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=38520 nonblack-opaque=37602 bytes=3010 cells-opaque=[4320, 5292, 4356, 5292, 4320, 5292, 4356, 5292]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry item_data_chip_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content item_data_chip_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=18621 nonblack-opaque=16749 bytes=3472 cells-opaque=[2340, 2358, 2124, 2403, 2376, 2421, 2214, 2385]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry item_food_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content item_food_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=23508 nonblack-opaque=23418 bytes=3001 cells-opaque=[2718, 3195, 2646, 3195, 2718, 3195, 2646, 3195]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry item_toolkit_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content item_toolkit_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=35370 nonblack-opaque=34119 bytes=3347 cells-opaque=[4122, 4797, 3951, 4815, 4122, 4815, 3951, 4797]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry loot_crate_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content loot_crate_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=4772 nonblack-opaque=4759 bytes=17104 cells-opaque=[4772, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry loot_crystal_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content loot_crystal_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=1875 nonblack-opaque=1865 bytes=8122 cells-opaque=[1875, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry loot_gear_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content loot_gear_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=4974 nonblack-opaque=4715 bytes=21282 cells-opaque=[4974, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry loot_key_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content loot_key_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=1673 nonblack-opaque=1510 bytes=5600 cells-opaque=[1673, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_bomber_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_bomber_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=11898 nonblack-opaque=10125 bytes=4724 cells-opaque=[1584, 1548, 1269, 1575, 1530, 1575, 1269, 1548]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_boss_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_boss_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=21204 nonblack-opaque=19341 bytes=6168 cells-opaque=[2961, 2691, 2025, 2907, 2889, 2655, 2070, 3006]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_boss_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_boss_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20421 nonblack-opaque=17496 bytes=5421 cells-opaque=[2781, 2718, 1782, 2826, 2862, 2844, 1863, 2745]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_boss_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_boss_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20592 nonblack-opaque=18540 bytes=5835 cells-opaque=[2808, 2736, 1854, 2862, 2880, 2862, 1854, 2736]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_boss_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_boss_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=21123 nonblack-opaque=19143 bytes=5832 cells-opaque=[2844, 2709, 2106, 2853, 2952, 2754, 2115, 2790]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_boss_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_boss_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20097 nonblack-opaque=18126 bytes=5905 cells-opaque=[2754, 2673, 1854, 2799, 2826, 2772, 1773, 2646]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_flyer_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_flyer_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=23121 nonblack-opaque=20835 bytes=5075 cells-opaque=[3240, 3249, 2466, 2808, 2826, 2817, 2466, 3249]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_heavy_brute_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_heavy_brute_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14625 nonblack-opaque=12942 bytes=5009 cells-opaque=[1944, 1944, 1539, 1854, 1863, 1926, 1629, 1926]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_heavy_brute_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_heavy_brute_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14004 nonblack-opaque=11457 bytes=4531 cells-opaque=[1944, 1818, 1314, 1881, 1872, 1899, 1386, 1890]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_heavy_brute_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_heavy_brute_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8541 nonblack-opaque=7353 bytes=3949 cells-opaque=[1071, 1053, 1017, 1134, 1116, 1089, 981, 1080]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_heavy_brute_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_heavy_brute_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=13932 nonblack-opaque=12357 bytes=4864 cells-opaque=[1944, 1854, 1368, 1845, 1854, 1845, 1368, 1854]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_heavy_brute_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_heavy_brute_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14319 nonblack-opaque=12546 bytes=5028 cells-opaque=[1926, 1926, 1539, 1809, 1827, 1917, 1575, 1800]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_heavy_brute_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_heavy_brute_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=13554 nonblack-opaque=11970 bytes=4891 cells-opaque=[1890, 1836, 1368, 1809, 1800, 1773, 1287, 1791]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_light_scout_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_light_scout_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=10467 nonblack-opaque=9315 bytes=4965 cells-opaque=[1233, 1224, 1224, 1530, 1332, 1260, 1179, 1485]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_light_scout_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_light_scout_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=10080 nonblack-opaque=8082 bytes=4610 cells-opaque=[1341, 1278, 1116, 1368, 1269, 1269, 1071, 1368]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_light_scout_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_light_scout_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8541 nonblack-opaque=7425 bytes=3946 cells-opaque=[1071, 1053, 1017, 1134, 1116, 1089, 981, 1080]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_light_scout_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_light_scout_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=9954 nonblack-opaque=8631 bytes=4671 cells-opaque=[1305, 1260, 1107, 1386, 1233, 1251, 1062, 1350]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_light_scout_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_light_scout_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=10449 nonblack-opaque=9171 bytes=4679 cells-opaque=[1260, 1395, 1251, 1341, 1296, 1368, 1215, 1323]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_light_scout_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_light_scout_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=9747 nonblack-opaque=8280 bytes=4712 cells-opaque=[1269, 1233, 1116, 1368, 1242, 1206, 1017, 1296]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_red_raider_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_red_raider_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=9405 nonblack-opaque=8433 bytes=4046 cells-opaque=[1062, 1098, 1098, 1404, 1188, 1161, 1080, 1314]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_red_raider_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_red_raider_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=9414 nonblack-opaque=7650 bytes=4085 cells-opaque=[1215, 1161, 990, 1296, 1179, 1233, 1017, 1323]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_red_raider_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_red_raider_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8541 nonblack-opaque=7353 bytes=3949 cells-opaque=[1071, 1053, 1017, 1134, 1116, 1089, 981, 1080]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_red_raider_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_red_raider_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8982 nonblack-opaque=7803 bytes=3878 cells-opaque=[1161, 1188, 900, 1242, 1152, 1197, 900, 1242]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_red_raider_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_red_raider_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=9288 nonblack-opaque=8091 bytes=4024 cells-opaque=[1062, 1251, 1044, 1197, 1179, 1305, 1080, 1170]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_red_raider_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_red_raider_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8694 nonblack-opaque=7650 bytes=3964 cells-opaque=[1116, 1170, 900, 1224, 1116, 1134, 837, 1197]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_shielder_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_shielder_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=16704 nonblack-opaque=15129 bytes=5430 cells-opaque=[2223, 2232, 1746, 2250, 2367, 2223, 1521, 2142]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_small_drone_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_small_drone_attack_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=16200 nonblack-opaque=14904 bytes=4635 cells-opaque=[2142, 2277, 1890, 1908, 1908, 1908, 1890, 2277]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_small_drone_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_small_drone_damaged_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14742 nonblack-opaque=12051 bytes=4397 cells-opaque=[1908, 1998, 1674, 1827, 1836, 1827, 1674, 1998]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_small_drone_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_small_drone_destroyed_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=8541 nonblack-opaque=7353 bytes=3949 cells-opaque=[1071, 1053, 1017, 1134, 1116, 1089, 981, 1080]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_small_drone_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_small_drone_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14616 nonblack-opaque=13167 bytes=4273 cells-opaque=[1908, 1989, 1620, 1827, 1836, 1827, 1620, 1989]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_small_drone_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_small_drone_walk_a_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14616 nonblack-opaque=13167 bytes=4273 cells-opaque=[1908, 1989, 1620, 1827, 1836, 1827, 1620, 1989]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_small_drone_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_small_drone_walk_b_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=14616 nonblack-opaque=13167 bytes=4273 cells-opaque=[1908, 1989, 1620, 1827, 1836, 1827, 1620, 1989]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_sniper_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_sniper_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=10143 nonblack-opaque=8829 bytes=4671 cells-opaque=[1170, 1224, 1269, 1440, 1260, 1206, 1179, 1395]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry mech_turret_light_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content mech_turret_light_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=10359 nonblack-opaque=9396 bytes=4626 cells-opaque=[1206, 1260, 1314, 1395, 1251, 1350, 1305, 1278]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry prop_component_gears_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content prop_component_gears_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=4245 nonblack-opaque=3986 bytes=20195 cells-opaque=[4245, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry prop_health_cell_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content prop_health_cell_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=20466 nonblack-opaque=19179 bytes=3062 cells-opaque=[2160, 2817, 2385, 2871, 2160, 2871, 2385, 2817]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry prop_salvage_pile_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content prop_salvage_pile_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=3429 nonblack-opaque=3371 bytes=16706 cells-opaque=[3429, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry prop_salvage_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content prop_salvage_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=26928 nonblack-opaque=22464 bytes=4916 cells-opaque=[3258, 3663, 3168, 3474, 3078, 3501, 3186, 3600]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_barrel_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_barrel_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=17568 nonblack-opaque=16596 bytes=3012 cells-opaque=[2106, 2286, 2106, 2286, 2106, 2286, 2106, 2286]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_chest_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_chest_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=19080 nonblack-opaque=18369 bytes=2968 cells-opaque=[2250, 2520, 2250, 2520, 2250, 2520, 2250, 2520]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_debris_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_debris_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=16929 nonblack-opaque=16164 bytes=3821 cells-opaque=[2106, 2160, 2106, 2133, 2070, 2124, 2097, 2133]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_door_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_door_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=24120 nonblack-opaque=23085 bytes=3282 cells-opaque=[2934, 3159, 2808, 3159, 2934, 3159, 2808, 3159]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_grate_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_grate_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=16776 nonblack-opaque=15552 bytes=2988 cells-opaque=[2070, 2124, 2070, 2124, 2070, 2124, 2070, 2124]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_metal_wall_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_metal_wall_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=27108 nonblack-opaque=25830 bytes=3035 cells-opaque=[3186, 3582, 3204, 3582, 3186, 3582, 3204, 3582]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_spike_trap_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_spike_trap_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=18450 nonblack-opaque=17946 bytes=4853 cells-opaque=[2178, 2466, 2178, 2430, 2178, 2412, 2178, 2430]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_stairs_down_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_stairs_down_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=17910 nonblack-opaque=17253 bytes=4379 cells-opaque=[2304, 2484, 2097, 2268, 1908, 2268, 2097, 2484]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet geometry tile_stone_wall_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "size=822x136 (expected 822x136)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "sheet has painted content tile_stone_wall_sheet.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=27126 nonblack-opaque=25668 bytes=3114 cells-opaque=[3186, 3582, 3204, 3582, 3186, 3582, 3222, 3582]"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset vision_floor_circuit.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content vision_floor_circuit.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64974 bytes=56808"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset vision_floor_plain.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content vision_floor_plain.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=65536 bytes=21082"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset vision_wall_right.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content vision_wall_right.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=63888 bytes=82351"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset vision_wall_top.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content vision_wall_top.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=60681 bytes=91369"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile asset vision_wall_top2.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tile size=256x256 (not an 8-direction sheet)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "tile has painted content vision_wall_top2.png",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "opaque=65536 nonblack-opaque=64894 bytes=49255"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "zero console errors on load",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "errors: none"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "canvas renders sprite colour, not a blank screen",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "screenshot=/home/hatch/workspace/scrap-dungeon/beta-testers/reports/screenshots/graphics-load.png distinct-colours=70166 bright-samples=29343/72000"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "walk pose changes on movement",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "pose before=rest on move=walk_b after 600ms=rest player (6,13) -> (7,13)"
+    },
+    {
+      "persona": "graphics-qc",
+      "check": "pose returns to rest after movement",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "pose after 600ms=rest (expected rest)"
+    },
+    {
+      "persona": "casual",
+      "check": "casual play ends with sane numbers",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "hp=100 carried=0 banked=0"
+    },
+    {
+      "persona": "casual",
+      "check": "casual play never softlocked (state stayed playable)",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "final state=playing hp=100 clock=630"
+    },
+    {
+      "persona": "casual",
+      "check": "wall bumps give no feedback",
+      "status": "NOTE",
+      "severity": "Minor",
+      "evidence": "20 move attempts changed nothing at all (position and clock both identical) \u2014 a human notices a wall bump produces no log line, no sound, no shake. See game.js doMove blocked path (returns blocked without logging)."
+    },
+    {
+      "persona": "casual",
+      "check": "bumping a wall does not move or corrupt state",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "moved=True before=(53, 21) after=(53,20) sane: hp=100 carried=0 banked=0"
+    },
+    {
+      "persona": "casual",
+      "check": "no uncaught console/page errors during casual",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "none"
+    },
+    {
+      "persona": "completionist",
+      "check": "a pickup can be walked to and collected",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "attempt 1: target {'kind': 'salvage', 'x': 37, 'y': 39} path=24 pickups 13 -> 11 inventory (0, 0, 0, 0, 0, 0) -> (13, 1, 0, 2, 0, 0) pos=(37,38) state=playing"
+    },
+    {
+      "persona": "completionist",
+      "check": "an enemy can be fought and killed",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "kills=2 hp=69 state=playing"
+    },
+    {
+      "persona": "completionist",
+      "check": "Descend banks exactly 25% (floored)",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "carried was 13, banked 0 -> 3 (expected 3), depth=2"
+    },
+    {
+      "persona": "completionist",
+      "check": "Extract keeps all carried salvage in banked total",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "carried was 10, banked 3 -> 13, state=extracted"
+    },
+    {
+      "persona": "completionist",
+      "check": "completionist run ends with sane numbers",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "hp=69 carried=0 banked=13"
+    },
+    {
+      "persona": "completionist",
+      "check": "no uncaught console/page errors during completionist",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "none"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "60 rapid move-key taps do not corrupt state",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "hp=100 carried=0 banked=0"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "clicking dock buttons while Bag modal is open is safe",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "modal was open=True, dock clicks blocked by overlay=3/3, still sane: hp=100 carried=0 banked=0"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "30x Wait + Rest spam keeps sane state",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "died during spam=False recovered state=playing hp=100 carried=0 banked=0"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "using an unheld item (or at full HP) gives feedback and costs nothing",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "used repair kit: hp 100 -> 100, cells (0, 0) -> (0, 0), log tail: ['You wait.', 'You wait.', 'You wait.', 'You wait.', 'Repair kit: no repair kits.']"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "out-of-bounds canvas taps are harmless",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "hp=100 carried=0 banked=0"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "autosave wrote hub + run keys to localStorage",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "keys=['scrapdungeon.run.v1', 'scrapdungeon.hub.v1'] state=playing depth=1 hp=100 (run key expected=True)"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "reload shows the hub screen with a Continue option",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "modal visible=True buttons=[New Expedition | Continue] text=HUB \u2014 saved expedition found | Resumable run: depth 1, HP 100/100, carried 0Banked salvage: 0Stockpiled components: 0Materials: 0 wire, 0 thermal cores, 0 shock"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "Continue resumes the saved run",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "before reload hp=100 depth=1 clock=330 -> after Continue hp=100 depth=1 clock=330 state=playing"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "second reload mid-run yields a playable game",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "state after reload=playing hp=100"
+    },
+    {
+      "persona": "bug-hunter",
+      "check": "no uncaught console/page errors during bug-hunter",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "none"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Wait",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Wait: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Use item",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Use item: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Menu",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Menu: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Search",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Search: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Bag",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Bag: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Recenter",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Recenter: 44x44px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: Log",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "Log: 44x44px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: FIRE",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "FIRE: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: +HP slot",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "+HP slot: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: FOOD slot",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "FOOD slot: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "tap target >= ~44px: KIT slot",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "KIT slot: 48x48px"
+    },
+    {
+      "persona": "mobile",
+      "check": "no horizontal overflow at 390px",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "scrollWidth=390 clientWidth=390"
+    },
+    {
+      "persona": "mobile",
+      "check": "HUD fits on one line at 390px (all segments incl. Power visible)",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "hud scrollWidth=378 clientWidth=378 powerRight=373 hudRight=384 power='OK'"
+    },
+    {
+      "persona": "mobile",
+      "check": "latest log line shows as a transient overlay on phones",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "transient={'text': 'You wait.', 'shown': True} last log line='You wait.'"
+    },
+    {
+      "persona": "mobile",
+      "check": "Log button opens the full log as a modal",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "modal visible=True title='Log'"
+    },
+    {
+      "persona": "mobile",
+      "check": "Log modal closes back to play",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "modal visible after Close=False"
+    },
+    {
+      "persona": "mobile",
+      "check": "viewport meta disables double-tap zoom breakage",
+      "status": "PASS",
+      "severity": "Minor",
+      "evidence": "viewport meta: width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    },
+    {
+      "persona": "mobile",
+      "check": "bottom dock is on screen at phone size",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "dock box={'x': 0, 'y': 679, 'width': 390, 'height': 165} viewport={'width': 390, 'height': 844}"
+    },
+    {
+      "persona": "mobile",
+      "check": "touch tap on an adjacent tile moves or attacks",
+      "status": "PASS",
+      "severity": "Major",
+      "evidence": "tap direction (0, -1): player (18,36) -> (18,35) clock 10 -> 20"
+    },
+    {
+      "persona": "mobile",
+      "check": "no uncaught console/page errors during mobile",
+      "status": "PASS",
+      "severity": "Blocker",
+      "evidence": "none"
+    }
+  ],
+  "opinions": {
+    "per_persona": {
+      "graphics-qc": {
+        "voice": "an art reviewer staring at the sprites and the screen",
+        "suggestions": [
+          {
+            "persona": "graphics-qc",
+            "category": "graphics/visuals",
+            "priority": "medium",
+            "key": "distinct-wrecks",
+            "suggestion": "Give each mech its own wreck. Killed raiders, drones and brutes all leave the same wreck pile, which flattens the moment of a kill \u2014 keep a hint of each silhouette in its wreck.",
+            "observation": "All destroyed sheets measured identical opaque-pixel counts: [8541]."
+          },
+          {
+            "persona": "graphics-qc",
+            "category": "graphics/visuals",
+            "priority": "medium",
+            "key": "exaggerate-walk-cycle",
+            "suggestion": "Exaggerate the walk cycle \u2014 bigger leg swing, more bob. The two walk frames are so close that movement reads as a slide, not a stride.",
+            "observation": "Scout walk_a vs walk_b differ by only 6.7% in opaque pixels."
+          }
+        ],
+        "abstentions": [
+          "distinct component art: no shared sheet this run",
+          "sprite contrast: screenshot already has enough bright samples"
+        ]
+      },
+      "casual": {
+        "voice": "a new player mashing around, figuring the game out as I go",
+        "suggestions": [
+          {
+            "persona": "casual",
+            "category": "controls/feel",
+            "priority": "high",
+            "key": "wall-bump-feedback",
+            "suggestion": "Give wall bumps some feedback \u2014 a thud, a tiny shake, or even just a log line. Right now bumping a wall feels like the game ignored my input.",
+            "observation": "In my run, 20 move attempts changed nothing at all (position and clock both identical) \u2014 see the casual NOTE 'wall bumps give no feedback'."
+          },
+          {
+            "persona": "casual",
+            "category": "flow/pacing",
+            "priority": "medium",
+            "key": "first-combat-sooner",
+            "suggestion": "Put an enemy \u2014 or at least a visible goal \u2014 closer to spawn. I wandered a whole session and never got into a fight, so I never learned what combat feels like.",
+            "observation": "120 random actions, final clock 630, kills 0."
+          },
+          {
+            "persona": "casual",
+            "category": "flow/pacing",
+            "priority": "low",
+            "key": "objective-reminder",
+            "suggestion": "Keep a small 'what am I doing' reminder on screen \u2014 stairs direction or current goal. After a long wander I forgot whether I was hunting loot or heading down.",
+            "observation": "My run lasted 120 actions to clock 630 with hp 100."
+          }
+        ],
+        "abstentions": [
+          "wall/floor contrast: wall share was not high this run"
+        ]
+      },
+      "completionist": {
+        "voice": "a player who wants to clear every floor properly",
+        "suggestions": [
+          {
+            "persona": "completionist",
+            "category": "flow/pacing",
+            "priority": "medium",
+            "key": "early-loot-near-spawn",
+            "suggestion": "Drop a small salvage pile within a couple of steps of spawn. Early loot teaches the pickup loop before the player has to trek for it.",
+            "observation": "My first pickup was 24 steps away (kind: salvage)."
+          }
+        ],
+        "abstentions": [
+          "stairs-journey rewards: stairs leg was short or unmeasured",
+          "loot variety: floor already showed several pickup kinds",
+          "distinct component art: no shared pickup sheet this run"
+        ]
+      },
+      "bug-hunter": {
+        "voice": "someone poking at every edge to see what breaks",
+        "suggestions": [
+          {
+            "persona": "bug-hunter",
+            "category": "controls/feel",
+            "priority": "low",
+            "key": "modal-close-affordance",
+            "suggestion": "Modal blocking works \u2014 but make the way out obvious, like a big Close button. Blocking stray taps is correct; leaving me hunting for the exit is not.",
+            "observation": "3/3 dock clicks were blocked by the Bag modal overlay in my spam run, and state stayed sane."
+          },
+          {
+            "persona": "bug-hunter",
+            "category": "relatability/fun",
+            "priority": "low",
+            "key": "hub-screen-run-summary",
+            "suggestion": "The reload hub screen works cleanly \u2014 I'd love a one-line 'last run' summary on it (depth, kills, banked) so coming back feels like continuing a story, not just resuming a save.",
+            "observation": "My save/load round-trip offered Continue and resumed the same run (hp/depth/clock matched before and after reload)."
+          }
+        ],
+        "abstentions": [
+          "unheld-item feedback: the log already reports unheld items",
+          "waiting danger signal: Wait spam did not kill me"
+        ]
+      },
+      "mobile": {
+        "voice": "a phone-only player, thumb on the screen",
+        "suggestions": [
+          {
+            "persona": "mobile",
+            "category": "controls/feel",
+            "priority": "medium",
+            "key": "smallest-tap-target",
+            "suggestion": "Bump the smallest buttons up toward 56px. On a phone, a 40-something-pixel target is a thumb-miss waiting to happen, especially mid-combat.",
+            "observation": "Smallest tap target at 390px was 'Recenter' at 44x44px."
+          },
+          {
+            "persona": "mobile",
+            "category": "controls/feel",
+            "priority": "medium",
+            "key": "touch-tap-zone",
+            "suggestion": "Touch taps work, but make the tap zone a touch more forgiving \u2014 a near-miss tap on a tile edge shouldn't feel like a miss. Fat-finger tolerance is the whole game on a phone.",
+            "observation": "My touchscreen tap on an adjacent walkable tile moved/attacked at 390px, but it had to land on the tile precisely."
+          },
+          {
+            "persona": "mobile",
+            "category": "flow/pacing",
+            "priority": "low",
+            "key": "phone-viewport-room",
+            "suggestion": "The phone layout fits with no sideways scroll, which is great \u2014 use that headroom to show a bit more of the room, so I can plan further ahead instead of scrolling the map in my head.",
+            "observation": "At 390px, horizontal overflow was 0px and the bottom dock was on screen."
+          }
+        ],
+        "abstentions": [
+          "last log line: the transient overlay already shows it"
+        ]
+      }
+    },
+    "consolidated": [
+      {
+        "category": "controls/feel",
+        "priority": "high",
+        "suggestion": "Give wall bumps some feedback \u2014 a thud, a tiny shake, or even just a log line. Right now bumping a wall feels like the game ignored my input.",
+        "observations": [
+          "In my run, 20 move attempts changed nothing at all (position and clock both identical) \u2014 see the casual NOTE 'wall bumps give no feedback'."
+        ],
+        "personas": [
+          "casual"
+        ]
+      },
+      {
+        "category": "graphics/visuals",
+        "priority": "medium",
+        "suggestion": "Give each mech its own wreck. Killed raiders, drones and brutes all leave the same wreck pile, which flattens the moment of a kill \u2014 keep a hint of each silhouette in its wreck.",
+        "observations": [
+          "All destroyed sheets measured identical opaque-pixel counts: [8541]."
+        ],
+        "personas": [
+          "graphics-qc"
+        ]
+      },
+      {
+        "category": "graphics/visuals",
+        "priority": "medium",
+        "suggestion": "Exaggerate the walk cycle \u2014 bigger leg swing, more bob. The two walk frames are so close that movement reads as a slide, not a stride.",
+        "observations": [
+          "Scout walk_a vs walk_b differ by only 6.7% in opaque pixels."
+        ],
+        "personas": [
+          "graphics-qc"
+        ]
+      },
+      {
+        "category": "flow/pacing",
+        "priority": "medium",
+        "suggestion": "Put an enemy \u2014 or at least a visible goal \u2014 closer to spawn. I wandered a whole session and never got into a fight, so I never learned what combat feels like.",
+        "observations": [
+          "120 random actions, final clock 630, kills 0."
+        ],
+        "personas": [
+          "casual"
+        ]
+      },
+      {
+        "category": "flow/pacing",
+        "priority": "medium",
+        "suggestion": "Drop a small salvage pile within a couple of steps of spawn. Early loot teaches the pickup loop before the player has to trek for it.",
+        "observations": [
+          "My first pickup was 24 steps away (kind: salvage)."
+        ],
+        "personas": [
+          "completionist"
+        ]
+      },
+      {
+        "category": "controls/feel",
+        "priority": "medium",
+        "suggestion": "Bump the smallest buttons up toward 56px. On a phone, a 40-something-pixel target is a thumb-miss waiting to happen, especially mid-combat.",
+        "observations": [
+          "Smallest tap target at 390px was 'Recenter' at 44x44px."
+        ],
+        "personas": [
+          "mobile"
+        ]
+      },
+      {
+        "category": "controls/feel",
+        "priority": "medium",
+        "suggestion": "Touch taps work, but make the tap zone a touch more forgiving \u2014 a near-miss tap on a tile edge shouldn't feel like a miss. Fat-finger tolerance is the whole game on a phone.",
+        "observations": [
+          "My touchscreen tap on an adjacent walkable tile moved/attacked at 390px, but it had to land on the tile precisely."
+        ],
+        "personas": [
+          "mobile"
+        ]
+      },
+      {
+        "category": "flow/pacing",
+        "priority": "low",
+        "suggestion": "Keep a small 'what am I doing' reminder on screen \u2014 stairs direction or current goal. After a long wander I forgot whether I was hunting loot or heading down.",
+        "observations": [
+          "My run lasted 120 actions to clock 630 with hp 100."
+        ],
+        "personas": [
+          "casual"
+        ]
+      },
+      {
+        "category": "controls/feel",
+        "priority": "low",
+        "suggestion": "Modal blocking works \u2014 but make the way out obvious, like a big Close button. Blocking stray taps is correct; leaving me hunting for the exit is not.",
+        "observations": [
+          "3/3 dock clicks were blocked by the Bag modal overlay in my spam run, and state stayed sane."
+        ],
+        "personas": [
+          "bug-hunter"
+        ]
+      },
+      {
+        "category": "relatability/fun",
+        "priority": "low",
+        "suggestion": "The reload hub screen works cleanly \u2014 I'd love a one-line 'last run' summary on it (depth, kills, banked) so coming back feels like continuing a story, not just resuming a save.",
+        "observations": [
+          "My save/load round-trip offered Continue and resumed the same run (hp/depth/clock matched before and after reload)."
+        ],
+        "personas": [
+          "bug-hunter"
+        ]
+      },
+      {
+        "category": "flow/pacing",
+        "priority": "low",
+        "suggestion": "The phone layout fits with no sideways scroll, which is great \u2014 use that headroom to show a bit more of the room, so I can plan further ahead instead of scrolling the map in my head.",
+        "observations": [
+          "At 390px, horizontal overflow was 0px and the bottom dock was on screen."
+        ],
+        "personas": [
+          "mobile"
+        ]
+      }
+    ]
+  }
+}

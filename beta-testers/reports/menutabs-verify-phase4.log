@@ -1,0 +1,102 @@
+--- attempt 1 ---
+PASS fresh run: HUD Std 16, pools default, hub stockpile untouched | {'hudAmmo': 'Std 16', 'pools': {'standard': 16, 'piercing': 0, 'incendiary': 0, 'shock': 0}, 'hubStock': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 12, 'ammoIncendiary': 6, 'ammoShock': 6}}
+PASS T/Shift+T cycle + 1/4 select, empty type shows 0, no time cost | {'t1': True, 't2': True, 't3': True, 't4': True, 't5': True, 'clock': 0, 'clock0': 0}
+FAIL Bag shows all four typed pools with the selected marker | BAG — INVENTORY
+Gear
+Ammo
+Skills
+Keys
+Info
+Close
+Equipment — swapping costs no time; the old piece returns to the Bag.
+Armor 2 · Max HP 100 · Evasion 8 · Range 5 · Sight 8
+Weapon: [Common] Scrap blaster +0
+Damage 2d6+8 · Range 5 · Standard
+Armor: — empty —
+Shield: — empty —
+Utility: — empty —
+FAIL Bag-adjacent selector (real click) switches to Piercing, Bag re-opens | {'clicked': True, 'selected': 'piercing', 'hudAmmo': 'Prc 0'}
+PASS FIRE on empty Shock auto-switches with the exact message, no fire/ammo/time | {'logTail': ['Run seed 81108223. Depth 1, industrial. Good hunting.', 'Ammo: Piercing selected.', 'Ammo: Incendiary selected.', 'Ammo: Piercing selected.', 'Ammo: Standard selected.', 'Ammo: Shock selected.', 'Switched to Incendiary — Shock empty'], 'selected': 'incendiary', 'pools': {'standard': 0, 'piercing': 0, 'incendiary': 5, 'shock': 0}, 'clock': 0, 'foeHp': 100}
+PASS next FIRE spends Incendiary and advances time | {'pools': {'standard': 0, 'piercing': 0, 'incendiary': 4, 'shock': 0}, 'clock': 10}
+PASS adjacent foe carries burning + jammed for the letter render | {'statuses': [{'kind': 'burning', 'ticksLeft': 3}, {'kind': 'jammed', 'ticksLeft': None}]}
+PASS scripted death ends the run | {'runState': 'dead'}
+PASS hub header shows materials + typed stockpile | HUB
+Banked salvage: 500
+Stockpiled components: 20
+Materials: 100 wire, 6 thermal cores, 6 shock cores, 4 corrosive cores
+Ammo stockpile: 40 Standard, 12 Piercing, 6 Incendiary, 6 Shock
+Chassis tier: 0/5 (+0 max HP) · Banking: 25%
+Pilot XP: 500 · Pilot skill ranks: 4 (see The Instructor on the Pilot 
+FAIL Loadout station shows the 16-Standard default preview | HUB
+Banked salvage: 500
+Stockpiled components: 20
+Materials: 100 wire, 6 thermal cores, 6 shock cores, 4 corrosive cores
+Ammo stockpile: 40 Standard, 12 Piercing, 6 Incendiary, 6 Shock
+Chassis tier: 0/5 (+0 max HP) · Banking: 25%
+Pilot XP: 500 · Pilot skill ranks: 4 (see The Instructor on the Pilot tab)
+Kills this run: 0
+
+Wreck
+Wreck waiting at depth 1: 0 salvage, 2 health cells, 2 food, 0 compone
+FAIL Loadout stepper (real click) changes the preview to 1 Piercing + 15 Standard | {'clicked': True, 'preview': 'HUB\nBanked salvage: 500\nStockpiled components: 20\nMaterials: 100 wire, 6 thermal cores, 6 shock cores, 4 corrosive cores\nAmmo stockpile: 40 Standard, 12 Piercing, 6 Incendiary, 6 Shock\nChassis tier: 0/5 (+0 max HP) · Banking: 25%\nPilot XP: 500 · Pilot skill ranks: 4 (see The Instructor on the Pilot tab)\nKills this run: 0\n\nWreck\nWreck waiting at depth 1: 0 salvage, 2 health cells, 2 food, 0 compone'}
+PASS New Expedition starts with the chosen loadout; hub deducted | {'clicked': True, 'pools': {'standard': 15, 'piercing': 1, 'incendiary': 0, 'shock': 0}, 'hubStock': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 11, 'ammoIncendiary': 6, 'ammoShock': 6}}
+FAIL second scripted death ends the run | {'runState': 'playing'}
+--- attempt 2 ---
+PASS fresh run: HUD Std 16, pools default, hub stockpile untouched | {'hudAmmo': 'Std 16', 'pools': {'standard': 16, 'piercing': 0, 'incendiary': 0, 'shock': 0}, 'hubStock': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 12, 'ammoIncendiary': 6, 'ammoShock': 6}}
+PASS T/Shift+T cycle + 1/4 select, empty type shows 0, no time cost | {'t1': True, 't2': True, 't3': True, 't4': True, 't5': True, 'clock': 0, 'clock0': 0}
+FAIL Bag shows all four typed pools with the selected marker | BAG — INVENTORY
+Gear
+Ammo
+Skills
+Keys
+Info
+Close
+Equipment — swapping costs no time; the old piece returns to the Bag.
+Armor 2 · Max HP 100 · Evasion 8 · Range 5 · Sight 8
+Weapon: [Common] Scrap blaster +0
+Damage 2d6+8 · Range 5 · Standard
+Armor: — empty —
+Shield: — empty —
+Utility: — empty —
+FAIL Bag-adjacent selector (real click) switches to Piercing, Bag re-opens | {'clicked': True, 'selected': 'piercing', 'hudAmmo': 'Prc 0'}
+PASS FIRE on empty Shock auto-switches with the exact message, no fire/ammo/time | {'logTail': ['Run seed 808636488. Depth 1, industrial. Good hunting.', 'Ammo: Piercing selected.', 'Ammo: Incendiary selected.', 'Ammo: Piercing selected.', 'Ammo: Standard selected.', 'Ammo: Shock selected.', 'Switched to Incendiary — Shock empty'], 'selected': 'incendiary', 'pools': {'standard': 0, 'piercing': 0, 'incendiary': 5, 'shock': 0}, 'clock': 0, 'foeHp': 100}
+PASS next FIRE spends Incendiary and advances time | {'pools': {'standard': 0, 'piercing': 0, 'incendiary': 4, 'shock': 0}, 'clock': 10}
+PASS adjacent foe carries burning + jammed for the letter render | {'statuses': [{'kind': 'burning', 'ticksLeft': 3}, {'kind': 'jammed', 'ticksLeft': None}]}
+PASS scripted death ends the run | {'runState': 'dead'}
+PASS hub header shows materials + typed stockpile | HUB
+Banked salvage: 500
+Stockpiled components: 20
+Materials: 100 wire, 6 thermal cores, 6 shock cores, 4 corrosive cores
+Ammo stockpile: 40 Standard, 12 Piercing, 6 Incendiary, 6 Shock
+Chassis tier: 0/5 (+0 max HP) · Banking: 25%
+Pilot XP: 500 · Pilot skill ranks: 4 (see The Instructor on the Pilot 
+FAIL Loadout station shows the 16-Standard default preview | HUB
+Banked salvage: 500
+Stockpiled components: 20
+Materials: 100 wire, 6 thermal cores, 6 shock cores, 4 corrosive cores
+Ammo stockpile: 40 Standard, 12 Piercing, 6 Incendiary, 6 Shock
+Chassis tier: 0/5 (+0 max HP) · Banking: 25%
+Pilot XP: 500 · Pilot skill ranks: 4 (see The Instructor on the Pilot tab)
+Kills this run: 0
+
+Wreck
+Wreck waiting at depth 1: 0 salvage, 2 health cells, 2 food, 0 compone
+FAIL Loadout stepper (real click) changes the preview to 1 Piercing + 15 Standard | {'clicked': True, 'preview': 'HUB\nBanked salvage: 500\nStockpiled components: 20\nMaterials: 100 wire, 6 thermal cores, 6 shock cores, 4 corrosive cores\nAmmo stockpile: 40 Standard, 12 Piercing, 6 Incendiary, 6 Shock\nChassis tier: 0/5 (+0 max HP) · Banking: 25%\nPilot XP: 500 · Pilot skill ranks: 4 (see The Instructor on the Pilot tab)\nKills this run: 0\n\nWreck\nWreck waiting at depth 1: 0 salvage, 2 health cells, 2 food, 0 compone'}
+PASS New Expedition starts with the chosen loadout; hub deducted | {'clicked': True, 'pools': {'standard': 15, 'piercing': 1, 'incendiary': 0, 'shock': 0}, 'hubStock': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 11, 'ammoIncendiary': 6, 'ammoShock': 6}}
+PASS breakdown opens the irreversible-confirm modal | {'clicked': True, 'confirm': 'BREAK DOWN — IRREVERSIBLE\nBreak down 1 component into 3 wire + 1 core roll?\n\nThis cannot be undone. The item is gone; only the materials remain.\nBreak it down\nCancel'}
+PASS confirmed breakdown: 1 component -> 3 wire + 1 core | {'before': {'banked': 500, 'components': 20, 'codexLen': 2, 'skills': {'breakdown': 1, 'ammoSmith': 3}, 'pilotXp': 500, 'stockpile': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 11, 'ammoIncendiary': 6, 'ammoShock': 6}, 'materials': {'wire': 100, 'coreThermal': 6, 'coreShock': 6, 'coreCorrosive': 4}}, 'after': {'banked': 500, 'components': 19, 'codexLen': 2, 'skills': {'breakdown': 1, 'ammoSmith': 3}, 'pilotXp': 500, 'stockpile': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 11, 'ammoIncendiary': 6, 'ammoShock': 6}, 'materials': {'wire': 103, 'coreThermal': 6, 'coreShock': 6, 'coreCorrosive': 5}}}
+PASS Craft Piercing pack (real click): +6 piercing, 6 wire + 4 salvage | {'clicked': True, 'hub': {'banked': 496, 'components': 19, 'codexLen': 2, 'skills': {'breakdown': 1, 'ammoSmith': 3}, 'pilotXp': 500, 'stockpile': {'health': 0, 'food': 0, 'repairKit': 0, 'ammoStandard': 40, 'ammoPiercing': 17, 'ammoIncendiary': 6, 'ammoShock': 6}, 'materials': {'wire': 97, 'coreThermal': 6, 'coreShock': 6, 'coreCorrosive': 5}}}
+PASS Enhance weapon (real click): +1 upgrade for 4 wire, tier kept | {'clicked': True, 'weapon': {'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 1, 'element': None, 'properties': []}, 'wire': 93}
+PASS no console errors / failed assets | none
+attempts: [{"attempt": 1, "failures": ["Bag shows all four typed pools with the selected marker", "Bag-adjacent selector (real click) switches to Piercing, Bag re-opens", "Loadout station shows the 16-Standard default preview", "Loadout stepper (real click) changes the preview to 1 Piercing + 15 Standard", "second scripted death ends the run"]}, {"attempt": 2, "failures": ["Bag shows all four typed pools with the selected marker", "Bag-adjacent selector (real click) switches to Piercing, Bag re-opens", "Loadout station shows the 16-Standard default preview", "Loadout stepper (real click) changes the preview to 1 Piercing + 15 Standard"]}]
+PASS fresh-run + switching + Bag verified within 3 attempts | {'fresh': True, 'switch': True, 'bag': True, 'autoswitch': True, 'letters': True, 'loadout': True, 'stations': True}
+PASS auto-switch + status letters verified within 3 attempts | {'fresh': True, 'switch': True, 'bag': True, 'autoswitch': True, 'letters': True, 'loadout': True, 'stations': True}
+PASS loadout + Salvager/Armorer stations verified within 3 attempts | {'fresh': True, 'switch': True, 'bag': True, 'autoswitch': True, 'letters': True, 'loadout': True, 'stations': True}
+{
+ "failures": [
+  "Bag shows all four typed pools with the selected marker",
+  "Bag-adjacent selector (real click) switches to Piercing, Bag re-opens",
+  "Loadout station shows the 16-Standard default preview",
+  "Loadout stepper (real click) changes the preview to 1 Piercing + 15 Standard"
+ ]
+}

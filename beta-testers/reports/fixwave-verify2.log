@@ -1,0 +1,48 @@
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 1) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'scrapPlating', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Run seed 1002982288. Depth 1, industrial. Good hunting.', 'The door opens.', 'The door opens.', 'Picked up [Common] Scrap plating +0 — stowed in the Bag. Equip it from the Bag (no time cost).']
+PASS Bag shows an Equipment section with the carried gear row | BAG — INVENTORY
+HP: 100/100
+Depth: 1
+Inventory (this run)
+Salvage carried: 0 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 0
+Ammo: Standard 16 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 0 ·
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'armor', 'equipped': {'kind': 'item', 'defId': 'scrapPlating', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (80, 80), 'actions': (8, 8)}
+PASS equipped piece leaves the carried list | []
+PASS descended depth 1 -> 2 | {'depth': 2, 'runState': 'playing'}
+PASS descended depth 2 -> 3 | {'depth': 3, 'runState': 'playing'}
+PASS descended depth 3 -> 4 | {'depth': 4, 'runState': 'playing'}
+FAIL shield found within 5 floors | {'runState': 'playing', 'hp': 24, 'depth': 4, 'actions': 219}
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 2) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'alloyAegis', 'tier': 'rare', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Run seed 2710125282. Depth 1, industrial. Good hunting.', 'The door opens.', 'The door opens.', 'Drone wakes up!', 'The door opens.', 'The door opens.', 'The door opens.', 'Picked up [Rare] Alloy aegis +0 — stowed in the Bag. Equip it from the Bag (no time cost).']
+PASS Bag shows an Equipment section with the carried gear row | BAG — INVENTORY
+HP: 100/100
+Depth: 1
+Inventory (this run)
+Salvage carried: 0 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 0
+Ammo: Standard 16 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 0 ·
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'shield', 'equipped': {'kind': 'item', 'defId': 'alloyAegis', 'tier': 'rare', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (660, 660), 'actions': (66, 66)}
+PASS equipped piece leaves the carried list | []
+PASS shield equipped in the shield slot | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'armor': None, 'shield': {'kind': 'item', 'defId': 'alloyAegis', 'tier': 'rare', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'utility': None}
+PASS freshly equipped shield starts empty | {'shield': 0}
+PASS shield recharges on waits (pool >= 1 after 2 waits) | {'shield': 1}
+PASS shield absorb visible in a real fight (log line) | {'absorbed': True, 'runState': 'playing', 'shield': 0, 'hp': 32, 'logTail': ['Drone hits You for 3 (raw 6, armor -2) (shield absorbed 1)', 'Drone hits You for 3 (raw 6, armor -2) (shield absorbed 1)', 'Starving Power drains 1 HP (38/100).', 'You misses Drone.', 'Drone hits You for 1 (raw 5, armor -2) (shield absorbed 2)', 'Drone hits You for 5 (raw 7, armor -2)', 'Drone misses You.', 'Drone misses You.']}
+PASS no console errors / failed assets | none
+PASS gear stow + Bag equip verified within 4 fresh runs | 
+PASS shield recharge + absorb verified within 4 fresh runs | 
+{
+ "failures": [
+  "shield found within 5 floors"
+ ]
+}

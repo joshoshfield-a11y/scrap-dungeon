@@ -1,0 +1,1231 @@
+[
+ {
+  "run": 1,
+  "before": {
+   "player": [
+    17,
+    31
+   ],
+   "sniper": [
+    22,
+    31
+   ],
+   "clock": 0,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 21,
+     "y": 31,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 20,
+     "y": 31,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 19,
+     "y": 31,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:31:19"
+     }
+    },
+    {
+     "x": 18,
+     "y": 31,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    17,
+    31
+   ],
+   "sniper": [
+    23,
+    30
+   ],
+   "clock": 10,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 22,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 21,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 20,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 19,
+     "y": 31,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:31:19"
+     }
+    },
+    {
+     "x": 18,
+     "y": 31,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "counterfactual": {
+   "openedDoors": 1,
+   "afterOpen": {
+    "player": [
+     17,
+     31
+    ],
+    "sniper": [
+     23,
+     30
+    ],
+    "clock": 20,
+    "los": true,
+    "telegraph": {
+     "x": 17,
+     "y": 31
+    },
+    "awake": true,
+    "nextTime": 40,
+    "line": [
+     {
+      "x": 22,
+      "y": 30,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 21,
+      "y": 30,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 20,
+      "y": 30,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 19,
+      "y": 31,
+      "grid": "floor",
+      "door": {
+       "state": "open",
+       "lockLevel": 0,
+       "id": "door:31:19"
+      }
+     },
+     {
+      "x": 18,
+      "y": 31,
+      "grid": "floor",
+      "door": null
+     }
+    ]
+   }
+  }
+ },
+ {
+  "run": 2,
+  "before": {
+   "player": [
+    26,
+    14
+   ],
+   "sniper": [
+    31,
+    14
+   ],
+   "clock": 0,
+   "los": true,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 30,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 29,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 28,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 27,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    26,
+    14
+   ],
+   "sniper": [
+    31,
+    14
+   ],
+   "clock": 10,
+   "los": true,
+   "telegraph": {
+    "x": 26,
+    "y": 14
+   },
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 30,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 29,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 28,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 27,
+     "y": 14,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  }
+ },
+ {
+  "run": 3,
+  "before": {
+   "player": [
+    43,
+    22
+   ],
+   "sniper": [
+    48,
+    22
+   ],
+   "clock": 0,
+   "los": true,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 47,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 46,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 45,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 44,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    43,
+    22
+   ],
+   "sniper": [
+    48,
+    22
+   ],
+   "clock": 10,
+   "los": true,
+   "telegraph": {
+    "x": 43,
+    "y": 22
+   },
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 47,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 46,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 45,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 44,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  }
+ },
+ {
+  "run": 4,
+  "before": {
+   "player": [
+    42,
+    35
+   ],
+   "sniper": [
+    47,
+    35
+   ],
+   "clock": 0,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 46,
+     "y": 35,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:35:46"
+     }
+    },
+    {
+     "x": 45,
+     "y": 35,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 44,
+     "y": 35,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 43,
+     "y": 35,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    42,
+    35
+   ],
+   "sniper": [
+    47,
+    35
+   ],
+   "clock": 10,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 46,
+     "y": 35,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:35:46"
+     }
+    },
+    {
+     "x": 45,
+     "y": 35,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 44,
+     "y": 35,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 43,
+     "y": 35,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "counterfactual": {
+   "openedDoors": 1,
+   "afterOpen": {
+    "player": [
+     42,
+     35
+    ],
+    "sniper": [
+     47,
+     35
+    ],
+    "clock": 20,
+    "los": true,
+    "telegraph": {
+     "x": 42,
+     "y": 35
+    },
+    "awake": true,
+    "nextTime": 40,
+    "line": [
+     {
+      "x": 46,
+      "y": 35,
+      "grid": "floor",
+      "door": {
+       "state": "open",
+       "lockLevel": 0,
+       "id": "door:35:46"
+      }
+     },
+     {
+      "x": 45,
+      "y": 35,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 44,
+      "y": 35,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 43,
+      "y": 35,
+      "grid": "floor",
+      "door": null
+     }
+    ]
+   }
+  }
+ },
+ {
+  "run": 5,
+  "before": {
+   "player": [
+    50,
+    18
+   ],
+   "sniper": [
+    55,
+    18
+   ],
+   "clock": 0,
+   "los": true,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 54,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 53,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 52,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 51,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    50,
+    18
+   ],
+   "sniper": [
+    55,
+    18
+   ],
+   "clock": 10,
+   "los": true,
+   "telegraph": {
+    "x": 50,
+    "y": 18
+   },
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 54,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 53,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 52,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 51,
+     "y": 18,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  }
+ },
+ {
+  "run": 6,
+  "before": {
+   "player": [
+    38,
+    27
+   ],
+   "sniper": [
+    43,
+    27
+   ],
+   "clock": 0,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 42,
+     "y": 27,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:27:42"
+     }
+    },
+    {
+     "x": 41,
+     "y": 27,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 40,
+     "y": 27,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 39,
+     "y": 27,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    38,
+    27
+   ],
+   "sniper": [
+    43,
+    27
+   ],
+   "clock": 10,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 42,
+     "y": 27,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:27:42"
+     }
+    },
+    {
+     "x": 41,
+     "y": 27,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 40,
+     "y": 27,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 39,
+     "y": 27,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "counterfactual": {
+   "openedDoors": 1,
+   "afterOpen": {
+    "player": [
+     38,
+     27
+    ],
+    "sniper": [
+     43,
+     27
+    ],
+    "clock": 20,
+    "los": true,
+    "telegraph": {
+     "x": 38,
+     "y": 27
+    },
+    "awake": true,
+    "nextTime": 40,
+    "line": [
+     {
+      "x": 42,
+      "y": 27,
+      "grid": "floor",
+      "door": {
+       "state": "open",
+       "lockLevel": 0,
+       "id": "door:27:42"
+      }
+     },
+     {
+      "x": 41,
+      "y": 27,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 40,
+      "y": 27,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 39,
+      "y": 27,
+      "grid": "floor",
+      "door": null
+     }
+    ]
+   }
+  }
+ },
+ {
+  "run": 7,
+  "before": {
+   "player": [
+    54,
+    39
+   ],
+   "sniper": [
+    59,
+    39
+   ],
+   "clock": 0,
+   "los": true,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 58,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 57,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 56,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 55,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    54,
+    39
+   ],
+   "sniper": [
+    59,
+    39
+   ],
+   "clock": 10,
+   "los": true,
+   "telegraph": {
+    "x": 54,
+    "y": 39
+   },
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 58,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 57,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 56,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 55,
+     "y": 39,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  }
+ },
+ {
+  "run": 8,
+  "before": {
+   "player": [
+    22,
+    30
+   ],
+   "sniper": [
+    27,
+    30
+   ],
+   "clock": 0,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 26,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 25,
+     "y": 30,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:30:25"
+     }
+    },
+    {
+     "x": 24,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 23,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    22,
+    30
+   ],
+   "sniper": [
+    27,
+    30
+   ],
+   "clock": 10,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 26,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 25,
+     "y": 30,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:30:25"
+     }
+    },
+    {
+     "x": 24,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 23,
+     "y": 30,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "counterfactual": {
+   "openedDoors": 1,
+   "afterOpen": {
+    "player": [
+     22,
+     30
+    ],
+    "sniper": [
+     27,
+     30
+    ],
+    "clock": 20,
+    "los": true,
+    "telegraph": {
+     "x": 22,
+     "y": 30
+    },
+    "awake": true,
+    "nextTime": 40,
+    "line": [
+     {
+      "x": 26,
+      "y": 30,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 25,
+      "y": 30,
+      "grid": "floor",
+      "door": {
+       "state": "open",
+       "lockLevel": 0,
+       "id": "door:30:25"
+      }
+     },
+     {
+      "x": 24,
+      "y": 30,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 23,
+      "y": 30,
+      "grid": "floor",
+      "door": null
+     }
+    ]
+   }
+  }
+ },
+ {
+  "run": 9,
+  "before": {
+   "player": [
+    8,
+    26
+   ],
+   "sniper": [
+    13,
+    26
+   ],
+   "clock": 0,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 12,
+     "y": 26,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:26:12"
+     }
+    },
+    {
+     "x": 11,
+     "y": 26,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 10,
+     "y": 26,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 9,
+     "y": 26,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    8,
+    26
+   ],
+   "sniper": [
+    13,
+    26
+   ],
+   "clock": 10,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 12,
+     "y": 26,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:26:12"
+     }
+    },
+    {
+     "x": 11,
+     "y": 26,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 10,
+     "y": 26,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 9,
+     "y": 26,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "counterfactual": {
+   "openedDoors": 1,
+   "afterOpen": {
+    "player": [
+     8,
+     26
+    ],
+    "sniper": [
+     13,
+     26
+    ],
+    "clock": 20,
+    "los": true,
+    "telegraph": {
+     "x": 8,
+     "y": 26
+    },
+    "awake": true,
+    "nextTime": 40,
+    "line": [
+     {
+      "x": 12,
+      "y": 26,
+      "grid": "floor",
+      "door": {
+       "state": "open",
+       "lockLevel": 0,
+       "id": "door:26:12"
+      }
+     },
+     {
+      "x": 11,
+      "y": 26,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 10,
+      "y": 26,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 9,
+      "y": 26,
+      "grid": "floor",
+      "door": null
+     }
+    ]
+   }
+  }
+ },
+ {
+  "run": 10,
+  "before": {
+   "player": [
+    42,
+    22
+   ],
+   "sniper": [
+    47,
+    22
+   ],
+   "clock": 0,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 0,
+   "line": [
+    {
+     "x": 46,
+     "y": 22,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:22:46"
+     }
+    },
+    {
+     "x": 45,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 44,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 43,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "after": {
+   "player": [
+    42,
+    22
+   ],
+   "sniper": [
+    47,
+    22
+   ],
+   "clock": 10,
+   "los": false,
+   "telegraph": null,
+   "awake": true,
+   "nextTime": 30,
+   "line": [
+    {
+     "x": 46,
+     "y": 22,
+     "grid": "floor",
+     "door": {
+      "state": "closed",
+      "lockLevel": 0,
+      "id": "door:22:46"
+     }
+    },
+    {
+     "x": 45,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 44,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    },
+    {
+     "x": 43,
+     "y": 22,
+     "grid": "floor",
+     "door": null
+    }
+   ]
+  },
+  "counterfactual": {
+   "openedDoors": 1,
+   "afterOpen": {
+    "player": [
+     42,
+     22
+    ],
+    "sniper": [
+     47,
+     22
+    ],
+    "clock": 20,
+    "los": true,
+    "telegraph": {
+     "x": 42,
+     "y": 22
+    },
+    "awake": true,
+    "nextTime": 40,
+    "line": [
+     {
+      "x": 46,
+      "y": 22,
+      "grid": "floor",
+      "door": {
+       "state": "open",
+       "lockLevel": 0,
+       "id": "door:22:46"
+      }
+     },
+     {
+      "x": 45,
+      "y": 22,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 44,
+      "y": 22,
+      "grid": "floor",
+      "door": null
+     },
+     {
+      "x": 43,
+      "y": 22,
+      "grid": "floor",
+      "door": null
+     }
+    ]
+   }
+  }
+ }
+]
+ISO_EXIT:0

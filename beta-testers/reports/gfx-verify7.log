@@ -1,0 +1,18 @@
+PASS hud: hp fill 100% at full hp | 100%
+PASS hud: ammo cartridge glyph | ▰
+PASS hud: dock glass background | rgba(11, 14, 20, 0.88)
+PASS hud: fits one line at 390px | True
+PASS hud: quickbar buttons >= 44px | [['FIRE16', 48, 48], ['FORCEX', 48, 48], ['+HP0', 48, 48], ['FOOD0', 48, 48], ['KIT0', 48, 48]]
+PASS hud: no horizontal overflow | True
+PASS hud: hp fill 25% after hp set to 25 | 25%
+PASS fxtoggle: menu shows FX overlay ON | FX overlay: ON
+PASS fxtoggle: OFF hides overlay | {'cls': True, 'disp': 'none', 'label': 'FX overlay: OFF'}
+PASS fxtoggle: ON restores overlay | {'cls': False, 'disp': 'block'}
+PASS glow: player tile bluer than far floor tile | near=102.0 far=25.3
+PASS ao: wall-adjacent floor edge darker than centre | cell=(6,35) edge=50.4 centre=91.1
+PASS flicker: console dressing tile changes between frames | console at (39,31) diff=1848/1849
+PASS trail: tap-to-walk sets a multi-tile trail | [{'x': 12, 'y': 36}, {'x': 13, 'y': 37}]
+FAIL fire: tracer spawned on FIRE | 0
+FAIL fire: impact sparks spawned on hit | 0
+PASS force: sparks + tracer spawned on FORCE | {'particles': 8, 'tracers': 1, 'trail': None, 'fxOverlayOn': True}
+FAILURES: ['fire: tracer spawned on FIRE', 'fire: impact sparks spawned on hit']

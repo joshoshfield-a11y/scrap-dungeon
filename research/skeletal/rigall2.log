@@ -1,0 +1,171 @@
+assault: 20 shapes, glows ['#35e0ff'], groups ['torso', 'head', 'armL', 'armR', 'legL', 'legR']
+artillery: 14 shapes, glows ['#35e0ff'], groups ['torso', 'head', 'legL', 'legR', 'cannon']
+tank: 14 shapes, glows ['#35e0ff'], groups ['hull', 'turret', 'trackL', 'trackR']
+spider: 21 shapes, glows ['#35e0ff'], groups ['body', 'legLF', 'legLM', 'legLB', 'legRF', 'legRM', 'legRB']
+turret: 17 shapes, glows ['#35e0ff'], groups ['base', 'dome', 'barrel']
+flyer: 16 shapes, glows ['#35e0ff'], groups ['hull', 'rotor', 'gun']
+shielder: 23 shapes, glows ['#35e0ff'], groups ['torso', 'head', 'legL', 'legR', 'shield', 'armR']
+sniper: 18 shapes, glows ['#35e0ff'], groups ['torso', 'head', 'armL', 'armR', 'legL', 'legR']
+bomber: 18 shapes, glows ['#35e0ff', '#ff7a1a'], groups ['body', 'head', 'armL', 'armR', 'legL', 'legR']
+== assault ==
+  assault_full: 8 frames
+  assault_torso: 8 frames
+  assault_head: 8 frames
+  assault_armL: 8 frames
+  assault_armR: 8 frames
+  assault_legL: 8 frames
+  assault_legR: 8 frames
+  assault dir W: residual px attributed: 9
+  assault dir E: residual px attributed: 27
+  assault dir S: composite-vs-full differing opaque px = 0
+  assault dir SW: composite-vs-full differing opaque px = 0
+  assault dir W: composite-vs-full differing opaque px = 0
+  assault dir NW: composite-vs-full differing opaque px = 0
+  assault dir N: composite-vs-full differing opaque px = 0
+  assault dir NE: composite-vs-full differing opaque px = 0
+  assault dir E: composite-vs-full differing opaque px = 0
+  assault dir SE: composite-vs-full differing opaque px = 0
+assault RIG DONE exact
+== artillery ==
+  artillery_full: 8 frames
+  artillery_torso: 8 frames
+  artillery_head: 8 frames
+  artillery_legL: 8 frames
+  artillery_legR: 8 frames
+  artillery_cannon: 8 frames
+  artillery dir S: residual px attributed: 18
+  artillery dir W: residual px attributed: 9
+  artillery dir NW: residual px attributed: 9
+  artillery dir NE: residual px attributed: 9
+  artillery dir E: residual px attributed: 9
+  artillery dir S: composite-vs-full differing opaque px = 0
+  artillery dir SW: composite-vs-full differing opaque px = 0
+  artillery dir W: composite-vs-full differing opaque px = 0
+  artillery dir NW: composite-vs-full differing opaque px = 0
+  artillery dir N: composite-vs-full differing opaque px = 0
+  artillery dir NE: composite-vs-full differing opaque px = 0
+  artillery dir E: composite-vs-full differing opaque px = 0
+  artillery dir SE: composite-vs-full differing opaque px = 0
+artillery RIG DONE exact
+== tank ==
+  tank_full: 8 frames
+  tank_hull: 8 frames
+  tank_turret: 8 frames
+  tank_trackL: 8 frames
+  tank_trackR: 8 frames
+  tank dir S: composite-vs-full differing opaque px = 0
+  tank dir SW: composite-vs-full differing opaque px = 0
+  tank dir W: composite-vs-full differing opaque px = 0
+  tank dir NW: composite-vs-full differing opaque px = 0
+  tank dir N: composite-vs-full differing opaque px = 0
+  tank dir NE: composite-vs-full differing opaque px = 0
+  tank dir E: composite-vs-full differing opaque px = 0
+  tank dir SE: composite-vs-full differing opaque px = 0
+tank RIG DONE exact
+== spider ==
+  spider_full: 8 frames
+  spider_body: 8 frames
+  spider_legLF: 8 frames
+  spider_legLM: 8 frames
+  spider_legLB: 8 frames
+  spider_legRF: 8 frames
+  spider_legRM: 8 frames
+  spider_legRB: 8 frames
+  spider dir S: composite-vs-full differing opaque px = 0
+  spider dir SW: composite-vs-full differing opaque px = 0
+  spider dir W: composite-vs-full differing opaque px = 0
+  spider dir NW: composite-vs-full differing opaque px = 0
+  spider dir N: composite-vs-full differing opaque px = 0
+  spider dir NE: composite-vs-full differing opaque px = 0
+  spider dir E: composite-vs-full differing opaque px = 0
+  spider dir SE: composite-vs-full differing opaque px = 0
+spider RIG DONE exact
+== turret ==
+  turret_full: 8 frames
+  turret_base: 8 frames
+  turret_dome: 8 frames
+  turret_barrel: 8 frames
+  turret dir SW: residual px attributed: 9
+  turret dir N: residual px attributed: 9
+  turret dir SE: residual px attributed: 9
+  turret dir S: composite-vs-full differing opaque px = 0
+  turret dir SW: composite-vs-full differing opaque px = 0
+  turret dir W: composite-vs-full differing opaque px = 0
+  turret dir NW: composite-vs-full differing opaque px = 0
+  turret dir N: composite-vs-full differing opaque px = 0
+  turret dir NE: composite-vs-full differing opaque px = 0
+  turret dir E: composite-vs-full differing opaque px = 0
+  turret dir SE: composite-vs-full differing opaque px = 0
+turret RIG DONE exact
+== flyer ==
+  flyer_full: 8 frames
+  flyer_hull: 8 frames
+  flyer_rotor: 8 frames
+  flyer_gun: 8 frames
+  flyer dir SW: residual px attributed: 18
+  flyer dir SE: residual px attributed: 18
+  flyer dir S: composite-vs-full differing opaque px = 0
+  flyer dir SW: composite-vs-full differing opaque px = 0
+  flyer dir W: composite-vs-full differing opaque px = 0
+  flyer dir NW: composite-vs-full differing opaque px = 0
+  flyer dir N: composite-vs-full differing opaque px = 0
+  flyer dir NE: composite-vs-full differing opaque px = 0
+  flyer dir E: composite-vs-full differing opaque px = 0
+  flyer dir SE: composite-vs-full differing opaque px = 0
+flyer RIG DONE exact
+== shielder ==
+  shielder_full: 8 frames
+  shielder_torso: 8 frames
+  shielder_head: 8 frames
+  shielder_legL: 8 frames
+  shielder_legR: 8 frames
+  shielder_shield: 8 frames
+  shielder_armR: 8 frames
+  shielder dir S: residual px attributed: 36
+  shielder dir E: residual px attributed: 18
+  shielder dir S: composite-vs-full differing opaque px = 0
+  shielder dir SW: composite-vs-full differing opaque px = 0
+  shielder dir W: composite-vs-full differing opaque px = 0
+  shielder dir NW: composite-vs-full differing opaque px = 0
+  shielder dir N: composite-vs-full differing opaque px = 0
+  shielder dir NE: composite-vs-full differing opaque px = 0
+  shielder dir E: composite-vs-full differing opaque px = 0
+  shielder dir SE: composite-vs-full differing opaque px = 0
+shielder RIG DONE exact
+== sniper ==
+  sniper_full: 8 frames
+  sniper_torso: 8 frames
+  sniper_head: 8 frames
+  sniper_armL: 8 frames
+  sniper_armR: 8 frames
+  sniper_legL: 8 frames
+  sniper_legR: 8 frames
+  sniper dir S: composite-vs-full differing opaque px = 0
+  sniper dir SW: composite-vs-full differing opaque px = 0
+  sniper dir W: composite-vs-full differing opaque px = 0
+  sniper dir NW: composite-vs-full differing opaque px = 0
+  sniper dir N: composite-vs-full differing opaque px = 0
+  sniper dir NE: composite-vs-full differing opaque px = 0
+  sniper dir E: composite-vs-full differing opaque px = 0
+  sniper dir SE: composite-vs-full differing opaque px = 0
+sniper RIG DONE exact
+== bomber ==
+  bomber_full: 8 frames
+  bomber_body: 8 frames
+  bomber_head: 8 frames
+  bomber_armL: 8 frames
+  bomber_armR: 8 frames
+  bomber_legL: 8 frames
+  bomber_legR: 8 frames
+  bomber dir SW: residual px attributed: 18
+  bomber dir SE: residual px attributed: 18
+  bomber dir S: composite-vs-full differing opaque px = 0
+  bomber dir SW: composite-vs-full differing opaque px = 0
+  bomber dir W: composite-vs-full differing opaque px = 0
+  bomber dir NW: composite-vs-full differing opaque px = 0
+  bomber dir N: composite-vs-full differing opaque px = 0
+  bomber dir NE: composite-vs-full differing opaque px = 0
+  bomber dir E: composite-vs-full differing opaque px = 0
+  bomber dir SE: composite-vs-full differing opaque px = 0
+bomber RIG DONE exact
+RESULTS: {'assault': True, 'artillery': True, 'tank': True, 'spider': True, 'turret': True, 'flyer': True, 'shielder': True, 'sniper': True, 'bomber': True}

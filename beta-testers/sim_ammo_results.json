@@ -1,0 +1,1832 @@
+{
+  "killDists": {
+    "raider|1|ranged": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.4
+    },
+    "raider|1|rangedTypical": {
+      "median": 4,
+      "p10": 2,
+      "p90": 7,
+      "mean": 4.32
+    },
+    "raider|1|meleeSurprise": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.28
+    },
+    "raider|1|meleeAwake": {
+      "median": 3,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.8
+    },
+    "raider|2|ranged": {
+      "median": 3,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.71
+    },
+    "raider|2|rangedTypical": {
+      "median": 4,
+      "p10": 2,
+      "p90": 9,
+      "mean": 4.79
+    },
+    "raider|2|meleeSurprise": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.27
+    },
+    "raider|2|meleeAwake": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.26
+    },
+    "raider|3|ranged": {
+      "median": 4,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.87
+    },
+    "raider|3|rangedTypical": {
+      "median": 4,
+      "p10": 2,
+      "p90": 8,
+      "mean": 4.42
+    },
+    "raider|3|meleeSurprise": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.41
+    },
+    "raider|3|meleeAwake": {
+      "median": 3,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.66
+    },
+    "drone|1|ranged": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.17
+    },
+    "drone|1|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 7,
+      "mean": 3.67
+    },
+    "drone|1|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "drone|1|meleeAwake": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.58
+    },
+    "drone|2|ranged": {
+      "median": 3,
+      "p10": 2,
+      "p90": 6,
+      "mean": 3.66
+    },
+    "drone|2|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 8,
+      "mean": 4.1
+    },
+    "drone|2|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "drone|2|meleeAwake": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.13
+    },
+    "drone|3|ranged": {
+      "median": 3,
+      "p10": 2,
+      "p90": 7,
+      "mean": 3.82
+    },
+    "drone|3|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 7,
+      "mean": 3.7
+    },
+    "drone|3|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "drone|3|meleeAwake": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.43
+    },
+    "brute|1|ranged": {
+      "median": 6,
+      "p10": 5,
+      "p90": 8,
+      "mean": 6.64
+    },
+    "brute|1|rangedTypical": {
+      "median": 8,
+      "p10": 5,
+      "p90": 22,
+      "mean": 10.79
+    },
+    "brute|1|meleeSurprise": {
+      "median": 5,
+      "p10": 4,
+      "p90": 6,
+      "mean": 5
+    },
+    "brute|1|meleeAwake": {
+      "median": 5,
+      "p10": 5,
+      "p90": 7,
+      "mean": 5.7
+    },
+    "brute|2|ranged": {
+      "median": 7,
+      "p10": 6,
+      "p90": 9,
+      "mean": 7.25
+    },
+    "brute|2|rangedTypical": {
+      "median": 8,
+      "p10": 4,
+      "p90": 28,
+      "mean": 12.5
+    },
+    "brute|2|meleeSurprise": {
+      "median": 5,
+      "p10": 5,
+      "p90": 7,
+      "mean": 5.52
+    },
+    "brute|2|meleeAwake": {
+      "median": 6,
+      "p10": 5,
+      "p90": 8,
+      "mean": 6.21
+    },
+    "brute|3|ranged": {
+      "median": 8,
+      "p10": 7,
+      "p90": 9,
+      "mean": 7.86
+    },
+    "brute|3|rangedTypical": {
+      "median": 7,
+      "p10": 4,
+      "p90": 26,
+      "mean": 10.89
+    },
+    "brute|3|meleeSurprise": {
+      "median": 6,
+      "p10": 5,
+      "p90": 7,
+      "mean": 6.03
+    },
+    "brute|3|meleeAwake": {
+      "median": 7,
+      "p10": 6,
+      "p90": 8,
+      "mean": 6.74
+    },
+    "turret_light|1|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|1|rangedTypical": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.5
+    },
+    "turret_light|1|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "turret_light|1|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|2|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.03
+    },
+    "turret_light|2|rangedTypical": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.71
+    },
+    "turret_light|2|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.28
+    },
+    "turret_light|2|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|3|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "turret_light|3|rangedTypical": {
+      "median": 2,
+      "p10": 1,
+      "p90": 4,
+      "mean": 2.48
+    },
+    "turret_light|3|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.43
+    },
+    "turret_light|3|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "flyer|1|ranged": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.47
+    },
+    "flyer|1|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 7,
+      "mean": 3.32
+    },
+    "flyer|1|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "flyer|1|meleeAwake": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.3
+    },
+    "flyer|2|ranged": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.67
+    },
+    "flyer|2|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 7,
+      "mean": 3.57
+    },
+    "flyer|2|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "flyer|2|meleeAwake": {
+      "median": 2,
+      "p10": 1,
+      "p90": 4,
+      "mean": 2.28
+    },
+    "flyer|3|ranged": {
+      "median": 2,
+      "p10": 1,
+      "p90": 6,
+      "mean": 2.92
+    },
+    "flyer|3|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 7,
+      "mean": 3.36
+    },
+    "flyer|3|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "flyer|3|meleeAwake": {
+      "median": 2,
+      "p10": 1,
+      "p90": 4,
+      "mean": 2.27
+    },
+    "shielder|1|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.48
+    },
+    "shielder|1|rangedTypical": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.3
+    },
+    "shielder|1|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.18
+    },
+    "shielder|1|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.44
+    },
+    "shielder|2|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.55
+    },
+    "shielder|2|rangedTypical": {
+      "median": 3,
+      "p10": 2,
+      "p90": 7,
+      "mean": 3.67
+    },
+    "shielder|2|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.52
+    },
+    "shielder|2|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.44
+    },
+    "shielder|3|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.72
+    },
+    "shielder|3|rangedTypical": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.33
+    },
+    "shielder|3|meleeSurprise": {
+      "median": 2,
+      "p10": 1,
+      "p90": 3,
+      "mean": 1.7
+    },
+    "shielder|3|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.44
+    },
+    "sniper|1|ranged": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.83
+    },
+    "sniper|1|rangedTypical": {
+      "median": 2,
+      "p10": 1,
+      "p90": 3,
+      "mean": 2.09
+    },
+    "sniper|1|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "sniper|1|meleeAwake": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.57
+    },
+    "sniper|2|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 1.97
+    },
+    "sniper|2|rangedTypical": {
+      "median": 2,
+      "p10": 1,
+      "p90": 4,
+      "mean": 2.29
+    },
+    "sniper|2|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 1,
+      "mean": 1
+    },
+    "sniper|2|meleeAwake": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.86
+    },
+    "sniper|3|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "sniper|3|rangedTypical": {
+      "median": 2,
+      "p10": 1,
+      "p90": 4,
+      "mean": 2.13
+    },
+    "sniper|3|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.14
+    },
+    "sniper|3|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "bomber|1|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "bomber|1|rangedTypical": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.81
+    },
+    "bomber|1|meleeSurprise": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.43
+    },
+    "bomber|1|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "bomber|2|ranged": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.24
+    },
+    "bomber|2|rangedTypical": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.09
+    },
+    "bomber|2|meleeSurprise": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.57
+    },
+    "bomber|2|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "bomber|3|ranged": {
+      "median": 3,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.55
+    },
+    "bomber|3|rangedTypical": {
+      "median": 2,
+      "p10": 2,
+      "p90": 5,
+      "mean": 2.88
+    },
+    "bomber|3|meleeSurprise": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.85
+    },
+    "bomber|3|meleeAwake": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.12
+    }
+  },
+  "floors": {
+    "crateDist": {},
+    "depth1": {
+      "crates": {
+        "median": 1,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.35
+      },
+      "lootRooms": {
+        "median": 1,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.35
+      },
+      "zeroCrateFloors": 0,
+      "n": 200,
+      "itemCaches": {
+        "median": 2,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.65
+      },
+      "zeroItemFloors": 0,
+      "itemTierShares": {
+        "common": 0.6596,
+        "epic": 0.0304,
+        "uncommon": 0.2219,
+        "rare": 0.0821,
+        "legendary": 0.0061
+      }
+    },
+    "depth2": {
+      "crates": {
+        "median": 1,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.34
+      },
+      "lootRooms": {
+        "median": 1,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.34
+      },
+      "zeroCrateFloors": 0,
+      "n": 200,
+      "itemCaches": {
+        "median": 2,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.66
+      },
+      "zeroItemFloors": 0,
+      "itemTierShares": {
+        "common": 0.6114,
+        "epic": 0.0331,
+        "uncommon": 0.2229,
+        "rare": 0.1175,
+        "legendary": 0.0151
+      }
+    },
+    "depth3": {
+      "crates": {
+        "median": 1,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.34
+      },
+      "lootRooms": {
+        "median": 1,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.34
+      },
+      "zeroCrateFloors": 0,
+      "n": 200,
+      "itemCaches": {
+        "median": 2,
+        "p10": 1,
+        "p90": 2,
+        "mean": 1.65
+      },
+      "zeroItemFloors": 0,
+      "itemTierShares": {
+        "common": 0.5198,
+        "uncommon": 0.2584,
+        "rare": 0.155,
+        "epic": 0.0456,
+        "legendary": 0.0213
+      }
+    }
+  },
+  "variants": {
+    "current": {
+      "depth1": {
+        "demand": {
+          "median": 16,
+          "p10": 12,
+          "p90": 21,
+          "mean": 16.08
+        },
+        "endBalance": {
+          "median": 9,
+          "p10": 4,
+          "p90": 20,
+          "mean": 10.79
+        },
+        "shortfallRuns": 3,
+        "shortfallMedian": 0,
+        "rangedFracSustainable": {
+          "median": 1,
+          "p10": 1,
+          "p90": 1,
+          "mean": 1
+        }
+      },
+      "depth2": {
+        "demand": {
+          "median": 19,
+          "p10": 14,
+          "p90": 27,
+          "mean": 19.42
+        },
+        "endBalance": {
+          "median": 1,
+          "p10": 0,
+          "p90": 14,
+          "mean": 4.63
+        },
+        "shortfallRuns": 82,
+        "shortfallMedian": 0,
+        "rangedFracSustainable": {
+          "median": 1,
+          "p10": 0.6071428571428571,
+          "p90": 1,
+          "mean": 0.89
+        }
+      },
+      "depth3": {
+        "demand": {
+          "median": 25,
+          "p10": 17,
+          "p90": 33,
+          "mean": 24.73
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 2,
+          "mean": 0.83
+        },
+        "shortfallRuns": 166,
+        "shortfallMedian": 10,
+        "rangedFracSustainable": {
+          "median": 0.5714285714285714,
+          "p10": 0.3076923076923077,
+          "p90": 1,
+          "mean": 0.61
+        }
+      }
+    },
+    "tighter": {
+      "depth1": {
+        "demand": {
+          "median": 16,
+          "p10": 12,
+          "p90": 21,
+          "mean": 16.08
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 4,
+          "mean": 0.86
+        },
+        "shortfallRuns": 137,
+        "shortfallMedian": 3,
+        "rangedFracSustainable": {
+          "median": 0.8,
+          "p10": 0.6,
+          "p90": 1,
+          "mean": 0.81
+        }
+      },
+      "depth2": {
+        "demand": {
+          "median": 19,
+          "p10": 14,
+          "p90": 27,
+          "mean": 19.42
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 0,
+          "mean": 0
+        },
+        "shortfallRuns": 200,
+        "shortfallMedian": 13,
+        "rangedFracSustainable": {
+          "median": 0.2857142857142857,
+          "p10": 0.16666666666666666,
+          "p90": 0.5789473684210527,
+          "mean": 0.34
+        }
+      },
+      "depth3": {
+        "demand": {
+          "median": 25,
+          "p10": 17,
+          "p90": 33,
+          "mean": 24.73
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 0,
+          "mean": 0
+        },
+        "shortfallRuns": 199,
+        "shortfallMedian": 19,
+        "rangedFracSustainable": {
+          "median": 0.19047619047619047,
+          "p10": 0.12903225806451613,
+          "p90": 0.4,
+          "mean": 0.23
+        }
+      }
+    },
+    "capped24": {
+      "depth1": {
+        "demand": {
+          "median": 16,
+          "p10": 12,
+          "p90": 21,
+          "mean": 16.08
+        },
+        "endBalance": {
+          "median": 3,
+          "p10": 0,
+          "p90": 10,
+          "mean": 4.21
+        },
+        "shortfallRuns": 39,
+        "shortfallMedian": 0,
+        "rangedFracSustainable": {
+          "median": 1,
+          "p10": 0.9,
+          "p90": 1,
+          "mean": 0.97
+        }
+      },
+      "depth2": {
+        "demand": {
+          "median": 19,
+          "p10": 14,
+          "p90": 27,
+          "mean": 19.42
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 2,
+          "mean": 0.5
+        },
+        "shortfallRuns": 165,
+        "shortfallMedian": 7,
+        "rangedFracSustainable": {
+          "median": 0.6,
+          "p10": 0.3,
+          "p90": 1,
+          "mean": 0.63
+        }
+      },
+      "depth3": {
+        "demand": {
+          "median": 25,
+          "p10": 17,
+          "p90": 33,
+          "mean": 24.73
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 0,
+          "mean": 0.06
+        },
+        "shortfallRuns": 198,
+        "shortfallMedian": 16,
+        "rangedFracSustainable": {
+          "median": 0.3,
+          "p10": 0.2,
+          "p90": 0.631578947368421,
+          "mean": 0.36
+        }
+      }
+    },
+    "generous": {
+      "depth1": {
+        "demand": {
+          "median": 16,
+          "p10": 12,
+          "p90": 21,
+          "mean": 16.08
+        },
+        "endBalance": {
+          "median": 9,
+          "p10": 4,
+          "p90": 18,
+          "mean": 10.07
+        },
+        "shortfallRuns": 3,
+        "shortfallMedian": 0,
+        "rangedFracSustainable": {
+          "median": 1,
+          "p10": 1,
+          "p90": 1,
+          "mean": 1
+        }
+      },
+      "depth2": {
+        "demand": {
+          "median": 19,
+          "p10": 14,
+          "p90": 27,
+          "mean": 19.42
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 9,
+          "mean": 2.51
+        },
+        "shortfallRuns": 109,
+        "shortfallMedian": 1,
+        "rangedFracSustainable": {
+          "median": 0.9333333333333333,
+          "p10": 0.5,
+          "p90": 1,
+          "mean": 0.83
+        }
+      },
+      "depth3": {
+        "demand": {
+          "median": 25,
+          "p10": 17,
+          "p90": 33,
+          "mean": 24.73
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 0,
+          "mean": 0.13
+        },
+        "shortfallRuns": 193,
+        "shortfallMedian": 15,
+        "rangedFracSustainable": {
+          "median": 0.375,
+          "p10": 0.20689655172413793,
+          "p90": 0.8095238095238095,
+          "mean": 0.44
+        }
+      }
+    },
+    "crafted12": {
+      "depth1": {
+        "demand": {
+          "median": 16,
+          "p10": 12,
+          "p90": 21,
+          "mean": 16.08
+        },
+        "endBalance": {
+          "median": 15,
+          "p10": 10,
+          "p90": 24,
+          "mean": 16.05
+        },
+        "shortfallRuns": 0,
+        "shortfallMedian": 0,
+        "rangedFracSustainable": {
+          "median": 1,
+          "p10": 1,
+          "p90": 1,
+          "mean": 1
+        }
+      },
+      "depth2": {
+        "demand": {
+          "median": 19,
+          "p10": 14,
+          "p90": 27,
+          "mean": 19.42
+        },
+        "endBalance": {
+          "median": 5,
+          "p10": 0,
+          "p90": 15,
+          "mean": 5.97
+        },
+        "shortfallRuns": 53,
+        "shortfallMedian": 0,
+        "rangedFracSustainable": {
+          "median": 1,
+          "p10": 0.8,
+          "p90": 1,
+          "mean": 0.95
+        }
+      },
+      "depth3": {
+        "demand": {
+          "median": 25,
+          "p10": 17,
+          "p90": 33,
+          "mean": 24.73
+        },
+        "endBalance": {
+          "median": 0,
+          "p10": 0,
+          "p90": 2,
+          "mean": 0.51
+        },
+        "shortfallRuns": 174,
+        "shortfallMedian": 11,
+        "rangedFracSustainable": {
+          "median": 0.5483870967741935,
+          "p10": 0.24,
+          "p90": 1,
+          "mean": 0.57
+        }
+      }
+    }
+  },
+  "ammoKillDists": {
+    "raider|1|standard": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.4
+    },
+    "raider|1|piercing": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.4
+    },
+    "raider|1|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.63
+    },
+    "raider|1|shock": {
+      "median": 3,
+      "p10": 2,
+      "p90": 5,
+      "mean": 3.4
+    },
+    "raider|2|standard": {
+      "median": 3,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.71
+    },
+    "raider|2|piercing": {
+      "median": 3,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.71
+    },
+    "raider|2|incendiary": {
+      "median": 3,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.85
+    },
+    "raider|2|shock": {
+      "median": 3,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.71
+    },
+    "raider|3|standard": {
+      "median": 4,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.87
+    },
+    "raider|3|piercing": {
+      "median": 4,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.87
+    },
+    "raider|3|incendiary": {
+      "median": 3,
+      "p10": 2,
+      "p90": 4,
+      "mean": 3.18
+    },
+    "raider|3|shock": {
+      "median": 4,
+      "p10": 3,
+      "p90": 5,
+      "mean": 3.87
+    },
+    "drone|1|standard": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.17
+    },
+    "drone|1|piercing": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.17
+    },
+    "drone|1|incendiary": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.65
+    },
+    "drone|1|shock": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.17
+    },
+    "drone|2|standard": {
+      "median": 3,
+      "p10": 2,
+      "p90": 6,
+      "mean": 3.66
+    },
+    "drone|2|piercing": {
+      "median": 3,
+      "p10": 2,
+      "p90": 6,
+      "mean": 3.66
+    },
+    "drone|2|incendiary": {
+      "median": 3,
+      "p10": 1,
+      "p90": 6,
+      "mean": 3.21
+    },
+    "drone|2|shock": {
+      "median": 3,
+      "p10": 2,
+      "p90": 6,
+      "mean": 3.66
+    },
+    "drone|3|standard": {
+      "median": 3,
+      "p10": 2,
+      "p90": 7,
+      "mean": 3.82
+    },
+    "drone|3|piercing": {
+      "median": 3,
+      "p10": 2,
+      "p90": 7,
+      "mean": 3.82
+    },
+    "drone|3|incendiary": {
+      "median": 3,
+      "p10": 2,
+      "p90": 6,
+      "mean": 3.49
+    },
+    "drone|3|shock": {
+      "median": 3,
+      "p10": 2,
+      "p90": 7,
+      "mean": 3.82
+    },
+    "brute|1|standard": {
+      "median": 6,
+      "p10": 5,
+      "p90": 8,
+      "mean": 6.64
+    },
+    "brute|1|piercing": {
+      "median": 5,
+      "p10": 5,
+      "p90": 7,
+      "mean": 5.71
+    },
+    "brute|1|incendiary": {
+      "median": 5,
+      "p10": 5,
+      "p90": 7,
+      "mean": 5.62
+    },
+    "brute|1|shock": {
+      "median": 6,
+      "p10": 5,
+      "p90": 8,
+      "mean": 6.64
+    },
+    "brute|2|standard": {
+      "median": 7,
+      "p10": 6,
+      "p90": 9,
+      "mean": 7.25
+    },
+    "brute|2|piercing": {
+      "median": 6,
+      "p10": 5,
+      "p90": 8,
+      "mean": 6.21
+    },
+    "brute|2|incendiary": {
+      "median": 6,
+      "p10": 5,
+      "p90": 7,
+      "mean": 6.11
+    },
+    "brute|2|shock": {
+      "median": 7,
+      "p10": 6,
+      "p90": 9,
+      "mean": 7.25
+    },
+    "brute|3|standard": {
+      "median": 8,
+      "p10": 7,
+      "p90": 9,
+      "mean": 7.86
+    },
+    "brute|3|piercing": {
+      "median": 7,
+      "p10": 6,
+      "p90": 8,
+      "mean": 6.74
+    },
+    "brute|3|incendiary": {
+      "median": 6,
+      "p10": 6,
+      "p90": 8,
+      "mean": 6.63
+    },
+    "brute|3|shock": {
+      "median": 8,
+      "p10": 7,
+      "p90": 9,
+      "mean": 7.86
+    },
+    "turret_light|1|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|1|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|1|incendiary": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.83
+    },
+    "turret_light|1|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|2|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.03
+    },
+    "turret_light|2|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.03
+    },
+    "turret_light|2|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 1.97
+    },
+    "turret_light|2|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.03
+    },
+    "turret_light|3|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "turret_light|3|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "turret_light|3|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "turret_light|3|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "flyer|1|standard": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.47
+    },
+    "flyer|1|piercing": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.47
+    },
+    "flyer|1|incendiary": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.31
+    },
+    "flyer|1|shock": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.47
+    },
+    "flyer|2|standard": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.67
+    },
+    "flyer|2|piercing": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.67
+    },
+    "flyer|2|incendiary": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.39
+    },
+    "flyer|2|shock": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.67
+    },
+    "flyer|3|standard": {
+      "median": 2,
+      "p10": 1,
+      "p90": 6,
+      "mean": 2.92
+    },
+    "flyer|3|piercing": {
+      "median": 2,
+      "p10": 1,
+      "p90": 6,
+      "mean": 2.92
+    },
+    "flyer|3|incendiary": {
+      "median": 2,
+      "p10": 1,
+      "p90": 5,
+      "mean": 2.51
+    },
+    "flyer|3|shock": {
+      "median": 2,
+      "p10": 1,
+      "p90": 6,
+      "mean": 2.92
+    },
+    "shielder|1|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.48
+    },
+    "shielder|1|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.45
+    },
+    "shielder|1|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.37
+    },
+    "shielder|1|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.48
+    },
+    "shielder|2|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.55
+    },
+    "shielder|2|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.46
+    },
+    "shielder|2|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.43
+    },
+    "shielder|2|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.55
+    },
+    "shielder|3|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.72
+    },
+    "shielder|3|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.55
+    },
+    "shielder|3|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.45
+    },
+    "shielder|3|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 4,
+      "mean": 2.72
+    },
+    "sniper|1|standard": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.83
+    },
+    "sniper|1|piercing": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.83
+    },
+    "sniper|1|incendiary": {
+      "median": 1,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.42
+    },
+    "sniper|1|shock": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.83
+    },
+    "sniper|2|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 1.97
+    },
+    "sniper|2|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 1.97
+    },
+    "sniper|2|incendiary": {
+      "median": 2,
+      "p10": 1,
+      "p90": 2,
+      "mean": 1.72
+    },
+    "sniper|2|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 1.97
+    },
+    "sniper|3|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "sniper|3|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "sniper|3|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 1.92
+    },
+    "sniper|3|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "bomber|1|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "bomber|1|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "bomber|1|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "bomber|1|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.1
+    },
+    "bomber|2|standard": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.24
+    },
+    "bomber|2|piercing": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.24
+    },
+    "bomber|2|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2
+    },
+    "bomber|2|shock": {
+      "median": 2,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.24
+    },
+    "bomber|3|standard": {
+      "median": 3,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.55
+    },
+    "bomber|3|piercing": {
+      "median": 3,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.55
+    },
+    "bomber|3|incendiary": {
+      "median": 2,
+      "p10": 2,
+      "p90": 2,
+      "mean": 2.05
+    },
+    "bomber|3|shock": {
+      "median": 3,
+      "p10": 2,
+      "p90": 3,
+      "mean": 2.55
+    }
+  },
+  "dominance": {
+    "depth1": {
+      "standard": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 6,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "piercing": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 5,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "incendiary": {
+        "medians": {
+          "raider": 2,
+          "drone": 2,
+          "brute": 5,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 1,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "shock": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 6,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      }
+    },
+    "depth2": {
+      "standard": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 7,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "piercing": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 6,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "incendiary": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 6,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "shock": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 7,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      }
+    },
+    "depth3": {
+      "standard": {
+        "medians": {
+          "raider": 4,
+          "drone": 3,
+          "brute": 8,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 3
+        },
+        "dominates": false
+      },
+      "piercing": {
+        "medians": {
+          "raider": 4,
+          "drone": 3,
+          "brute": 7,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 3
+        },
+        "dominates": false
+      },
+      "incendiary": {
+        "medians": {
+          "raider": 3,
+          "drone": 3,
+          "brute": 6,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 2
+        },
+        "dominates": false
+      },
+      "shock": {
+        "medians": {
+          "raider": 4,
+          "drone": 3,
+          "brute": 8,
+          "turret_light": 2,
+          "flyer": 2,
+          "shielder": 2,
+          "sniper": 2,
+          "bomber": 3
+        },
+        "dominates": false
+      }
+    }
+  },
+  "gates": {
+    "stkBlaster": {
+      "drone": {
+        "median": 3,
+        "limit": 3,
+        "pass": true
+      },
+      "raider": {
+        "median": 3,
+        "limit": 4,
+        "pass": true
+      },
+      "brute": {
+        "median": 6,
+        "limit": 8,
+        "pass": true
+      }
+    },
+    "stkTypical": {
+      "drone": {
+        "median": 3,
+        "limit": 3,
+        "pass": true
+      },
+      "raider": {
+        "median": 4,
+        "limit": 4,
+        "pass": true
+      },
+      "brute": {
+        "median": 8,
+        "limit": 8,
+        "pass": true
+      }
+    },
+    "ammoShare": {
+      "depth1": {
+        "median": 1,
+        "floor": 0.7,
+        "pass": true
+      },
+      "depth2": {
+        "median": 1,
+        "floor": 0.7,
+        "pass": true
+      }
+    },
+    "zeroItemFloors": {
+      "depth1": 0,
+      "depth2": 0,
+      "depth3": 0,
+      "pass": true
+    },
+    "p4AmmoBaseline": {
+      "drone": {
+        "median": 3,
+        "expect": 3,
+        "pass": true
+      },
+      "raider": {
+        "median": 3,
+        "expect": 3,
+        "pass": true
+      },
+      "brute": {
+        "median": 6,
+        "expect": 6,
+        "pass": true
+      }
+    },
+    "p4NoUniversalDominance": {
+      "anyDominant": false,
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+PASS fresh run starts with Common +0 blaster instance, 16 ammo (attempt 1) | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'ammo': 16}
+PASS descended depth 1 -> 2 | {'depth': 2, 'runState': 'playing'}
+PASS stepping on a gear drop stows it in the Bag (weapon unchanged) | {'carried': [{'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'uncommon', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, {'kind': 'item', 'defId': 'alloyAegis', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}], 'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS stow log line names the tier and the Bag | ['Turret hits You for 3 (raw 5, armor -2)', 'The door opens.', 'Drone hits You for 3 (raw 5, armor -2)', 'Drone misses You.', 'Turret hits You for 3 (raw 5, armor -2)', 'The door opens.', 'The door opens.', 'Picked up [Common] Alloy aegis +0 — stowed in the Bag. Equip it from the Bag (no time cost).']
+PASS Bag shows an Equipment section with the carried gear row | Bag — inventory
+HP: 73/100
+Depth: 2
+Inventory (this run)
+Salvage carried: 0 · Components: 0
+Health cells: 0 · Food: 0 · Repair kits: 0 · Data chips found: 0
+Ammo: Standard 16 ◀ selected · Piercing 0 · Incendiary 0 · Shock 0 · Weapon: [Common] Scrap blaster +0
+Hub (survives runs)
+Banked salvage: 0 · 
+PASS Equip button clicked for the carried row | 
+PASS Bag Equip fills the slot with the exact instance | {'slot': 'shield', 'equipped': {'kind': 'item', 'defId': 'alloyAegis', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}}
+PASS Bag swap costs no time and no action | {'clock': (1130, 1130), 'actions': (114, 114)}
+PASS equipped piece leaves the carried list | [{'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'uncommon', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}]
+PASS shield equipped in the shield slot | {'weapon': {'kind': 'item', 'defId': 'scrapBlaster', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'armor': None, 'shield': {'kind': 'item', 'defId': 'alloyAegis', 'tier': 'common', 'upgrade': 0, 'properties': [], 'flair': None, 'element': None}, 'utility': None}
+PASS freshly equipped shield starts empty | {'shield': 0}
+PASS shield recharges on waits (pool >= 1 after 2 waits) | {'shield': 1}
+PASS shield absorb visible in a real fight (log line) | {'absorbed': True, 'runState': 'playing', 'shield': 0, 'hp': 58, 'logTail': ['Turret hits You for 0 (raw 4, armor -2) (shield absorbed 2)', 'Turret hits You for 0 (raw 5, armor -2) (shield absorbed 3)', 'You hits Turret for 18 (raw 19, armor -1)', 'You hits Turret for 18 (raw 19, armor -1)', 'Turret destroyed! Wreck left behind. Salvage drop: +4 — walk over it to collect.', 'Salvaged +4 scrap (carried: 4).', 'Turret hits You for 1 (raw 5, armor -2) (shield absorbed 2)', 'Starving Power drains 1 HP (58/100).']}
+PASS no console errors / failed assets | none
+PASS gear stow + Bag equip verified within 4 fresh runs | 
+PASS shield recharge + absorb verified within 4 fresh runs | 
+{
+ "failures": []
+}

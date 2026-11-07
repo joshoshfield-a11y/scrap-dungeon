@@ -1,0 +1,3 @@
+PASS fresh run: energy 100, heat 0, no mech skills, 0 points, meters collapsed (attempt 1) | {'energy': 100, 'heat': 0, 'mechSkills': [], 'points': 0, 'meters': {'text': '', 'hidden': True}}
+FAIL hunt earns 4+ run skill points and 25+ carried salvage | {'runState': 'dead', 'points': 0, 'carried': 30, 'kills': 2}
+PASS fresh run: energy 100, heat 0, no mech skills, 0 points, meters collapsed (attempt 2) | {'energy': 100, 'heat': 0, 'mechSkills': [], 'points': 0, 'meters': {'text': '', 'hidden': True}}

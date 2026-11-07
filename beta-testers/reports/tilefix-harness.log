@@ -1,0 +1,3 @@
+PASS=358 FAIL=1 NOTE=2 ENV=0 Blockers=0 Majors=1
+  Major FAIL [completionist] a pickup can be walked to and collected — attempt 2: target {'kind': 'salvage', 'x': 55, 'y': 31} path=2 pickups 26 -> 26 inventory (0, 0, 0, 0, 0, 0) -> (0, 0, 0, 0, 0, 0) pos=(55,29) state=playing
+Report: /home/hatch/workspace/scrap-dungeon/beta-testers/reports/REPORT.md

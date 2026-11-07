@@ -1,0 +1,59 @@
+PASS Bag opens with a 5-tab bar, Gear default active | ['Gear', 'Ammo', 'Skills', 'Keys', 'Info']
+PASS Gear tab: equipped Alloy vest shows Armor +3, Max HP +14 (rare +1 scaling) | BAG — INVENTORY
+Gear
+Ammo
+Skills
+Keys
+Info
+Close
+Equipment — swapping costs no time; the old piece returns to the Bag.
+Armor 5 · Max HP 114 · Evasion 8 · Range 5 · Sight 10 · Shield 0/22
+Weapon: [Common] Scrap blaster +0
+Damage 2d6+8 · Range 5 · Standard
+Armor: [Rare] Alloy vest +1 Remove
+Adds: Armor +3 · Max HP +14
+Shield: [Uncommon] Alloy aegis +2 Remove
+Adds: Shield +22
+Utility: [Common] Sensor
+PASS Gear tab: equipped Alloy aegis shows Shield +22, Sensor shows Sight +2
+PASS Gear tab: derived totals line still present (Armor 5, Max HP 114, Sight 10, Shield 0/22) | BAG — INVENTORY
+Gear
+Ammo
+Skills
+Keys
+Info
+Close
+Equipment — swapping costs no time; the old piece returns to the Bag.
+Armor 5 · Max HP 114 · Evasion 8 · Range 5 · Sight 10 · Shield 0/22
+Weapon: [Common] Scrap blaster +0
+Damage 2d6+8 · Range 5 · Standard
+Armor: [Rare] Alloy vest +1 Remove
+Adds: Armor +3 · Max HP +14
+Shield: [Uncommon] Alloy aegis +2 Remove
+Adds: Shield +22
+Utility: [Common] Sensor
+PASS Gear tab: carried Ablative weave swap preview Armor +1, Max HP +10
+PASS Gear tab: carried Scope swap preview Range +1, Sight −2
+PASS Gear tab: carried Nano bastion swap preview Shield +35 plus pool-reset note
+PASS Gear tab: carried Plasma rifle shows dice/range and Range +1 swap preview
+PASS Gear tab buttons all >=44px tall | {'tabs': 48, 'gear': 48}
+PASS Ammo tab: selector buttons visible, gear section hidden
+PASS Skills tab: mech skill cards visible (Overclock, Sensor Pulse)
+PASS Keys tab: reachable, reports carried keys (none on a fresh floor)
+PASS Info tab: inventory summary + Use buttons visible again
+PASS no horizontal overflow at 390px in the Bag
+PASS reopening the Bag keeps the last-used tab (Info persists across opens)
+PASS Gear tab selectable again after reopen
+PASS death fixture placed (adjacent lethal foe, player at 1 HP)
+PASS player dies for real and the death modal opens
+PASS hub opens with a 5-tab bar, Upgrades default active | ['Upgrades', 'Salvage & Crafting', 'Loadout', 'Intel', 'Pilot']
+PASS Upgrades tab: Mechanic visible, Salvager hidden
+PASS Salvage & Crafting tab: Salvager + Armorer visible, Mechanic hidden
+PASS station action keeps the Salvage & Crafting tab (no reset to Upgrades)
+PASS Loadout tab: starting-ammo station visible, Salvager hidden
+PASS Intel tab: Scout + Radio visible, Researcher not in this group
+PASS Pilot tab: Instructor visible, Scout hidden
+PASS hub tab buttons all >=44px tall | 48
+PASS no horizontal overflow at 390px in the hub
+PASS zero console errors across the whole run | []
+RESULT passes=28 failures=0

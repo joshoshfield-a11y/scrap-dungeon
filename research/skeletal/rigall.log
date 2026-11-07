@@ -1,0 +1,81 @@
+raider: 13 boxes, glows ['#35e0ff'], groups ['torso', 'head', 'armL', 'armR', 'legL', 'legR']
+brute: 20 boxes, glows ['#35e0ff'], groups ['torso', 'head', 'armL', 'armR', 'legL', 'legR']
+drone: 13 boxes, glows ['#35e0ff'], groups ['body', 'armL', 'armR', 'rotor', 'skid']
+boss: 28 boxes, glows ['#35e0ff', '#ff7a1a'], groups ['torso', 'head', 'armL', 'armR', 'legL', 'legR']
+== raider ==
+  raider_full: 8 frames
+  raider_torso: 8 frames
+  raider_head: 8 frames
+  raider_armL: 8 frames
+  raider_armR: 8 frames
+  raider_legL: 8 frames
+  raider_legR: 8 frames
+  raider dir SW: residual px attributed: 9
+  raider dir W: residual px attributed: 9
+  raider dir S: composite-vs-full differing opaque px = 0
+  raider dir SW: composite-vs-full differing opaque px = 0
+  raider dir W: composite-vs-full differing opaque px = 0
+  raider dir NW: composite-vs-full differing opaque px = 0
+  raider dir N: composite-vs-full differing opaque px = 0
+  raider dir NE: composite-vs-full differing opaque px = 0
+  raider dir E: composite-vs-full differing opaque px = 0
+  raider dir SE: composite-vs-full differing opaque px = 0
+raider RIG DONE exact
+== brute ==
+  brute_full: 8 frames
+  brute_torso: 8 frames
+  brute_head: 8 frames
+  brute_armL: 8 frames
+  brute_armR: 8 frames
+  brute_legL: 8 frames
+  brute_legR: 8 frames
+  brute dir S: residual px attributed: 18
+  brute dir W: residual px attributed: 9
+  brute dir E: residual px attributed: 9
+  brute dir S: composite-vs-full differing opaque px = 0
+  brute dir SW: composite-vs-full differing opaque px = 0
+  brute dir W: composite-vs-full differing opaque px = 0
+  brute dir NW: composite-vs-full differing opaque px = 0
+  brute dir N: composite-vs-full differing opaque px = 0
+  brute dir NE: composite-vs-full differing opaque px = 0
+  brute dir E: composite-vs-full differing opaque px = 0
+  brute dir SE: composite-vs-full differing opaque px = 0
+brute RIG DONE exact
+== drone ==
+  drone_full: 8 frames
+  drone_body: 8 frames
+  drone_armL: 8 frames
+  drone_armR: 8 frames
+  drone_rotor: 8 frames
+  drone_skid: 8 frames
+  drone dir S: composite-vs-full differing opaque px = 0
+  drone dir SW: composite-vs-full differing opaque px = 0
+  drone dir W: composite-vs-full differing opaque px = 0
+  drone dir NW: composite-vs-full differing opaque px = 0
+  drone dir N: composite-vs-full differing opaque px = 0
+  drone dir NE: composite-vs-full differing opaque px = 0
+  drone dir E: composite-vs-full differing opaque px = 0
+  drone dir SE: composite-vs-full differing opaque px = 0
+drone RIG DONE exact
+== boss ==
+  boss_full: 8 frames
+  boss_torso: 8 frames
+  boss_head: 8 frames
+  boss_armL: 8 frames
+  boss_armR: 8 frames
+  boss_legL: 8 frames
+  boss_legR: 8 frames
+  boss dir SW: residual px attributed: 9
+  boss dir W: residual px attributed: 9
+  boss dir E: residual px attributed: 9
+  boss dir SE: residual px attributed: 9
+  boss dir S: composite-vs-full differing opaque px = 0
+  boss dir SW: composite-vs-full differing opaque px = 0
+  boss dir W: composite-vs-full differing opaque px = 0
+  boss dir NW: composite-vs-full differing opaque px = 0
+  boss dir N: composite-vs-full differing opaque px = 0
+  boss dir NE: composite-vs-full differing opaque px = 0
+  boss dir E: composite-vs-full differing opaque px = 0
+  boss dir SE: composite-vs-full differing opaque px = 0
+boss RIG DONE exact
+RESULTS: {'raider': True, 'brute': True, 'drone': True, 'boss': True}
